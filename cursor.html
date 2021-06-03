@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Cursor Controlled Experiment - Kaylee Gao</title>
+  <!-- Bootstrap -->
+  <link href="css/bootstrap-4.3.1.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+  <link href="css/custom.css" rel="stylesheet">
+  <link rel="shortcut icon" type="image/x-icon" href="images/mylogo2.ico" />
+</head>
+
+<body>
+  <div class="container">
+    <nav class="navbar navbar-expand-lg navbar-light mt-5 bg-transparent" id="top">
+      <a class="navbar-brand font-weight-bold" href="index.html"><img src="images/mylogo.png"
+          class="mylogo mr-4"><span class="my-name">Kaylee Gao.</span></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse navbar-light" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto font-weight-bold">
+          <li class="nav-item">
+            <a class="nav-link link link--carme font-12" href="index.html">Projects
+              <svg class="link__graphic link__graphic--stroke link__graphic--scribble" width="100%" height="9"
+                viewBox="0 0 101 9">
+                <path
+                  d="M.426 1.973C4.144 1.567 17.77-.514 21.443 1.48 24.296 3.026 24.844 4.627 27.5 7c3.075 2.748 6.642-4.141 10.066-4.688 7.517-1.2 13.237 5.425 17.59 2.745C58.5 3 60.464-1.786 66 2c1.996 1.365 3.174 3.737 5.286 4.41 5.423 1.727 25.34-7.981 29.14-1.294"
+                  pathLength="1" />
+              </svg></a>
+            </a>
+          <li class="nav-item">
+            <a class="nav-link link link--carme font-12" href="about.html">About
+              <svg class="link__graphic link__graphic--stroke link__graphic--scribble" width="100%" height="9"
+                viewBox="0 0 101 9">
+                <path
+                  d="M.426 1.973C4.144 1.567 17.77-.514 21.443 1.48 24.296 3.026 24.844 4.627 27.5 7c3.075 2.748 6.642-4.141 10.066-4.688 7.517-1.2 13.237 5.425 17.59 2.745C58.5 3 60.464-1.786 66 2c1.996 1.365 3.174 3.737 5.286 4.41 5.423 1.727 25.34-7.981 29.14-1.294"
+                  pathLength="1" />
+              </svg></a>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+
+  <div class="contents">
+  <div class="container">
+    <div class="row">
+      <ol class="col-12 breadcrumb">
+        <li class="breadcrumb-item"><a class="breadcrumb-link" href="./index.html#parallax">Projects</a></li>
+        <li class="breadcrumb-item my-color"><strong>Cursor Experiment</strong></li>
+      </ol>
+      <h1 class="col-12 project-title">Cursor experiment.</h1>
+    </div>
+  </div>
+  <img src="images/cursor-info.png" alt="Cursor experiment information" class="img-fluid">
+  <div class="container">
+    <div class="row mt-100">
+      <div class="col-12 col-md-6">
+        <h2 class="mb-4 my-color"><strong>Project overview.</strong></h2>
+        <p class="paragraph mb-5">
+          The computer mouse is a widely used accessory, and we usually a standard point
+          cursor. However, it is a doubt whether a point cursor is the most efficient
+          technique that allows users to select a particular target quickly. The project is a
+          controlled experiment to investigate how different cursors, the size of targets, and the number of
+          targets can influence users’ pointing and selection using a computer mouse and find the most
+          efficient combination to do it.
+        </p>
+      </div>
+      <div class="col-12 col-md-5 offset-md-1">
+        <h2 class="mb-4 my-color"><strong>Challenges.</strong></h2>
+        <ol class="mb-5 paragraph">
+          <li>Required coding to automatically run the test. </li>
+          <li>Needed complicated and precise calculations to minimize errors.</li>
+          <li>Due to limited time and resources, there were only three participants participated in the study. </li>
+        </ol>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-12">
+        <h2 class="mb-4 my-color mt-100"><strong>Methodology.</strong></h2>
+        <p class="paragraph mb-5">
+          <strong>Number of Participants: </strong>3 <br>
+          <strong>Tools: </strong>HTML, CSS, JavaScript, Python, Excel, <a href="http://www.yorku.ca/mack/GoStats/">GoStats</a> <br>
+          <strong>Study Format: </strong>Online via Zoom <br>
+          <strong>Data Analysis Method: </strong>Three-way ANOVA <br>
+        </p>
+        <p class="paragraph">The study used <strong>three-way ANOVA</strong>,
+          which means it consisted of three independent variables and two dependent variables.</p>
+        <p class="paragraph mb-5">The study had 27 conditions and was conducted using a <strong>within-subject</strong>
+          design.
+          Each condition had 5 blocks, and each block contained 5 trials. The study lasted approximately 30 minutes, and
+          the participants needed to click at least 675 targets to complete the experiment. </p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-12 col-md-6">
+        <h4 class="my-color mb-4"><strong>Independent variables.</strong></h4>
+        <ul class="paragraph mb-5">
+          <li><strong>Technique: </strong>point, bubble, area</li>
+          <li><strong>Size of targets: </strong>small, medium, large</li>
+          <li><strong>Number of targets: </strong>few, some many</li>
+        </ul>
+      </div>
+      <div class="col-12 col-md-6">
+        <h4 class="my-color mb-4"><strong>Dependent variables.</strong></h4>
+        <ul class="paragraph mb-5">
+          <li>Time spent on clicking a target, measured in milliseconds</li>
+          <li>accuracy rate of each trial, rounded to two decimals</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-12 col-md-4">
+        <figure class="mb-5">
+          <img src="images/few-small-area.png" alt="few small area cursor" class="img-fluid project-photo">
+          <figcaption class="text-center project-caption mt-1">Few and small targets with the area cursor</figcaption>
+        </figure>
+      </div>
+
+      <div class="col-12 col-md-4">
+        <figure class="mb-5">
+          <img src="images/some-medium-bubble.png" alt="few small area cursor" class="img-fluid project-photo">
+          <figcaption class="text-center project-caption mt-1">Some and medium targets with the bubble cursor</figcaption>
+        </figure>
+      </div>
+
+      <div class="col-12 col-md-4">
+        <figure class="mb-5">
+          <img src="images/many-large-point.png" alt="few small area cursor" class="img-fluid project-photo">
+          <figcaption class="text-center project-caption mt-1">Many and large targets with the point cursor</figcaption>
+        </figure>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-12">
+        <h2 class="mb-4 my-color mt-100"><strong>Hypotheses.</strong></h2>
+        <p class="mb-5">Total of 6 hypothese was made prior to the experiment. 2 hypotheses was made for each
+          independent variable investigated.</p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-12">
+      </div>
+      <div class="col-12 col-md-4 offset-md-1">
+        <blockquote class="quote font-italic paragraph mb-5">
+          - There is <strong>no difference in the mean time</strong> to complete target selection tasks using bubble
+          cursors vs. point cursors vs. area cursors.
+        </blockquote>
+      </div>
+      <div class="col-12 col-md-4 offset-md-2">
+        <blockquote class="quote font-italic paragraph mb-5">
+          - There is <strong>no difference in the mean accuracy rate</strong> to complete target selection tasks using
+          bubble cursors vs. point cursors vs. area cursors.
+        </blockquote>
+      </div>
+      <div class="col-12 col-md-4 offset-md-1">
+        <blockquote class="quote font-italic paragraph mb-5">
+          - <strong>Less mean time</strong> is needed to complete target selection tasks on the targets with larger
+          sizes.
+        </blockquote>
+      </div>
+      <div class="col-12 col-md-4 offset-md-2">
+        <blockquote class="quote font-italic paragraph mb-5">
+          - There is <strong>a higher accuracy rate</strong> on selecting the targets with larger sizes.
+        </blockquote>
+      </div>
+      <div class="col-12 col-md-4 offset-md-1">
+        <blockquote class="quote font-italic paragraph mb-5">
+          - There is <strong>no difference in the mean time</strong> to select different numbers of targets.
+        </blockquote>
+      </div>
+      <div class="col-12 col-md-4 offset-md-2">
+        <blockquote class="quote font-italic paragraph mb-5">
+          - There is <strong>no difference in the mean accuracy rate</strong> to select different numbers of targets.
+        </blockquote>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-12">
+        <h3 class="mb-4 my-color mt-100"><strong>Results and analysis.</strong></h3>
+      </div>
+      <div class="col-12">
+        <h4 class="my-color mb-4"><strong>Time spent.</strong></h4>
+        <div class="tab">
+          <button class="tablinks" onclick="openCity(event, 'technique-size')" id="defaultOpen">Technique x Size of
+            Targets</button>
+          <button class="tablinks" onclick="openCity(event, 'technique-number')">Technique x Number of Targets</button>
+          <button class="tablinks" onclick="openCity(event, 'size-number')">Size of Targets x Number of Targets</button>
+        </div>
+
+        <div id="technique-size" class="tabcontent">
+          <div class="row">
+            <div class="col-md-12 col-lg-7 mb-5 mt-5">
+              <img src="images/p1.png" class="img-fluid">
+            </div>
+            <div class="col-md-12 col-lg-3 offset-lg-1 mb-5 mt-5">
+              <p class="paragraph"><strong>Technique: </strong>the bubble cursor was the fastest at 809.56 milliseconds,
+                and the point cursor was the slowest, which was at 946.13 milliseconds. </p>
+              <p class="paragraph">However, the effect of taking technique and size of targets as a whole was modest.
+                (F<sub>4, 8</sub> = 2.759, p &gt; .05)</p>
+            </div>
+          </div>
+        </div>
+
+        <div id="technique-number" class="tabcontent">
+          <div class="row">
+            <div class="col-md-12 col-lg-7 mb-5 mt-5">
+              <img src="images/p2.png" class="img-fluid">
+            </div>
+            <div class="col-md-12 col-lg-3 offset-lg-1 mb-5 mt-5">
+              <p class="paragraph"><strong>Number of targets: </strong>the fastest mean time was determined to be "few"
+                targets, which was at 843.79 milliseconds, while "many" targets cost them 902.14 milliseconds to
+                complete the clicks. </p>
+              <p class="paragraph">In terms of technique and the number of targets, the difference was statistically
+                significant (F<sub>4, 8</sub> = 5.557, p &lt; .05) due to the difference between "few" numbers of
+                targets with the area cursor and "many" numbers of targets with the area cursor.</p>
+            </div>
+          </div>
+        </div>
+
+        <div id="size-number" class="tabcontent">
+          <div class="row">
+            <div class="col-md-12 col-lg-7 mb-5 mt-5">
+              <img src="images/p3.png" class="img-fluid">
+            </div>
+            <div class="col-md-12 col-lg-3 offset-lg-1 mb-5 mt-5">
+              <p class="paragraph"><strong>Size of targets: </strong>the small tasks took participants 1003.86
+                milliseconds to click. Medium targets were moderate at 825.85 milliseconds, while the large ones took
+                only 784.92 milliseconds. </p>
+              <p class="paragraph">For the size of targets and the number of targets, result showed the difference was
+                not statistically significant (F<sub>4, 8</sub> = 1.817, p &gt; .05). </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 mb-5">
+        <h4 class="my-color mb-4 mt-5"><strong>Accuracy rate.</strong></h4>
+        <div class="tab">
+          <button class="tablinks2" onclick="openCity2(event, 'technique-size2')" id="defaultOpen2">Technique x Size of
+            Targets</button>
+          <button class="tablinks2" onclick="openCity2(event, 'technique-number2')">Technique x Number of
+            Targets</button>
+          <button class="tablinks2" onclick="openCity2(event, 'size-number2')">Size of Targets x Number of
+            Targets</button>
+        </div>
+
+        <div id="technique-size2" class="tabcontent2">
+          <div class="row">
+            <div class="col-md-12 col-lg-7 mb-5 mt-5">
+              <img src="images/p4.png" class="img-fluid">
+            </div>
+            <div class="col-md-12 col-lg-3 offset-lg-1 mb-5 mt-5">
+              <p class="paragraph"><strong>Technique: </strong>, the bubble cursor obtains the highest rate at 0.972,
+                while the point cursor was at 0.910, which was slightly inaccurate than the area cursor at 0.912. </p>
+              <p class="paragraph">The interaction effect of technique x size of targets was statistically significant
+                (F<sub>2, 4</sub>> = 4.152, p &gt; .05).</p>
+            </div>
+          </div>
+        </div>
+
+        <div id="technique-number2" class="tabcontent2">
+          <div class="row">
+            <div class="col-md-12 col-lg-7 mb-5 mt-5">
+              <img src="images/p5.png" class="img-fluid">
+            </div>
+            <div class="col-md-12 col-lg-3 offset-lg-1 mb-5 mt-5">
+              <p class="paragraph"><strong>Number of targets: </strong>“Few” numbers of targets resulted in the highest
+                accuracy rate at 0.95. The medium level “some” had the lowest accuracy rate at 0.91. </p>
+              <p class="paragraph">In terms of technique and the number of targets, there was a statistically
+                significant effect (F4, 8 = 13.735, p &lt; .05).
+                This was due to the difference between the point cursor with “some”, “many” targets and the area cursor
+                with “few”, “many” targets. </p>
+            </div>
+          </div>
+        </div>
+
+        <div id="size-number2" class="tabcontent2">
+          <div class="row">
+            <div class="col-md-12 col-lg-7 mb-5 mt-5">
+              <img src="images/p6.png" class="img-fluid">
+            </div>
+            <div class="col-md-12 col-lg-3 offset-lg-1 mb-5 mt-5">
+              <p class="paragraph"><strong>Size of targets: </strong>The accuracy rate on small targets was only 0.898.
+                However, medium and large targets obtained the same accuracy rate at 0.949. </p>
+              <p class="paragraph">In terms of size of targets and the number of targets, its interaction effect was not
+                statistically significant (F<sub>4, 8</sub>> = 1.651, p &gt; .05) due to small differences. </p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-12">
+        <h2 class="mb-4 my-color mt-100"><strong>Conclusion.</strong></h2>
+      </div>
+      <div class="col-12">
+        <ul class="paragraph mb-5">
+          <li>
+            The technique and the size of targets contributed significantly to both time and the accuracy rate,
+            while the number of targets only impacted time.
+          </li>
+          <li>
+            The bubble cursor provided advantages in small and dense target environments compare with the other two.
+          </li>
+          <li>
+            The currently wide-used technique – the standard point cursor did not contribute to a good performance.
+          </li>
+          <li>
+            The combination of the bubble cursor, the large size of targets, and few numbers of targets resulted in the
+            best performance in time and the accuracy rate.
+          </li>
+        </ul>
+      </div>
+    </div>
+
+
+  </div>
+
+  <div class="container">
+    <div class="row">
+        <div class="col-12 col-md-8 offset-md-2 mt-100 mb-5">
+            <div class="bottom-nav text-center">
+                <a class="bottom-nav-link" href="index.html#parallax">All Projects</a>
+                <span> | </span>
+                <a class="bottom-nav-link" href="benchpress.html">Bench Press Upgrade</a>
+                <span> | </span>
+                <a class="bottom-nav-link" href="spacefinder.html">Study Space Finder</a>
+                <span> | </span>
+                <span class="my-color">Cursor Experiment</span>
+                <span> | </span>
+                <a class="bottom-nav-link" href="game.html">China Impression</a>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
+
+  <footer>
+    <div class="container">
+      <hr>
+      <div class="row">
+        <div class="col-12">
+          <span class="navbar-text mb-5">© 2021. All Rights Reserved to Yifei Gao</span>
+        </div>
+
+      </div>
+    </div>
+  </footer>
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap-4.3.1.js"></script>
+  <script src="js/custom.js"></script>
+
+</body>
+
+</html>
