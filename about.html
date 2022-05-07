@@ -1,92 +1,487 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>About - Kaylee Gao</title>
-    <!-- Bootstrap -->
-    <link href="css/bootstrap-4.3.1.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
-    <link href="css/custom.css" rel="stylesheet">
-    <link rel="shortcut icon" type="image/x-icon" href="images/mylogo2.ico" />
-  </head>
-  <body>
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>About - Kaylee Gao</title>
+  <!-- Bootstrap -->
+  <link href="css/bootstrap-4.3.1.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <link href="css/hover.css" rel="stylesheet" media="all">
+  <link href="css/custom.css" rel="stylesheet">
+  <link href="css/nav.css" rel="stylesheet">
+  <link rel="shortcut icon" type="image/x-icon" href="images/mylogo2.ico" />
+  <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+  <style>
+  </style>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light mt-5 bg-transparent animate__animated animate__fadeInDown" id="top">
     <div class="container">
-    <nav class="navbar navbar-expand-lg navbar-light mt-5 bg-transparent" id="top">
-      <a class="navbar-brand font-weight-bold" href="index.html"><img src="images/mylogo.png" class="mylogo mr-4"><span class="my-name">Kaylee Gao.</span></a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
+      <a class="navbar-brand font-weight-bold" href="index.html"><img src="images/mylogo.png" class="mylogo mr-4"><span
+          class="my-name">Kaylee Gao.</span></a>
+      <button class="navbar-toggler animate__animated animate__jackInTheBox border-0" type="button"
+        data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+        aria-expanded="false" aria-label="Toggle navigation">
+        <a class="navicon-button x" id="nav-button">
+          <div class="navicon"></div>
+        </a>
       </button>
       <div class="collapse navbar-collapse navbar-light" id="navbarSupportedContent">
         <ul class="navbar-nav ml-auto font-weight-bold">
-          <li class="nav-item">
-            <a class="nav-link link link--carme font-12" href="index.html">Projects
-              <svg class="link__graphic link__graphic--stroke link__graphic--scribble" 
-              width="100%" height="9" viewBox="0 0 101 9">
-              <path d="M.426 1.973C4.144 1.567 17.77-.514 21.443 1.48 24.296 3.026 24.844 4.627 27.5 7c3.075 2.748 6.642-4.141 10.066-4.688 7.517-1.2 13.237 5.425 17.59 2.745C58.5 3 60.464-1.786 66 2c1.996 1.365 3.174 3.737 5.286 4.41 5.423 1.727 25.34-7.981 29.14-1.294" pathLength="1"/></svg></a>
+          <li class="nav-item animate__animated animate__jackInTheBox">
+            <a class="nav-link link font-12" href="index.html#parallax">Projects
+              <svg class="link__graphic link__graphic--stroke link__graphic--scribble" width="100%" height="9"
+                viewBox="0 0 101 9">
+                <path
+                  d="M.426 1.973C4.144 1.567 17.77-.514 21.443 1.48 24.296 3.026 24.844 4.627 27.5 7c3.075 2.748 6.642-4.141 10.066-4.688 7.517-1.2 13.237 5.425 17.59 2.745C58.5 3 60.464-1.786 66 2c1.996 1.365 3.174 3.737 5.286 4.41 5.423 1.727 25.34-7.981 29.14-1.294"
+                  pathLength="1" />
+              </svg></a>
             </a>
-            <li class="nav-item">
-              <a class="nav-link link link--carme my-color font-12" href="#">About
-                <svg class="link__graphic link__graphic--stroke link__graphic--scribble" 
-                width="100%" height="9" viewBox="0 0 101 9">
-                <path d="M.426 1.973C4.144 1.567 17.77-.514 21.443 1.48 24.296 3.026 24.844 4.627 27.5 7c3.075 2.748 6.642-4.141 10.066-4.688 7.517-1.2 13.237 5.425 17.59 2.745C58.5 3 60.464-1.786 66 2c1.996 1.365 3.174 3.737 5.286 4.41 5.423 1.727 25.34-7.981 29.14-1.294" pathLength="1"/></svg></a>
-              </a>
           </li>
-        </ul>
-      </div>
-    </nav>
-  </div>
-  
-  <div class="contents">
-  <div class="container">
-    <div class="row"> 
-      <h1 class="col-12 subtitle">About me.</h1>    
-      <div class="col-md-5 col-12 col-lg-4 text-center">
-        <img class="img-fluid mb-5 my-photo" src="images/photo.jpg" alt="selfie">
-      </div>
-      <div class="col-md-7 col-12 col-lg-8 mt-md-0 mt-2">
-          <h2 class="mb-3 my-color"><strong>Hi, I'm Kaylee.</strong></h2>
-    <p class="paragraph">Hey there! I'm Yifei (Kaylee), a student from the Class of 2021 at University of Toronto. 
-      I was born and raised in Shanghai, China. By merging the computer science and design courses I learned at the university, 
-      I found myself in interaction and web design. I believe that powerful design, even a simplification, can give people a new horizon of the world. 
-    </p>
-      <p class="paragraph"> This portfolio website is coded by me using HTML, CSS, JavaScript, and Bootstrap.</p>
-      <button class="btn p-3 mt-4 mb-5 my-btn" onclick="location.href='./files/yifei_cv.pdf'">Resume</button>
-          <ul class="my-ul">
-        <li class="my-li">
-            <a href="mailto:kayleegao1998@gmail.com" class="my-a icons"><i class="fa fa-envelope icon"></i></a></li>
-        <li class="my-li">
-          <a target="__blank" href="https://www.facebook.com/yifei.gao.355" class="my-a icons"><i class="fab fa-facebook-f icon"></i></a>
-        </li>
-        <li class="my-li">
-          <a target="__blank" href="https://www.linkedin.com/in/yifei-gao-a9a288183/" class="my-a icons"><i class="fab fa-linkedin-in icon"></i></a></li>
-          <li class="my-li">
-            <a target="__blank" href="https://www.instagram.com/kayleeegao/" class="my-a icons"><i class="fab fa-instagram icon ins"></i></a>
+          <li class="nav-item animate__animated animate__jackInTheBox">
+            <a class="nav-link link font-12 link-active" href="#">About
+              <svg class="link__graphic link__graphic--stroke link__graphic--scribble" width="100%" height="9"
+                viewBox="0 0 101 9">
+                <path
+                  d="M.426 1.973C4.144 1.567 17.77-.514 21.443 1.48 24.296 3.026 24.844 4.627 27.5 7c3.075 2.748 6.642-4.141 10.066-4.688 7.517-1.2 13.237 5.425 17.59 2.745C58.5 3 60.464-1.786 66 2c1.996 1.365 3.174 3.737 5.286 4.41 5.423 1.727 25.34-7.981 29.14-1.294"
+                  pathLength="1" />
+              </svg></a>
+            </a>
+          </li>
+          <li class="nav-item animate__animated animate__jackInTheBox">
+            <a class="nav-link link font-12" href="contact.html">Contact
+              <svg class="link__graphic link__graphic--stroke link__graphic--scribble" width="100%" height="9"
+                viewBox="0 0 101 9">
+                <path
+                  d="M.426 1.973C4.144 1.567 17.77-.514 21.443 1.48 24.296 3.026 24.844 4.627 27.5 7c3.075 2.748 6.642-4.141 10.066-4.688 7.517-1.2 13.237 5.425 17.59 2.745C58.5 3 60.464-1.786 66 2c1.996 1.365 3.174 3.737 5.286 4.41 5.423 1.727 25.34-7.981 29.14-1.294"
+                  pathLength="1" />
+              </svg></a>
+            </a>
           </li>
         </ul>
       </div>
     </div>
-  </div>
-  </div>
+  </nav>
+
+  <div class="animate__animated animate__fadeIn animate__slower">
+    <div class="container">
+      <div class="row mb-5">
+        <h1 class="col-12 subtitle custom-h">About me.</h1>
+        <div class="col-12 col-sm-8 offset-sm-2 offset-md-3 col-md-6 offset-lg-0 col-lg-4 text-lg-left text-center">
+          <img class="img-fluid mb-5 my-photo" src="images/about/photo.jpg" alt="portrait">
+        </div>
+        <div class="col-12 col-lg-8 mt-md-0 mt-2 mb-5">
+          <h2 class="mb-3 custom-font"><img src="./images/illustrations/thunder.png" class="mr-2"
+              style="height: 1.3em;">Hi, I'm <span class="pink-mark custom-font">Kaylee</span>.</h2>
+          <p class="mb-3 span-description" style="font-weight: 500;">CCIT & CS & MATH Graduate @ UTM | MDEI Recent
+            Graduate @
+            UWaterloo
+          </p>
+          <p class="paragraph">👋🏻 Hi there! I'm Yifei Gao (Kaylee), a multi-disciplinary UX designer based in
+            Shanghai, China. I am an alumni at University of Toronto Mississauga, majored in Communication, Culture,
+            Information & Technology and Computer Science and minored in Mathematical Sciences.
+            My passion for UX design had led me to complete a master's degree in Digital Experience Innovation program at the University of Waterloo.
+          </p>
+          <p class="paragraph">👩‍💻 I have interned in three distinct fields: marketing, backend development, and
+            interaction design.
+            These experiences correspond to the different majors I pursued in undergraduate and graduate studies.
+            It is because of the different internship experiences and the fusion of computer science and design courses,
+            that I was able to find my passion for UX and interaction design.
+            With a multi-disciplinary background, I combine my strength in programming and design to create
+            user-centered products. </p>
+          <p class="paragraph mb-4"> 🌟 As a designer with a computer science background, 
+            I independently designed and developed this portfolio website. I value accessability, the site is responsive and guaranteed to work on all types of devices.</p>
+          <button class="btn my-btn mr-4 d-inline-block align-middle mb-4"
+            onClick="javascript:window.open('./files/yifei_cv.pdf', '_blank');">My Resume</button>
+          <div class="d-inline-block">
+            <ul class="icon-ul mt-0 mr-3 mb-4 align-middle" id="social">
+              <li class="icon-li">
+                <a href="mailto:kayleegao1998@gmail.com" class="icon-a icons"><i class="fa fa-envelope icon"></i></a>
+              </li>
+              <li class="icon-li">
+                <a target="__blank" href="https://www.linkedin.com/in/yifei-gao-a9a288183/" class="icon-a icons"><i
+                    class="fab fa-linkedin-in icon"></i></a>
+              </li>
+              <li class="icon-li">
+                <a target="__blank" href="https://www.instagram.com/kayleeegao/" class="icon-a icons"><i
+                    class="fab fa-instagram icon ins"></i></a>
+              </li>
+            </ul>
+            <span class="align-middle d-inline-block mb-4">or <a href="contact.html"
+                class="shoot-message-link custom-font">contact me</a></span>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="row mt-100 scroll_in">
+        <div class="col-12 mb-5">
+          <div id="hobby-heart">
+            <img src="./images/about/heart.png" class="d-block ml-auto mr-auto" style="max-width: 70%;">
+          </div>
+          <div id="hobby-slider">
+            <div>
+              <span>🧋</span>
+              <span class="point-indicator">·</span>
+              <span>🍲</span>
+              <span class="point-indicator">·</span>
+              <span>🍣</span>
+              <span class="point-indicator">·</span>
+              <span>🐱</span>
+              <span class="point-indicator">·</span>
+              <span>🎧</span>
+              <span class="point-indicator">·</span>
+              <span>👻</span>
+              <span class="point-indicator">·</span>
+              <span>💃🏻</span>
+              <span class="point-indicator">·</span>
+
+             </div>
+            
+            <div>
+              <span>🧋</span>
+              <span class="point-indicator">·</span>
+              <span>🍲</span>
+              <span class="point-indicator">·</span>
+              <span>🍣</span>
+              <span class="point-indicator">·</span>
+              <span>🐱</span>
+              <span class="point-indicator">·</span>
+              <span>🎧</span>
+              <span class="point-indicator">·</span>
+              <span>👻</span>
+              <span class="point-indicator">·</span>
+              <span>💃🏻</span>
+              <span class="point-indicator">·</span>
+            </div>
+             
+          </div>
+        </div>
+      </div>
+
+      <div class="row mt-100">
+        <div class="col-12 col-lg-4 offset-lg-1 scroll_in">
+            <h3 class="mb-4 mt-4 resume-title text-uppercase">🎓 Education</h3>
+            <p class="paragraph">Through systematic learning in computer science and design thinking for 5 years, I act as a bridge between designers and developers. </p>
+        </div>
+        <div class="col-12 col-lg-6 scroll_in">
+          <div class="timeline">
+            <div class="timeline-items ml-sm-4">
+              <div class="timeline-item">
+                <div class="discussion">
+                  <h4>
+                    <div class="photo" style="background-image: url(./images/about/uwaterloo-logo.png);">
+                    </div>
+                  </h4>
+                  <div class="desc-contact">
+                    <p class="name">University of Waterloo</p>
+                    <p class="about-secondary message"><span class="mr-3" aria-hidden="true"><i class="fas fa-graduation-cap mr-1"></i>Class of 2022</span><i
+                        class='fas fa-map-marker-alt mr-1'></i>Stratford, Canada</span></p>
+                  </div>
+                </div>
+                <h5><span class="badge badge-pill my-badge">Master's Degree</span></h5>
+                <ul class="list-unstyled" style="line-height: 1.8; font-size: 0.9em;">
+                  <li>👉🏻 Master of Digital Experience Innovation</li>
+                </ul>
+              </div>
+              <div class="timeline-item">
+                <div class="discussion">
+                  <h4>
+                    <div class="photo" style="background-image: url(./images/about/university-of-toronto-logo.png);">
+                    </div>
+                  </h4>
+                  <div class="desc-contact">
+                    <p class="name">University of Toronto</p>
+                    <p class="about-secondary message"><span class="mr-3" aria-hidden="true"><i class="fas fa-graduation-cap mr-1"></i>Class of 2021</span><i
+                        class='fas fa-map-marker-alt mr-1'></i>Toronto, Canada</span></p>
+                  </div>
+                </div>
+                <h5><span class="badge badge-pill my-badge">Bachelor's Degree</span></h5>
+                <ul class="list-unstyled" style="line-height: 1.8; font-size: 0.9em;">
+                  <li>👉🏻 Honours Bachelor of Science with Distinction</li>
+                  <li>👉🏻 Major: Computer Science</li>
+                  <li>👉🏻 Major: Communication, Culture, Information & Technology</li>
+                  <li>👉🏻 Minor: Mathematical Sciences</li>
+                </ul>
+              </div>
+              <div class="timeline-item">
+                <div class="discussion">
+                  <h4>
+                    <div class="photo" style="border-radius: 50px; background-image: url(./images/about/sheridan-logo.jpeg);">
+                    </div>
+                  </h4>
+                  <div class="desc-contact">
+                    <p class="name">Sheridan College</p>
+                    <p class="about-secondary message"><span class="mr-3" aria-hidden="true"><i class="fas fa-graduation-cap mr-1"></i>Class of 2021</span><i
+                        class='fas fa-map-marker-alt mr-1'></i>Oakville, Canada</span></p>
+                  </div>
+                </div>
+                <h5><span class="badge badge-pill my-badge">Certificate</span></h5>
+                <ul class="list-unstyled" style="line-height: 1.8; font-size: 0.9em;">
+                  <li>👉🏻 Certificate in Digital Communication</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row mt-100">
+        <div class="col-12 col-lg-4 offset-lg-1 scroll_in">
+            <h3 class="mb-4 mt-4 resume-title text-uppercase">💻 Experience</h3>
+            <p class="paragraph">I'm fortunate to have experienced in different fields and eventually find my passion for UX design.</p>
+        </div>
+        <div class="col-12 col-lg-6 scroll_in">
+          <div class="timeline">
+            <div class="timeline-items ml-sm-4">
+              <div class="timeline-item">
+                <div class="discussion">
+                  <h4>
+                    <div class="photo" style="background-image: url(./images/about/sensetime-logo.png);">
+                    </div>
+                  </h4>
+                  <div class="desc-contact">
+                    <p class="name">SenseTime Group Ltd</p>
+                    <p class="about-secondary message"><span class="mr-3" aria-hidden="true"><i
+                          class='far fa-clock mr-1'></i>4 Mos · 2021-2022</span><i
+                        class='fas fa-map-marker-alt mr-1'></i>Shanghai, China</span></p>
+                  </div>
+                </div>
+                <h5><span class="badge badge-pill my-badge">Interaction Design Intern</span></h5>
+              </div>
+              <div class="timeline-item">
+                <div class="discussion">
+                  <h4>
+                    <div class="photo" style="background-image: url(./images/about/ca-logo.png);">
+                    </div>
+                  </h4>
+                  <div class="desc-contact">
+                    <p class="name">C&A (China) Co., Ltd</p>
+                    <p class="about-secondary message"><span class="mr-3" aria-hidden="true"><i
+                          class='far fa-clock mr-1'></i>2 Mos · 2020</span><i
+                        class='fas fa-map-marker-alt mr-1'></i>Shanghai, China</span></p>
+                  </div>
+                </div>
+                <h5><span class="badge badge-pill my-badge">Intern Backend Developer</span></h5>
+              </div>
+              <div class="timeline-item">
+                <div class="discussion">
+                  <h4>
+                    <div class="photo" style="border-radius: 50px; background-image: url(./images/about/bestone.JPG);">
+                    </div>
+                  </h4>
+                  <div class="desc-contact">
+                    <p class="name">Shanghai Bestone Co., Ltd</p>
+                    <p class="about-secondary message"><span class="mr-3" aria-hidden="true"><i
+                          class='far fa-clock mr-1'></i>1 Mo · 2019</span><i
+                        class='fas fa-map-marker-alt mr-1'></i>Shanghai, China</span></p>
+                  </div>
+                </div>
+                <h5><span class="badge badge-pill my-badge">Marketing Intern</span></h5>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="row mb-5">
+        <div class="col-12 col-lg-10 offset-lg-1 scroll_in">
+          <h3 class="mb-5 mt-100 resume-title text-uppercase">✅ Skill Set</h3>
+        </div>
+        <div class="col-10 offset-1 col-md-5 offset-md-0 col-lg-4 offset-lg-1 scroll_in">
+          <div class="section-block skills-block">
+            <div class="skills">
+
+              <div class="skill">
+                <span>Figma</span>
+                <div class="skill-dots">
+                  <div class="skill-dot fill"></div>
+                  <div class="skill-dot fill"></div>
+                  <div class="skill-dot fill"></div>
+                  <div class="skill-dot fill"></div>
+                  <div class="skill-dot fill"></div>
+                </div>
+              </div>
+
+              <div class="skill">
+                <span>Adobe XD</span>
+                <div class="skill-dots">
+                  <div class="skill-dot fill"></div>
+                  <div class="skill-dot fill"></div>
+                  <div class="skill-dot fill"></div>
+                  <div class="skill-dot fill"></div>
+                  <div class="skill-dot fill"></div>
+                </div>
+              </div>
+
+              <div class="skill">
+                <span>Adobe Illustrator</span>
+                <div class="skill-dots">
+                  <div class="skill-dot fill"></div>
+                  <div class="skill-dot fill"></div>
+                  <div class="skill-dot fill"></div>
+                  <div class="skill-dot fill"></div>
+                  <div class="skill-dot"></div>
+                </div>
+              </div>
+
+              <div class="skill">
+                <span>Adobe Photoshop</span>
+                <div class="skill-dots">
+                  <div class="skill-dot fill"></div>
+                  <div class="skill-dot fill"></div>
+                  <div class="skill-dot fill"></div>
+                  <div class="skill-dot"></div>
+                  <div class="skill-dot"></div>
+                </div>
+              </div>
+
+              <div class="skill">
+                <span>Adobe InDesign</span>
+                <div class="skill-dots">
+                  <div class="skill-dot fill"></div>
+                  <div class="skill-dot fill"></div>
+                  <div class="skill-dot fill"></div>
+                  <div class="skill-dot fill"></div>
+                  <div class="skill-dot"></div>
+                </div>
+              </div>
+
+              <div class="skill">
+                <span>Adobe Premiere Pro</span>
+                <div class="skill-dots">
+                  <div class="skill-dot fill"></div>
+                  <div class="skill-dot fill"></div>
+                  <div class="skill-dot"></div>
+                  <div class="skill-dot"></div>
+                  <div class="skill-dot"></div>
+                </div>
+              </div>
+
+              <div class="skill">
+                <span>Unity</span>
+                <div class="skill-dots">
+                  <div class="skill-dot fill"></div>
+                  <div class="skill-dot fill"></div>
+                  <div class="skill-dot"></div>
+                  <div class="skill-dot"></div>
+                  <div class="skill-dot"></div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="col-10 offset-1 col-md-5 col-lg-4 offset-md-2 scroll_in">
+          <div class="section-block skills-block">
+            <div class="skills">
+
+              <div class="skill">
+                <span>HTML/CSS</span>
+                <div class="skill-dots">
+                  <div class="skill-dot fill"></div>
+                  <div class="skill-dot fill"></div>
+                  <div class="skill-dot fill"></div>
+                  <div class="skill-dot fill"></div>
+                  <div class="skill-dot fill"></div>
+                </div>
+              </div>
+
+
+              <div class="skill">
+                <span>JavaScript</span>
+                <div class="skill-dots">
+                  <div class="skill-dot fill"></div>
+                  <div class="skill-dot fill"></div>
+                  <div class="skill-dot fill"></div>
+                  <div class="skill-dot"></div>
+                  <div class="skill-dot"></div>
+                </div>
+              </div>
+
+              <div class="skill">
+                <span>Python</span>
+                <div class="skill-dots">
+                  <div class="skill-dot fill"></div>
+                  <div class="skill-dot fill"></div>
+                  <div class="skill-dot fill"></div>
+                  <div class="skill-dot fill"></div>
+                  <div class="skill-dot"></div>
+                </div>
+              </div>
+
+              <div class="skill">
+                <span>Java</span>
+                <div class="skill-dots">
+                  <div class="skill-dot fill"></div>
+                  <div class="skill-dot fill"></div>
+                  <div class="skill-dot fill"></div>
+                  <div class="skill-dot"></div>
+                  <div class="skill-dot"></div>
+                </div>
+              </div>
+
+              <div class="skill">
+                <span>SQL</span>
+                <div class="skill-dots">
+                  <div class="skill-dot fill"></div>
+                  <div class="skill-dot fill"></div>
+                  <div class="skill-dot"></div>
+                  <div class="skill-dot"></div>
+                  <div class="skill-dot"></div>
+                </div>
+              </div>
+
+              <div class="skill">
+                <span>Bootstrap</span>
+                <div class="skill-dots">
+                  <div class="skill-dot fill"></div>
+                  <div class="skill-dot fill"></div>
+                  <div class="skill-dot fill"></div>
+                  <div class="skill-dot fill"></div>
+                  <div class="skill-dot fill"></div>
+                </div>
+              </div>
+
+              <div class="skill">
+                <span>WordPress</span>
+                <div class="skill-dots">
+                  <div class="skill-dot fill"></div>
+                  <div class="skill-dot fill"></div>
+                  <div class="skill-dot fill"></div>
+                  <div class="skill-dot fill"></div>
+                  <div class="skill-dot"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <a class="to-top hvr-bob" onclick="toTop()"></a>
+
 
 
     <footer>
-        <div class="container">
-          <hr>
-          <div class="row">
-            <div class="col-12">
-              <span class="navbar-text mb-5">© 2021. All Rights Reserved to Yifei Gao</span>
-            </div>
-            
-          </div>
-        </div>
-      </footer>
+      <div id="footer-placeholder"></div>
+    </footer>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap-4.3.1.js"></script>
+    <script src="js/custom.js"></script>
 
-  </body>
+
+
+</body>
+
 </html>

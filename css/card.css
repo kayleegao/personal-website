@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+SC&family=Unna:ital@0;1&display=swap');
+
+:root {
+  --d: 700ms;
+  --e: cubic-bezier(0.19, 1, 0.22, 1);
+  --font-serif: 'Unna', 'Noto Serif SC', serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.my-card p {
+  font-style: italic;
+}
+
+
+.page-content {
+  padding: 1rem;
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+.my-card {
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  overflow: hidden;
+  padding: 1.5rem;
+  width: 100%;
+  text-align: center;
+  color: whitesmoke;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1), 0 2px 2px rgba(0, 0, 0, 0.1), 0 4px 4px rgba(0, 0, 0, 0.1), 0 8px 8px rgba(0, 0, 0, 0.1), 0 16px 16px rgba(0, 0, 0, 0.1);
+}
+@media (min-width: 600px) {
+  .my-card {
+    height: 350px;
+  }
+}
+.my-card:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 110%;
+  background-size: cover;
+  background-position: 0 0;
+  transition: transform calc(var(--d) * 1.5) var(--e);
+  pointer-events: none;
+}
+.my-card:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 200%;
+  pointer-events: none;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.009) 11.7%, rgba(0, 0, 0, 0.034) 22.1%, rgba(0, 0, 0, 0.072) 31.2%, rgba(0, 0, 0, 0.123) 39.4%, rgba(0, 0, 0, 0.182) 46.6%, rgba(0, 0, 0, 0.249) 53.1%, rgba(0, 0, 0, 0.32) 58.9%, rgba(0, 0, 0, 0.394) 64.3%, rgba(0, 0, 0, 0.468) 69.3%, rgba(0, 0, 0, 0.54) 74.1%, rgba(0, 0, 0, 0.607) 78.8%, rgba(0, 0, 0, 0.668) 83.6%, rgba(0, 0, 0, 0.721) 88.7%, rgba(0, 0, 0, 0.762) 94.1%, rgba(0, 0, 0, 0.79) 100%);
+  transform: translateY(-50%);
+  transition: transform calc(var(--d) * 2) var(--e);
+}
+
+#bench-press.lazy, #daddy-zone.lazy, #roommate.lazy, 
+#earth.lazy, #uniform.lazy, #playground.lazy, #odds-and-ends.lazy, #dyson-bot.lazy {
+  background-image: none;
+}
+
+#bench-press:before {
+  background-image: url("../images/benchpress/gym.jpg");
+  background-size: auto 100%;
+  background-position: right;
+}
+
+#daddy-zone:before {
+  background-image: url("../images/daddy-zone/daddy-zone-card.png");
+  background-size: auto 100%;
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-color: #4975E9;
+}
+
+#roommate:before {
+  background-image: url("../images/roommate/roommate-card.png"), url("../images/roommate/roommate-cardbg.png");
+  background-size: auto 100%;
+  background-position: top center;
+  background-repeat: no-repeat, repeat;
+}
+
+#earth:before {
+  background-image: url("../images/earth/earth-card.png");
+  background-size: auto 100%;
+  background-position: top center;
+}
+
+#uniform:before {
+  background-image: url("../images/uniform/uniform-card.png");
+  background-size: auto 100%;
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-color: #DDA517;
+}
+
+#playground:before {
+  background-image: url("../images/playground/playground-card.png"), url("../images/playground/playground-cardbg.png");
+  background-size: auto 100%;
+  background-position: top center;
+  background-repeat: no-repeat, repeat;
+}
+
+#odds-and-ends:before {
+  background-image:  url("../images/logos/unity.png"), url("../images/odds-and-ends/odds-and-ends-card.png");
+  background-size: 20% auto, auto 100%;
+  background-position: top 10% left 8%, top center;
+  background-repeat: no-repeat, no-repeat;
+  background-color: #D3E8D1;
+}
+
+#dyson-bot:before {
+  background-image:  url("../images/dyson-bot/dyson-logo.png"), url("../images/dyson-bot/dyson-bot-card.png");
+  background-size: 15% auto, auto 100%;
+  background-position: top 8% left 8%, top center;
+  background-repeat: no-repeat, no-repeat;
+  background-color: #B5448A;
+}
+
+
+
+.card-content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding: 2rem;
+  transition: transform var(--d) var(--e);
+  z-index: 1;
+}
+.card-copy {
+  margin-top: 0.8rem;
+}
+
+.card-title {
+  font-size: 1.3rem;
+  font-weight: 500;
+  line-height: 1.2;
+  color: #fafafa;
+  text-shadow: 2px 2px rgba(0,0,0,0.3);
+  margin-bottom: 0.5rem;
+}
+
+.my-card small {
+  font-family: var(--font-serif);
+}
+
+
+.card-copy {
+  font-size: 1.125rem;
+  font-family: var(--font-serif);
+  line-height: 1.5;
+}
+
+.card-btn {
+  margin-top: 1.2rem;
+  padding: 0.75rem 1.5rem;
+  font-size: 0.65rem;
+  font-weight: bold;
+  letter-spacing: 0.025rem;
+  text-transform: uppercase;
+  color: white;
+  background-color: black;
+  border: none;
+}
+.card-btn:hover {
+  background-color: #0d0d0d;
+}
+
+@media (hover: hover) and (min-width: 600px) {
+  .my-card:after {
+    transform: translateY(0);
+  }
+
+  .card-content {
+    transform: translateY(calc(100% - 4.5rem));
+  }
+  .card-content > *:not(.card-title) {
+    opacity: 0;
+    transform: translateY(1rem);
+    transition: transform var(--d) var(--e), opacity var(--d) var(--e);
+  }
+
+  .my-card:hover,
+.my-card:focus-within {
+    align-items: center;
+  }
+  .my-card:hover:before,
+.my-card:focus-within:before {
+    transform: translateY(-4%);
+  }
+  .my-card:hover:after,
+.my-card:focus-within:after {
+    transform: translateY(-50%);
+  }
+  .my-card:hover .card-content,
+.my-card:focus-within .content {
+    transform: translateY(0);
+  }
+  .my-card:hover .card-content > *:not(.card-title),
+.my-card:focus-within .card-content > *:not(.card-title) {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: calc(var(--d) / 8);
+  }
+
+  .my-card:focus-within:before, .my-card:focus-within:after,
+.my-card:focus-within .card-content,
+.my-card:focus-within .card-content > *:not(.card-title) {
+    transition-duration: 0s;
+  }
+}
