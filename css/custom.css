@@ -26,7 +26,6 @@
 
 :root {
   --main-color: #ffc722;
-  /**--pink-color: rgb(250,224,230);**/
   --pink-color: rgb(238,179,228);
   --text-color: #333;
   --peach-color: rgb(244, 186, 185);
@@ -70,14 +69,15 @@ hr.wavy-line {
   background-color: #faf3e3;
   color: #d7a306;
   padding: 5px 10px;
+  font-weight: 500;
 }
 
 
-#hello, h1, h1 strong, .wrap, .my-btn, .custom-font, .tag, .mySwiperMenu h5, .mySwiperMenu p, .mySwiperMenu .all-center, .navbar-text, .card-title, .discussion .name, .project-intro-wrapper * {
+#hello, h1, h1 strong, .wrap, .my-btn, .custom-font, .tag, .mySwiperMenu h5, .mySwiperMenu p, .mySwiperMenu .all-center, .navbar-text, .card-title, .discussion .name, .project-intro-wrapper *, h2, .resume-title {
   font-family: 'Euclidcircularb', avenir, sans-serif;
 }
 
-.my-name, .nav-link, h2, .resume-title {
+nav * {
   font-family: 'Ubuntu', avenir, sans-serif;
   font-weight: 500 !important;
 }
@@ -123,6 +123,19 @@ h1, h2 {
 .project-intro-wrapper {
   padding: 50px 30px;
   border-radius: 30px;
+  position: relative;
+}
+
+.project-intro-wrapper .bulb {
+  position: absolute; 
+  z-index: 100;
+  right: 3%;
+  top: -45px;
+  filter: drop-shadow(5px 5px 10px rgba(100, 100, 100, 0.1));
+}
+
+.project-intro-wrapper h6 {
+  line-height: 1.5em;
 }
 
 .project-intro-wrapper p, .project-intro-wrapper span {
@@ -1100,6 +1113,7 @@ td {
     padding: 6px 15px;
     background-color: #faf3e3;
     color: #d7a306;
+    font-weight: 500;
   }
 
   .more-projects:hover {
@@ -1560,6 +1574,9 @@ blockquote.blockstyle:after {
     .more-projects p {
       margin-top: 0;
     }
+    .project-intro-wrapper .bulb {
+      width: 80px;
+    }
   }
 
 
@@ -1637,6 +1654,9 @@ blockquote.blockstyle:after {
     }
     #shuffle-link {
       font-size: 12px;
+    }
+    .project-intro-wrapper .bulb {
+      top: -30px;
     }
   }
 
