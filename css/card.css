@@ -126,6 +126,13 @@
   background-color: #B5448A;
 }
 
+#baby-u:before {
+  background-image:  url("../images/baby-u/baby-u-card.png");
+  background-size: auto 100%;
+  background-position: top center;
+  background-repeat: no-repeat, repeat;
+}
+
 
 
 .card-content {

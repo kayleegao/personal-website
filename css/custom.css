@@ -73,7 +73,7 @@ hr.wavy-line {
 }
 
 
-#hello, h1, h1 strong, .wrap, .my-btn, .custom-font, .tag, .mySwiperMenu h5, .mySwiperMenu p, .mySwiperMenu .all-center, .navbar-text, .card-title, .discussion .name {
+#hello, h1, h1 strong, .wrap, .my-btn, .custom-font, .tag, .mySwiperMenu h5, .mySwiperMenu p, .mySwiperMenu .all-center, .navbar-text, .card-title, .discussion .name, .project-intro-wrapper * {
   font-family: 'Euclidcircularb', avenir, sans-serif;
 }
 
@@ -120,6 +120,16 @@ h1, h2 {
   color: #fff;
 }
 
+.project-intro-wrapper {
+  padding: 50px 30px;
+  border-radius: 30px;
+}
+
+.project-intro-wrapper p, .project-intro-wrapper span {
+  font-size: 0.9em;
+  line-height: 2em;
+}
+
 #hobby-slider {
   --image-size: 60px;
   padding: 40px 20px;
@@ -128,8 +138,8 @@ h1, h2 {
   margin: 0 auto;
   position: relative;
   display: flex;
-  border-top: 1px solid #e6e6e6;
-  border-bottom: 1px solid #e6e6e6;
+  border-top: 1px solid #d5d5d5;
+  border-bottom: 1px solid #d5d5d5;
 }
 
 #hobby-heart {
@@ -584,6 +594,23 @@ td {
   transform: translate(-5px, -5px);
   box-shadow: 5px 5px 0px var(--text-color);
   cursor: pointer;
+}
+
+.prototype-btn {
+  background-color: #222222;
+  color: #fafafa;
+  border-radius: 50px;
+  font-size: .8em;
+  padding: 15px 20px;
+  transition: all 500ms ease;
+  -webkit-transition: all 500ms ease;
+  -moz-transition: all 500ms ease;
+  -o-transition: all 500ms ease;
+}
+
+.prototype-btn:hover {
+  background-color: #333;
+  color: #fafafa;
 }
 
 #shuffle-link {
