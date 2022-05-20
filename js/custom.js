@@ -2,7 +2,20 @@ $(document).ready(function() {
   $("#footer-placeholder").load("../footer.html");
   var path = window.location.pathname;
   var page = path.split("/").pop(); //get file name
-  if (page != "index.html" || page != "about.html") {
+  if (page != "index.html" || page != "about.html" || page != "contact.html"|| page != "contact-success.html") {
+    // More Project Swipers
+    var swiper = new Swiper(".mySwiperMenu", {
+      breakpoints: {
+      0: {
+        slidesPerView: 1.5,
+        spaceBetween: 30,
+      },
+      992: {
+        slidesPerView: 2.5,
+        spaceBetween: 40,
+      },
+      },
+    });
     getRandomProjects();
   }
 });
@@ -45,7 +58,7 @@ $(window).on("load", function () {
       var objectTop = $(this).offset().top;
       var windowBottom = $(window).scrollTop() + $(window).innerHeight();
       $(this).addClass("hidden");
-      if (objectTop < windowBottom) {
+      if (objectTop < windowBottom-50) {
           $(this).removeClass("hidden").addClass("animate__animated animate__fadeInUpSmall visible");
       }
     });
@@ -73,19 +86,18 @@ function toTop() {
   window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
 }
 
-// More Project Swipers
-var swiper = new Swiper(".mySwiperMenu", {
-  breakpoints: {
-    0: {
-      slidesPerView: 1.5,
-      spaceBetween: 30,
-    },
-    992: {
-      slidesPerView: 2.5,
-      spaceBetween: 40,
-    },
+var babyuPage = {
+  codeName: "baby-u", 
+  name: "BabyU",
+  description: "A platform to help first-time parents learn about parenting and track their child's development", 
+  imageAddress: function() {
+    return "../images/baby-u/"+this.codeName+"-card.png";
   },
-});
+  link: function() {
+    return this.codeName + ".html";
+  },
+  badgeInfo: "UX/UI"
+};
 
 var playgroundPage = {
   codeName: "playground", 
@@ -193,7 +205,7 @@ var uniformPage = {
   badgeInfo: "Development"
 };
 
-var allProjects = [dysonBotPage, playgroundPage, daddyZonePage, roommatePage, oddsAndEndsPage, goToTheEarthPage, benchPressPage, uniformPage];
+var allProjects = [dysonBotPage, babyuPage, playgroundPage, daddyZonePage, roommatePage, oddsAndEndsPage, goToTheEarthPage, benchPressPage, uniformPage];
 
 function getRandomProjects() {
   //Generate five random projects other than the current one
@@ -249,5 +261,3 @@ function getRandomProjects() {
     $(this).find('h5').removeClass('more-projects-title-hover');
   })
 }
-
-

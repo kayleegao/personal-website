@@ -73,7 +73,7 @@ hr.wavy-line {
 }
 
 
-#hello, h1, h1 strong, .wrap, .my-btn, .custom-font, .tag, .mySwiperMenu h5, .mySwiperMenu p, .mySwiperMenu .all-center, .navbar-text, .card-title, .discussion .name, .project-intro-wrapper *, h2, .resume-title {
+#hello, h1, h1 strong, .wrap, .my-btn, .custom-font, .tag, .mySwiperMenu h5, .mySwiperMenu p, .mySwiperMenu .all-center, .navbar-text, .card-title, .discussion .name, .project-intro-wrapper *, h2, .resume-title, .prototype-bt, .cd-image-label {
   font-family: 'Euclidcircularb', avenir, sans-serif;
 }
 
@@ -303,6 +303,152 @@ font-size: 9pt;
   margin: 10px 0 0 60px;
 }
 
+.cd-image-container {
+  position: relative;
+  width: 100%;
+  margin: 0em auto;
+}
+.cd-image-container img {
+  display: block;
+}
+
+.cd-image-label {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  font-weight: 700;
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 1em 1.2em;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  opacity: 0;
+  -webkit-transform: translateY(20px);
+  -moz-transform: translateY(20px);
+  -ms-transform: translateY(20px);
+  -o-transform: translateY(20px);
+  transform: translateY(20px);
+  -webkit-transition: -webkit-transform 0.3s 0.7s, opacity 0.3s 0.7s;
+  -moz-transition: -moz-transform 0.3s 0.7s, opacity 0.3s 0.7s;
+  transition: transform 0.3s 0.7s, opacity 0.3s 0.7s;
+}
+.cd-image-label.is-hidden {
+  visibility: hidden;
+}
+.is-visible .cd-image-label {
+  opacity: 1;
+  -webkit-transform: translateY(0);
+  -moz-transform: translateY(0);
+  -ms-transform: translateY(0);
+  -o-transform: translateY(0);
+  transform: translateY(0);
+}
+
+.cd-resize-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  overflow: hidden;
+  /* Force Hardware Acceleration in WebKit */
+  -webkit-transform: translateZ(0);
+  -moz-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  -o-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+.cd-resize-img img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: block;
+  height: 100%;
+  width: auto;
+  max-width: none;
+}
+.cd-resize-img .cd-image-label {
+  right: auto;
+  left: 0;
+}
+.is-visible .cd-resize-img {
+  width: 50%;
+  /* bounce in animation of the modified image */
+  -webkit-animation: cd-bounce-in 0.7s;
+  -moz-animation: cd-bounce-in 0.7s;
+  animation: cd-bounce-in 0.7s;
+}
+
+@-webkit-keyframes cd-bounce-in {
+  0% {
+    width: 0;
+  }
+  60% {
+    width: 55%;
+  }
+  100% {
+    width: 50%;
+  }
+}
+@-moz-keyframes cd-bounce-in {
+  0% {
+    width: 0;
+  }
+  60% {
+    width: 55%;
+  }
+  100% {
+    width: 50%;
+  }
+}
+@keyframes cd-bounce-in {
+  0% {
+    width: 0;
+  }
+  60% {
+    width: 55%;
+  }
+  100% {
+    width: 50%;
+  }
+}
+.cd-handle {
+  position: absolute;
+  height: 44px;
+  width: 44px;
+  /* center the element */
+  left: 50%;
+  top: 50%;
+  margin-left: -22px;
+  margin-top: -22px;
+  border-radius: 50%;
+  background: var(--peach-color) url("../images/cd-arrows.svg") no-repeat center center;
+  cursor: move;
+  box-shadow: 0 0 0 6px rgba(0, 0, 0, 0.2), 0 0 10px rgba(0, 0, 0, 0.6), inset 0 1px 0 rgba(255, 255, 255, 0.3);
+  opacity: 0;
+  -webkit-transform: translate3d(0, 0, 0) scale(0);
+  -moz-transform: translate3d(0, 0, 0) scale(0);
+  -ms-transform: translate3d(0, 0, 0) scale(0);
+  -o-transform: translate3d(0, 0, 0) scale(0);
+  transform: translate3d(0, 0, 0) scale(0);
+}
+.cd-handle.draggable {
+  /* change background color when element is active */
+  background-color: #333;
+}
+.is-visible .cd-handle {
+  opacity: 1;
+  -webkit-transform: translate3d(0, 0, 0) scale(1);
+  -moz-transform: translate3d(0, 0, 0) scale(1);
+  -ms-transform: translate3d(0, 0, 0) scale(1);
+  -o-transform: translate3d(0, 0, 0) scale(1);
+  transform: translate3d(0, 0, 0) scale(1);
+  -webkit-transition: -webkit-transform 0.3s 0.7s, opacity 0s 0.7s;
+  -moz-transition: -moz-transform 0.3s 0.7s, opacity 0s 0.7s;
+  transition: transform 0.3s 0.7s, opacity 0s 0.7s;
+}
+
 
 form {
   border: 3px solid var(--text-color);
@@ -338,7 +484,7 @@ form {
   border-radius: 50px;
   font-size: .9em;
   font-weight: 500;
-  padding: 10px 30px;
+  padding: 10px 35px;
   transition: all 0.5s ease;
   -webkit-transition: all 0.5s ease;
   -moz-transition: all 0.5s ease;
@@ -351,6 +497,10 @@ form {
   border: 2px solid var(--text-color);
   box-shadow: 5px 5px 0px var(--text-color);
   cursor: pointer;
+}
+
+.project-intro-wrapper h6 {
+  margin-bottom: 5px;
 }
 
 
@@ -383,6 +533,10 @@ form {
   border-radius:10px;
 }
 
+.radius-20 {
+  border-radius:20px;
+}
+
 mark {
   color: #313131;
   background-image: linear-gradient(#FFCC00 0%, #FFCC00 100%);
@@ -390,7 +544,7 @@ mark {
   background-size: 100% 0.3em;
   background-position: 0 72%;
   background-color: transparent;
-  font-weight: bold;
+  font-weight: 700;
   font-style: italic;
 }
 
@@ -455,11 +609,11 @@ background: linear-gradient(0deg, rgba(244, 186, 185, 0.35) 0%, rgba(244, 186, 1
 
 #welcome {
     height: 70vh;
-    margin-top: 18vh;
+    margin-top: 16vh;
     z-index: 100;
 }
 #home-images {
-  margin-top: 16vh;
+  margin-top: 14vh;
   height: 380px;
 }
 
@@ -487,6 +641,13 @@ background: linear-gradient(0deg, rgba(244, 186, 185, 0.35) 0%, rgba(244, 186, 1
   height: 0.9em;
 }
 
+.ic-arrow-sm {
+  position: static;
+  margin-top: -3px;
+  margin-left: 10px;
+  height: 0.8em;
+}
+
 .mylogo {
     width: 60px;
     height: auto;
@@ -497,22 +658,18 @@ background: linear-gradient(0deg, rgba(244, 186, 185, 0.35) 0%, rgba(244, 186, 1
     font-size: 3em;
     margin-bottom: 60px;
     margin-top: 150px;
-    font-weight: bold;
+    font-weight: 700;
 }
 
 .project-title {
   font-size: 3em;
-  font-weight: bold;
+  font-weight: 700;
   margin-bottom: 60px;
   margin-top: 30px;
 }
 
 .mt-100 {
   margin-top: 100px;
-}
-
-.span-title {
-  font-size: 0.9em;
 }
 
 .contribution li, .span-description {
@@ -523,6 +680,21 @@ background: linear-gradient(0deg, rgba(244, 186, 185, 0.35) 0%, rgba(244, 186, 1
 .about-secondary {
   color: rgba(138, 138, 138, 1);
   font-size: 0.8em;
+}
+
+.my-secondary {
+  color: rgba(138, 138, 138, 1);
+}
+
+.intro-card {
+  background-color: #fafafa;
+  border: none;
+  border-radius: 20px;
+  box-shadow: 2.037e-15px 33.2667px 66.5333px rgba(51, 51, 51, 0.1175), inset -4.75299e-16px -7.76222px 7.76222px #F4F4F4, inset 4.75299e-16px 7.76222px 7.76222px #FFFFFF;
+}
+
+.intro-card p, .intro-card ul li, .span-title, .mySwiperCube ul li, .mySwiperCube p {
+  font-size: 0.9em;
 }
 
 
@@ -569,19 +741,19 @@ td {
 
 .font-12 {
   font-size: 1.2em;
-  font-weight: bold;
+  font-weight: 700;
 }
 
 .font-large-num {
   font-size: 80px;
   color: #e8e8e8;
-  font-weight: bold;
+  font-weight: 700;
 }
 
 .font-large-num-dark {
   font-size: 80px;
   color: rgb(68, 68, 68);
-  font-weight: bold;
+  font-weight: 700;
 }
 
 
@@ -610,7 +782,7 @@ td {
 }
 
 .prototype-btn {
-  background-color: #222222;
+  background-color: var(--text-color);
   color: #fafafa;
   border-radius: 50px;
   font-size: .8em;
@@ -622,7 +794,8 @@ td {
 }
 
 .prototype-btn:hover {
-  background-color: #333;
+  transform: translate(-5px, -5px);
+  box-shadow: 5px 5px 0px #888888;
   color: #fafafa;
 }
 
@@ -653,6 +826,14 @@ td {
     margin-bottom: 1.25rem;
 }
 
+.custom-h {
+  margin-bottom: 20px;
+}
+
+.little-badge {
+  padding: 3px 5px;
+  font-size: 0.8em;
+}
 
 
 .my-photo {
@@ -752,8 +933,13 @@ td {
   line-height: 2.2em;
 }
 
-.mySwiperDesignHighlights .swiper-slide {
-  background-color: rgba(245, 245, 245, 0.9);
+.mySwiperCube .swiper-slide {
+  background-color: rgba(245, 245, 245, 0.95);
+}
+
+.mySwiperCube {
+  box-shadow: 2px 33px 66px rgba(51, 51, 51, 0.1175);
+
 }
 
   .experience-face {
@@ -761,7 +947,7 @@ td {
     height: 30px;
   }
 
-  .shoot-message-link {
+  .general-link {
     color: var(--text-color);
     border-bottom: 1px solid rgba(0,0,0, 0.4);
     text-decoration: none;
@@ -771,7 +957,7 @@ td {
     -o-transition: all 400ms;
   }
 
-  .shoot-message-link:hover {
+  .general-link:hover {
     color: var(--text-color);
     border-bottom: 1px solid var(--text-color);
     text-decoration: none;
@@ -860,7 +1046,32 @@ td {
     height: 100px;
   
   }
-  
+
+.checklist i {
+  color: var(--main-color);
+}
+
+
+/* MAKING IT RESPONSIVE */
+@media (max-width: 768px) {
+    body {
+        padding-top: 15%;
+    }
+    .card-header {
+        padding: 10px;
+        padding-bottom: 15px;
+    }
+    input[type="text"] {
+        width: 70%;
+    }
+    .mark-done {
+        padding-bottom: 6px;
+        margin: 2px 15px 2px -2px;
+    }
+    .markdone-div {
+        display: none;
+    }
+} 
 
 
   .tab {
@@ -874,7 +1085,7 @@ td {
     font-size: 65px;
     line-height: 1em;
     color: var(--main-color);
-    font-weight: bold;
+    font-weight: 700;
   }
   .large-caption {
     font-size: 20px;
@@ -1000,7 +1211,7 @@ td {
       text-decoration:none;
       float:right;
       font-size:24px;
-      font-weight:bold;
+      font-weight:700;
       color:white;
   }
 
@@ -1180,9 +1391,14 @@ td {
 }
 .mySwiperUsability .swiper-title {
     color: #c4c4c4;
+    line-height: 1.5em;
 }
 .mySwiperUsability .swiper-content {
     color: #909090;
+}
+
+.mySwiperUsability .swiper-main-content, .paragraph-sm {
+  line-height: 1.8em;
 }
 
 /* Collapse CSS*/
@@ -1218,6 +1434,7 @@ td {
     background: transparent;
     margin-bottom: 20px;
     overflow: hidden;
+
 }
 
 .titleWrapper{
@@ -1285,7 +1502,7 @@ td {
   border-radius: 0.75rem;
 }
   .filters-content {
-    margin: 2rem 0 2.5rem;
+    margin: 1rem 0 2.5em 0;
     background-color: #eee;
     padding: 0.5rem;
     border-radius: 0.75rem;
@@ -1298,7 +1515,7 @@ td {
     width: 100%;
     border: none;
     outline: none;
-    padding: 1rem;
+    padding: 1rem 0.5rem 1rem 0.5rem;
     transition: 0.3s;
     border-radius: 0.75rem;
     color: var(--text-color);
@@ -1532,6 +1749,9 @@ blockquote.blockstyle:after {
     .vertical-center {
       position: inherit;
     }
+    .img-comp-container, .img-comp-img img {
+      height: 300px;
+    }
   }
   @media only screen and (max-width: 767px) { /* sm or smaller */
 
@@ -1558,7 +1778,6 @@ blockquote.blockstyle:after {
       height: 45vh;
     }
     #home-images {
-      margin-top: 0px;
       margin-left: -10px;
     }
     #parallax {
@@ -1656,7 +1875,10 @@ blockquote.blockstyle:after {
       font-size: 12px;
     }
     .project-intro-wrapper .bulb {
-      top: -30px;
+      top: -40px;
+    }
+    .img-comp-container, .img-comp-img img {
+      height: 300px;
     }
   }
 
