@@ -10,6 +10,7 @@
   <link href="css/bootstrap-4.3.1.css" rel="stylesheet">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link href="css/card.css" rel="stylesheet">
   <link href="css/hover.css" rel="stylesheet" media="all">
   <link href="css/custom.css" rel="stylesheet">
@@ -180,10 +181,10 @@
 
   <div class="container mt-100" id="parallax">
     <div class="row">
-      <div class="col-12 scroll_in_up">
+      <div class="col-12" data-aos="fade-up" data-aos-duration="1000">
         <h2 class="mb-4 custom-h">📱 UX/UI design.</h2>
       </div>
-      <div class="col-12 col-md-6 mb-5 scroll_in_up">
+      <div class="col-12 col-md-6 mb-5" data-aos="fade-up" data-aos-duration="1000">
         <div class="my-card lazy" id="dyson-bot">
           <div class="card-content">
             <h3 class="card-title">Dyson Bot x IBM</h3>
@@ -194,7 +195,7 @@
           </div>
         </div>
       </div>
-      <div class="col-12 col-md-6 mb-5 scroll_in_up">
+      <div class="col-12 col-md-6 mb-5" data-aos="fade-up" data-aos-duration="1000">
         <div class="my-card lazy" id="baby-u">
           <div class="card-content">
             <h3 class="card-title">BabyU</h3>
@@ -204,7 +205,7 @@
           </div>
         </div>
       </div>
-      <div class="col-12 col-md-6 mb-5 scroll_in_up">
+      <div class="col-12 col-md-6 mb-5" data-aos="fade-up" data-aos-duration="1000">
         <div class="my-card lazy" id="playground">
           <div class="card-content">
             <h3 class="card-title">Playground</h3>
@@ -215,7 +216,7 @@
           </div>
         </div>
       </div>
-      <div class="col-12 col-md-6 mb-5 scroll_in_up">
+      <div class="col-12 col-md-6 mb-5" data-aos="fade-up" data-aos-duration="1000">
         <div class="my-card lazy" id="daddy-zone">
           <div class="card-content">
             <h3 class="card-title">Daddy Zone</h3>
@@ -226,7 +227,7 @@
           </div>
         </div>
       </div>
-      <div class="col-12 col-md-6 mb-5 scroll_in_up">
+      <div class="col-12 col-md-6 mb-5" data-aos="fade-up" data-aos-duration="1000">
         <div class="my-card lazy" id="roommate">
           <div class="card-content">
             <h3 class="card-title">Best Roommate</h3>
@@ -240,10 +241,10 @@
     </div>
 
     <div class="row mt-100">
-      <div class="col-12 scroll_in_up">
+      <div class="col-12" data-aos="fade-up" data-aos-duration="1000">
         <h2 class="mb-4 custom-h">🔎 Other work.</h2>
       </div>
-      <div class="col-12 col-md-6 mb-5 scroll_in_up">
+      <div class="col-12 col-md-6 mb-5" data-aos="fade-up" data-aos-duration="1000">
         <div class="my-card lazy" id="odds-and-ends">
           <div class="card-content">
             <h3 class="card-title">Odds and Ends</h3>
@@ -255,7 +256,7 @@
         </div>
       </div>
 
-      <div class="col-12 col-md-6 mb-5 scroll_in_up">
+      <div class="col-12 col-md-6 mb-5" data-aos="fade-up" data-aos-duration="1000">
         <div class="my-card lazy" id="earth">
           <div class="card-content">
             <h3 class="card-title">Go to the Earth</h3>
@@ -267,7 +268,7 @@
         </div>
       </div>
 
-      <div class="col-12 col-md-6 mb-5 scroll_in_up">
+      <div class="col-12 col-md-6 mb-5" data-aos="fade-up" data-aos-duration="1000">
         <div class="my-card lazy" id="bench-press">
           <div class="card-content">
             <h3 class="card-title">Bench Press Upgrade</h3>
@@ -279,7 +280,7 @@
         </div>
       </div>
 
-      <div class="col-12 col-md-6 mb-5 scroll_in_up">
+      <div class="col-12 col-md-6 mb-5" data-aos="fade-up" data-aos-duration="1000">
         <div class="my-card lazy" id="uniform">
           <div class="card-content">
             <h3 class="card-title">SUXD Uniform</h3>
@@ -300,6 +301,7 @@
   <footer>
     <div id="footer-placeholder"></div>
   </footer>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="js/smoothscroll.js"></script>
@@ -364,6 +366,7 @@
     };
     //Activate home animation after finish loading
     $(document).ready(function () {
+      AOS.init();
       bounceInRight = ['#image-fire', '#image-smile', '#image-lock', '#image-look', '#image-heart', '#image-horns'];
       bounceInLeft = ['#image-battery', '#image-drink', '#image-male', '#image-fire-hydrant'];
       bounceInDown = ['#image-think-face', '#image-lucky', '#image-ghost', '#image-bomb', '#image-think', '#image-dice', '#image-bucket', '#image-blue-heart', '#image-gamepad'];

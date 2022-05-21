@@ -53,15 +53,6 @@ $(window).on("load", function () {
         $(this).css('opacity', 0);
       }
     });
-    $('.scroll_in_up').each(function () {
-
-      var objectTop = $(this).offset().top;
-      var windowBottom = $(window).scrollTop() + $(window).innerHeight();
-      $(this).addClass("hidden");
-      if (objectTop < windowBottom-50) {
-          $(this).removeClass("hidden").addClass("animate__animated animate__fadeInUpSmall visible");
-      }
-    });
   }
   $('.scroll_in').css('opacity', 0);
   fade();
