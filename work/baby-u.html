@@ -15,6 +15,7 @@
     <link href="../css/custom.css" rel="stylesheet">
     <link href="../css/nav.css" rel="stylesheet">
     <link rel="shortcut icon" type="image/x-icon" href="../images/mylogo2.ico" />
+    <script src="../js/modernizr.js"></script> <!-- Modernizr -->
 
 
 </head>
@@ -78,7 +79,7 @@
                     <li class="breadcrumb-item my-color"><b>BabyU</b></li>
                 </ol>
                 <h1 class="col-12 project-title custom-h">BabyU.</h1>
-                <div class="col-12 col-lg-8 offset-lg-2">
+                <div class="col-12 col-md-8 offset-md-2">
                     <img src="../images/baby-u/baby-u-info.png" alt="BabyU app info"
                         class="img-fluid illustration-shadow">
                 </div>
@@ -161,7 +162,7 @@
                             </p>
                         </div>
                         <div class="col-12 mt-2">
-                            <button class="btn prototype-btn"
+                            <button class="btn my-dark-btn"
                                 onClick="javascript:window.open('https://www.figma.com/proto/rbHv6s2znlKtuUkWUfx0oT/BabyU?node-id=602%3A9079&scaling=scale-down&page-id=601%3A9078&starting-point-node-id=602%3A9079', '_blank');">View
                                 Prototype<i class='fas fa-external-link-alt ml-2'></i></button>
                         </div>
@@ -248,7 +249,7 @@
             <div class="col-6 col-md-3 mb-4 scroll_in">
                 <p class="text-center paragraph-sm"><img src="../images/baby-u/baby.png" alt="baby"
                         class="img-fluid icon-center"><br>
-                    Baby physical growth tracking does not reflect the baby's development momentum</p>
+                    Baby physical growth tracking does not reflect their development momentum</p>
             </div>
             <div class="col-6 col-md-3 mb-4 scroll_in">
                 <p class="text-center paragraph-sm"><img src="../images/baby-u/vaccine.png" alt="vaccine"
@@ -298,7 +299,7 @@
                     <li>Social</li>
                     <li>Vaccinations</li>
                 </ul>
-                <button class="btn prototype-btn"
+                <button class="btn my-dark-btn"
                     onClick="javascript:window.open('https://emilychung487718.invisionapp.com/freehand/DEI626-Nn628R1N4?dsid_h=88ca0d632289375a45af9107c2702e3098fa7e3ed88c0a88ec93d186ac111528&uid_h=515cb7807d384aaf345f16fafb19c6e276890dc0f3508937a9cb02a47abd88bd', '_blank');">View
                     Wireframe<i class='fas fa-external-link-alt ml-2'></i></button>
             </div>
@@ -762,7 +763,7 @@
             </div>
 
             <div class="col-12 mt-3 scroll_in">
-                <button class="btn prototype-btn"
+                <button class="btn my-dark-btn"
                     onClick="javascript:window.open('../files/babyu-ux-report.pdf', '_blank');">View Full Report<i
                         class='fas fa-external-link-alt ml-2'></i></button>
             </div>
@@ -777,13 +778,14 @@
                     Therefore, <mark>I independently redesigned the UI</mark> and at the same time <mark>finished some
                         previously unimplemented changes</mark> based on insights from usability testing.
                 </p>
+                
                 <figure class="cd-image-container">
-                    <img src="../images/baby-u/baby-u-card.png" alt="Original Image" class="img-fluid">
+                    <img src="../images/baby-u/baby-u-card.png" alt="After" class="img-fluid">
                     <span class="cd-image-label" data-type="original" style="border-radius: 20px 0 0 0;">After</span>
 
                     <div class="cd-resize-img">
                         <!-- the resizable image on top -->
-                        <img src="../images/baby-u/baby-u-before.png" alt="Modified Image" class="img-fluid">
+                        <img src="../images/baby-u/baby-u-before.png" alt="Before" class="img-fluid">
                         <span class="cd-image-label" data-type="modified"
                             style="border-radius: 0 20px 0 0;">Before</span>
                     </div>
@@ -1043,7 +1045,7 @@
                 <section class="filters" id="tab1">
                     <ul class="filters-content">
                         <button class="filters__button is-active" data-target="#onboarding">
-                            Sign Up
+                            Onboarding
                         </button>
                         <button class="filters__button" data-target="#home">
                             Home
@@ -1061,7 +1063,7 @@
                             <div class="row">
                                 <div class="col-10 offset-1 offset-lg-1 col-lg-6 mt-5">
                                     <div class="vertical-center">
-                                        <span class="yellow-mark font-weight-bold h5">Sign Up.</span>
+                                        <span class="yellow-mark font-weight-bold h5">Onboarding.</span>
                                         <ol class="paragraph mt-4 list-unstyled">
                                             <li>💡 Onboarding is divided into three steps: email and password, user
                                                 info, and child info.</li>
@@ -1339,6 +1341,9 @@
             <div id="footer-placeholder"></div>
         </footer>
         <a class="to-top hvr-bob" onclick="toTop()"></a>
+        <script src="../js/jquery-2.1.1.js"></script>
+        <script src="../js/jquery.mobile.custom.min.js"></script> <!-- Resource jQuery -->
+        <script src="../js/img-comparsion.js"></script> <!-- Resource jQuery -->
         <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
         <!-- Include all compiled plugins (below), or include individual files as needed -->
@@ -1349,123 +1354,6 @@
         <script src="../js/custom.js"></script>
         <script>
             jQuery(document).ready(function ($) {
-                var dragging = false,
-                    scrolling = false,
-                    resizing = false;
-                //cache jQuery objects
-                var imageComparisonContainers = $('.cd-image-container');
-                //check if the .cd-image-container is in the viewport 
-                //if yes, animate it
-                checkPosition(imageComparisonContainers);
-                $(window).on('scroll', function () {
-                    if (!scrolling) {
-                        scrolling = true;
-                        (!window.requestAnimationFrame)
-                            ? setTimeout(function () { checkPosition(imageComparisonContainers); }, 100)
-                            : requestAnimationFrame(function () { checkPosition(imageComparisonContainers); });
-                    }
-                });
-
-                //make the .cd-handle element draggable and modify .cd-resize-img width according to its position
-                imageComparisonContainers.each(function () {
-                    var actual = $(this);
-                    drags(actual.find('.cd-handle'), actual.find('.cd-resize-img'), actual, actual.find('.cd-image-label[data-type="original"]'), actual.find('.cd-image-label[data-type="modified"]'));
-                });
-
-                //upadate images label visibility
-                $(window).on('resize', function () {
-                    if (!resizing) {
-                        resizing = true;
-                        (!window.requestAnimationFrame)
-                            ? setTimeout(function () { checkLabel(imageComparisonContainers); }, 100)
-                            : requestAnimationFrame(function () { checkLabel(imageComparisonContainers); });
-                    }
-                });
-
-                function checkPosition(container) {
-                    container.each(function () {
-                        var actualContainer = $(this);
-                        if ($(window).scrollTop() + $(window).height() * 0.5 > actualContainer.offset().top) {
-                            actualContainer.addClass('is-visible');
-                        }
-                    });
-
-                    scrolling = false;
-                }
-
-                function checkLabel(container) {
-                    container.each(function () {
-                        var actual = $(this);
-                        updateLabel(actual.find('.cd-image-label[data-type="modified"]'), actual.find('.cd-resize-img'), 'left');
-                        updateLabel(actual.find('.cd-image-label[data-type="original"]'), actual.find('.cd-resize-img'), 'right');
-                    });
-
-                    resizing = false;
-                }
-
-                //draggable funtionality - credits to http://css-tricks.com/snippets/jquery/draggable-without-jquery-ui/
-                function drags(dragElement, resizeElement, container, labelContainer, labelResizeElement) {
-                    dragElement.on("mousedown vmousedown", function (e) {
-                        dragElement.addClass('draggable');
-                        resizeElement.addClass('resizable');
-
-                        var dragWidth = dragElement.outerWidth(),
-                            xPosition = dragElement.offset().left + dragWidth - e.pageX,
-                            containerOffset = container.offset().left,
-                            containerWidth = container.outerWidth(),
-                            minLeft = containerOffset + 10,
-                            maxLeft = containerOffset + containerWidth - dragWidth - 10;
-
-                        dragElement.parents().on("mousemove vmousemove", function (e) {
-                            if (!dragging) {
-                                dragging = true;
-                                (!window.requestAnimationFrame)
-                                    ? setTimeout(function () { animateDraggedHandle(e, xPosition, dragWidth, minLeft, maxLeft, containerOffset, containerWidth, resizeElement, labelContainer, labelResizeElement); }, 100)
-                                    : requestAnimationFrame(function () { animateDraggedHandle(e, xPosition, dragWidth, minLeft, maxLeft, containerOffset, containerWidth, resizeElement, labelContainer, labelResizeElement); });
-                            }
-                        }).on("mouseup vmouseup", function (e) {
-                            dragElement.removeClass('draggable');
-                            resizeElement.removeClass('resizable');
-                        });
-                        e.preventDefault();
-                    }).on("mouseup vmouseup", function (e) {
-                        dragElement.removeClass('draggable');
-                        resizeElement.removeClass('resizable');
-                    });
-                }
-
-                function animateDraggedHandle(e, xPosition, dragWidth, minLeft, maxLeft, containerOffset, containerWidth, resizeElement, labelContainer, labelResizeElement) {
-                    var leftValue = e.pageX + xPosition - dragWidth;
-                    //constrain the draggable element to move inside his container
-                    if (leftValue < minLeft) {
-                        leftValue = minLeft;
-                    } else if (leftValue > maxLeft) {
-                        leftValue = maxLeft;
-                    }
-
-                    var widthValue = (leftValue + dragWidth / 2 - containerOffset) * 100 / containerWidth + '%';
-
-                    $('.draggable').css('left', widthValue).on("mouseup vmouseup", function () {
-                        $(this).removeClass('draggable');
-                        resizeElement.removeClass('resizable');
-                    });
-
-                    $('.resizable').css('width', widthValue);
-
-                    updateLabel(labelResizeElement, resizeElement, 'left');
-                    updateLabel(labelContainer, resizeElement, 'right');
-                    dragging = false;
-                }
-
-                function updateLabel(label, resizeElement, position) {
-                    if (position == 'left') {
-                        (label.offset().left + label.outerWidth() < resizeElement.offset().left + resizeElement.outerWidth()) ? label.removeClass('is-hidden') : label.addClass('is-hidden');
-                    } else {
-                        (label.offset().left > resizeElement.offset().left + resizeElement.outerWidth()) ? label.removeClass('is-hidden') : label.addClass('is-hidden');
-                    }
-                }
-
-
                 //accordin
                 jQuery('.titleWrapper').click(function () {
                     var toggle = jQuery(this).next('div#descwrapper');
