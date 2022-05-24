@@ -66,6 +66,7 @@ hr.wavy-line {
    border: 0;
 }
 
+
 .my-badge {
   background-color: #faf3e3;
   color: #d7a306;
@@ -237,7 +238,7 @@ left: 35px;
 width: 13px;
 height: 13px;
 background-color: #8BC34A;
-border-radius: 13px;
+border-radius: 50%;
 border: 2.5px solid #FAFAFA;
 }
 
@@ -460,6 +461,7 @@ form {
   padding: 50px 30px;
 }
 
+
 #contact-form input,
 #contact-form textarea {
   border: 3px solid #909090;
@@ -501,6 +503,7 @@ form {
   box-shadow: 5px 5px 0px var(--text-color);
   cursor: pointer;
 }
+
 
 .project-intro-wrapper h6 {
   margin-bottom: 5px;
@@ -612,11 +615,11 @@ background: linear-gradient(0deg, rgba(244, 186, 185, 0.35) 0%, rgba(244, 186, 1
 
 #welcome {
     height: 70vh;
-    margin-top: 16vh;
+    margin-top: 14vh;
     z-index: 100;
 }
 #home-images {
-  margin-top: 14vh;
+  margin-top: 12vh;
   height: 380px;
 }
 
@@ -663,6 +666,8 @@ background: linear-gradient(0deg, rgba(244, 186, 185, 0.35) 0%, rgba(244, 186, 1
     margin-top: 150px;
     font-weight: 700;
 }
+
+
 
 .project-title {
   font-size: 3em;

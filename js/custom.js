@@ -1,23 +1,5 @@
 $(document).ready(function() {
   $("#footer-placeholder").load("../footer.html");
-  var path = window.location.pathname;
-  var page = path.split("/").pop(); //get file name
-  if (page != "index.html" || page != "about.html" || page != "contact.html"|| page != "contact-success.html") {
-    // More Project Swipers
-    var swiper = new Swiper(".mySwiperMenu", {
-      breakpoints: {
-      0: {
-        slidesPerView: 1.5,
-        spaceBetween: 30,
-      },
-      992: {
-        slidesPerView: 2.5,
-        spaceBetween: 40,
-      },
-      },
-    });
-    getRandomProjects();
-  }
 });
 
 
@@ -251,4 +233,20 @@ function getRandomProjects() {
     $(this).find('.more-projects-img').removeClass('opacity-50');
     $(this).find('h5').removeClass('more-projects-title-hover');
   })
+}
+
+function initMoreProject() {
+  var swiper = new Swiper(".mySwiperMenu", {
+    breakpoints: {
+    0: {
+      slidesPerView: 1.5,
+      spaceBetween: 30,
+    },
+    992: {
+      slidesPerView: 2.5,
+      spaceBetween: 40,
+    },
+    },
+  });
+  getRandomProjects();
 }
