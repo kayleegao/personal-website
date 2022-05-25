@@ -1,15 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Unna:ital@0;1&display=swap');
-
 :root {
   --d: 700ms;
   --e: cubic-bezier(0.19, 1, 0.22, 1);
-  --font-serif: 'Unna', serif;
 }
 
 .my-card p {
-  font-style: italic;
+  color: rgba(250, 250, 250, 0.95);
 }
-
 
 .page-content {
   padding: 1rem;
@@ -25,9 +21,8 @@
   padding: 1.5rem;
   width: 100%;
   text-align: center;
-  color: whitesmoke;
   border-radius: 10px;
-  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1), 0 8px 8px rgba(0, 0, 0, 0.1), 0 16px 16px rgba(0, 0, 0, 0.1), 0 32px 32px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 16px 16px rgba(51, 51, 51, 0.1), 0 32px 32px rgba(51, 51, 51, 0.1);
 }
 @media (min-width: 600px) {
   .my-card {
@@ -142,38 +137,34 @@
   transition: transform var(--d) var(--e);
   z-index: 1;
 }
-.card-copy {
-  margin-top: 0.8rem;
-}
+
 
 .card-title {
+  color: #fafafa;
   font-size: 1.3rem;
   font-weight: 500;
   line-height: 1.2;
-  color: #fafafa;
-  text-shadow: 2px 2px rgba(0,0,0,0.3);
+  text-shadow: 2px 2px rgba(0,0,0,0.4);
   margin-bottom: 0.5rem;
 }
 
-.my-card small {
-  font-family: var(--font-serif);
-}
+
 
 
 .card-copy {
-  font-size: 1.125rem;
-  font-family: var(--font-serif);
+  font-size: 12pt;
   line-height: 1.5;
+  margin-top: 0.75rem;
 }
 
 .card-btn {
   margin-top: 1.2rem;
   padding: 0.75rem 1.5rem;
-  font-size: 0.65rem;
-  font-weight: bold;
+  font-size: 0.7rem;
+  font-weight: 500;
   letter-spacing: 0.025rem;
   text-transform: uppercase;
-  color: white;
+  color: #fafafa;
   background-color: black;
   border: none;
 }
@@ -182,6 +173,7 @@
 }
 
 @media (hover: hover) and (min-width: 600px) {
+
   .my-card:after {
     transform: translateY(0);
   }

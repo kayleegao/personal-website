@@ -75,7 +75,7 @@ hr.wavy-line {
 }
 
 
-#hello, h1, h1 strong, .wrap, .my-btn, .custom-font, .tag, .mySwiperMenu h5, .mySwiperMenu p, .mySwiperMenu .all-center, .navbar-text, .card-title, .discussion .name, .project-intro-wrapper *, h2, .resume-title, .my-dark-btn, .cd-image-label {
+#hello, h1, h1 strong, .wrap, .my-btn, .custom-font, .tag, .mySwiperMenu h5, .mySwiperMenu p, .mySwiperMenu .all-center, .navbar-text, .my-card *, .discussion .name, .project-intro-wrapper *, h2, .resume-title, .my-dark-btn, .cd-image-label {
   font-family: 'Euclidcircularb', avenir, sans-serif;
 }
 
@@ -456,7 +456,7 @@ font-size: 9pt;
 
 form {
   border: 3px solid var(--text-color);
-  box-shadow: 10px 10px 0 var(--text-color);
+  box-shadow: 8px 8px 0 var(--text-color);
   border-radius: 30px;
   padding: 50px 30px;
 }
@@ -1703,6 +1703,9 @@ blockquote.blockstyle:after {
     }
     .project-intro-wrapper .bulb {
       top: -40px;
+    }
+    .card-content {
+      padding: 2rem 1rem;
     }
   }
 
