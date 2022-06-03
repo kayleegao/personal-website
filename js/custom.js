@@ -1,44 +1,11 @@
 $(document).ready(function() {
+  AOS.init();
   $("#footer-placeholder").load("../footer.html");
 });
 
 
 $("#nav-button").click(function(){
   $(this).toggleClass("open");
-});
-
-$(window).on("load", function () {
-  function fade() {
-    var animation_height = $(window).innerHeight() * 0.5;
-    var ratio = Math.round((1 / animation_height) * 10000) / 10000;
-
-    $('.scroll_in').each(function () {
-
-      var objectTop = $(this).offset().top;
-      var windowBottom = $(window).scrollTop() + $(window).innerHeight();
-
-      if (objectTop < windowBottom) {
-        if (objectTop < windowBottom - animation_height) {
-          $(this).css({
-            transition: 'opacity 0.1s linear',
-            opacity: 1
-
-          });          
-
-        } else {
-          $(this).css({
-            transition: 'opacity 0.25s linear',
-            opacity: (windowBottom - objectTop) * ratio
-          });
-        }
-      } else {
-        $(this).css('opacity', 0);
-      }
-    });
-  }
-  $('.scroll_in').css('opacity', 0);
-  fade();
-  $(window).scroll(function () { fade(); });
 });
 
 
@@ -193,7 +160,7 @@ function getRandomProjects() {
       shuffled.push(shuffled.splice(shuffled.indexOf(shuffled[i]), 1)[0]); //Move the current project to the last
     }
   }
-  let selected = shuffled.slice(0, 5); //slice the first five elements from shuffled
+  let selected = shuffled.slice(0, 4); //slice the first four elements from shuffled
   var placeholder = "";
   for (i = 0; i < selected.length; i++) {
       placeholder = placeholder.concat(
