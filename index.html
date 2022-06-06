@@ -19,21 +19,24 @@
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-lg navbar-light mt-5 bg-transparent animate__animated animate__fadeInDown" id="top">
+  <nav class="navbar navbar-expand-lg navbar-light pt-3 pt-sm-5 bg-transparent animate__animated animate__fadeInDown"
+    id="top">
     <div class="container">
-      <a class="navbar-brand font-weight-bold" href="index.html"><img src="images/mylogo.png" class="mylogo mr-4"><span
-          class="my-name">Kaylee Gao.</span></a>
-      <button class="navbar-toggler animate__animated animate__jackInTheBox border-0" type="button"
-        data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-        aria-expanded="false" aria-label="Toggle navigation">
-        <a class="navicon-button x" id="nav-button">
-          <div class="navicon"></div>
-        </a>
+      <a class="navbar-brand font-weight-bold left-out" href="index.html"><img src="images/mylogo.svg"
+          class="mylogo mr-4"><span class="my-name">Kaylee Gao.</span></a>
+      <div class="right-out">
+        <button class="navbar-toggler animate__animated animate__jackInTheBox border-0" type="button"
+          data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+          aria-expanded="false" aria-label="Toggle navigation">
+          <a class="navicon-button x" id="nav-button">
+            <div class="navicon"></div>
+          </a>
+      </div>
       </button>
-      <div class="collapse navbar-collapse navbar-light" id="navbarSupportedContent">
+      <div class="collapse navbar-collapse navbar-light right-out" id="navbarSupportedContent">
         <ul class="navbar-nav ml-auto font-weight-bold">
           <li class="nav-item animate__animated animate__jackInTheBox">
-            <a class="nav-link link font-12" href="#parallax">Work
+            <a class="nav-link link font-12" href="#work">Work
               <svg class="link__graphic link__graphic--stroke link__graphic--scribble" width="100%" height="9"
                 viewBox="0 0 101 9">
                 <path
@@ -53,7 +56,7 @@
             </a>
           </li>
           <li class="nav-item animate__animated animate__jackInTheBox">
-            <a class="nav-link link font-12" href="contact.html">Contact
+            <a class="nav-link link font-12" href="#contact-area">Contact
               <svg class="link__graphic link__graphic--stroke link__graphic--scribble" width="100%" height="9"
                 viewBox="0 0 101 9">
                 <path
@@ -67,19 +70,18 @@
     </div>
   </nav>
 
-
+  <div class="square"></div>
   <div class="container">
     <div class="row">
-      <div class="col-12 col-md-7" id="welcome">
-        <div class="mb-2 animate__animated animate__fadeInUp" id="hello">
+      <div class="col-12 col-md-7 left-out" id="welcome">
+        <div class="mb-2 animate__animated animate__fadeInUp mb-2" id="hello">
           I'm passionate about<br>
-          <a class="typewrite my-color" data-period="2000"
-            data-type='[ "UX Design", "Web Design", "Interaction Design", "HCI" ]'>
-            <span class="wrap"></span>
-          </a>
+          <div id="typing" class="my-color"></div>
         </div>
         <p class="paragraph mb-4 animate__animated animate__fadeInUp" style="animation-delay: 0.5s;" id="home-intro">
-          👋🏻 Hi! I'm <span class="pink-mark custom-font">Yifei Gao (Kaylee)</span>, a Shanghai-based multi-disciplinary UX designer with a background in computer science and communication. I elevate products through human-centered design.</p>
+          👋🏻 Hi there, I'm <span class="pink-mark">Yifei Gao (Kaylee)</span>, a Shanghai-based
+          multi-disciplinary UX designer with a background in computer science and communication. I elevate products
+          through human-centric design.</p>
         <div class=" animate__animated animate__fadeInUp animate__delay-1s">
           <div class="col-12 pl-0 pr-0">
             <button class="btn my-btn" onclick="location.href='./about.html'">More About Me<img
@@ -87,7 +89,7 @@
           </div>
         </div>
       </div>
-      <div class="col-12 col-md-5 position-relative" id="home-images">
+      <div class="col-12 col-md-5 position-relative right-out" id="home-images">
         <div class="img_producto_container hidden d-md-none" id="image-fire" data-scale="1.12"
           style="animation-delay: 0.2s;">
           <img class="dslc-lightbox-image img_producto illustration-shadow" src="images/illustrations/fire.png"
@@ -179,13 +181,13 @@
   </div>
 
 
-  <div class="container mt-100" id="parallax">
+  <div class="container" id="work">
     <div class="row">
-      <div class="col-12" data-aos="fade-up" data-aos-duration="1000">
-        <h2 class="mb-4 custom-h">📱 UX/UI design.</h2>
+      <div class="col-12" data-aos="fade-right" data-aos-duration="1000">
+        <h2 class="mb-4 custom-h fade-out-up">📱 UX/UI design.</h2>
       </div>
-      <div class="col-12 col-md-6 mb-5" data-aos="fade-up" data-aos-duration="1000">
-        <div class="my-card lazy" id="dyson-bot">
+      <div class="col-12 col-md-6 mb-5" data-aos="fade-up-right" data-aos-duration="1000">
+        <div class="my-card lazy left-up-out" id="dyson-bot">
           <div class="card-content">
             <h3 class="card-title">Dyson Bot x IBM</h3>
             <p><small>Apr. 4, 2022 - Apr. 18, 2022</small></p>
@@ -195,18 +197,19 @@
           </div>
         </div>
       </div>
-      <div class="col-12 col-md-6 mb-5" data-aos="fade-up" data-aos-duration="1000">
-        <div class="my-card lazy" id="baby-u">
+      <div class="col-12 col-md-6 mb-5" data-aos="fade-up-left" data-aos-duration="1000">
+        <div class="my-card lazy right-up-out" id="baby-u">
           <div class="card-content">
             <h3 class="card-title">BabyU</h3>
             <p><small>Mar 2022 - Apr 2022</small></p>
-            <p class="card-copy">A platform to help first-time parents learn about parenting and track their child's development</p>
+            <p class="card-copy">A platform to help first-time parents learn about parenting and track their child's
+              development</p>
             <button class="card-btn hvr-shadow" onclick="location.href='./work/baby-u.html'">View Project</button>
           </div>
         </div>
       </div>
-      <div class="col-12 col-md-6 mb-5" data-aos="fade-up" data-aos-duration="1000">
-        <div class="my-card lazy" id="playground">
+      <div class="col-12 col-md-6 mb-5" data-aos="fade-up-right" data-aos-duration="1000">
+        <div class="my-card lazy left-up-out" id="playground">
           <div class="card-content">
             <h3 class="card-title">Playground</h3>
             <p><small>Nov 2021 - Dec 2021</small></p>
@@ -216,8 +219,8 @@
           </div>
         </div>
       </div>
-      <div class="col-12 col-md-6 mb-5" data-aos="fade-up" data-aos-duration="1000">
-        <div class="my-card lazy" id="daddy-zone">
+      <div class="col-12 col-md-6 mb-5" data-aos="fade-up-left" data-aos-duration="1000">
+        <div class="my-card lazy right-up-out" id="daddy-zone">
           <div class="card-content">
             <h3 class="card-title">Daddy Zone</h3>
             <p><small>Oct 2021 - Nov 2021</small></p>
@@ -227,8 +230,8 @@
           </div>
         </div>
       </div>
-      <div class="col-12 col-md-6 mb-5" data-aos="fade-up" data-aos-duration="1000">
-        <div class="my-card lazy" id="roommate">
+      <div class="col-12 col-md-6 mb-5" data-aos="fade-up-right" data-aos-duration="1000">
+        <div class="my-card lazy left-up-out" id="roommate">
           <div class="card-content">
             <h3 class="card-title">Best Roommate</h3>
             <p><small>Sep. 3, 2021 - Sep. 6, 2021</small></p>
@@ -241,11 +244,11 @@
     </div>
 
     <div class="row mt-100">
-      <div class="col-12" data-aos="fade-up" data-aos-duration="1000">
-        <h2 class="mb-4 custom-h">🔎 Other work.</h2>
+      <div class="col-12" data-aos="fade-right" data-aos-duration="1000">
+        <h2 class="mb-4 custom-h fade-out-up">🔎 Other work.</h2>
       </div>
-      <div class="col-12 col-md-6 mb-5" data-aos="fade-up" data-aos-duration="1000">
-        <div class="my-card lazy" id="odds-and-ends">
+      <div class="col-12 col-md-6 mb-5" data-aos="fade-up-right" data-aos-duration="1000">
+        <div class="my-card lazy left-up-out" id="odds-and-ends">
           <div class="card-content">
             <h3 class="card-title">Odds and Ends</h3>
             <p><small>Mar 2022 - Apr 2022</small></p>
@@ -256,8 +259,8 @@
         </div>
       </div>
 
-      <div class="col-12 col-md-6 mb-5" data-aos="fade-up" data-aos-duration="1000">
-        <div class="my-card lazy" id="earth">
+      <div class="col-12 col-md-6 mb-5" data-aos="fade-up-left" data-aos-duration="1000">
+        <div class="my-card lazy right-up-out" id="earth">
           <div class="card-content">
             <h3 class="card-title">Go to the Earth</h3>
             <p><small>Aug. 24, 2021 - Sep. 5, 2021</small></p>
@@ -268,8 +271,8 @@
         </div>
       </div>
 
-      <div class="col-12 col-md-6 mb-5" data-aos="fade-up" data-aos-duration="1000">
-        <div class="my-card lazy" id="bench-press">
+      <div class="col-12 col-md-6 mb-5" data-aos="fade-up-right" data-aos-duration="1000">
+        <div class="my-card lazy left-up-out" id="bench-press">
           <div class="card-content">
             <h3 class="card-title">Bench Press Upgrade</h3>
             <p><small>Sep 2019 - Dec 2019</small></p>
@@ -280,8 +283,8 @@
         </div>
       </div>
 
-      <div class="col-12 col-md-6 mb-5" data-aos="fade-up" data-aos-duration="1000">
-        <div class="my-card lazy" id="uniform">
+      <div class="col-12 col-md-6 mb-5" data-aos="fade-up-left" data-aos-duration="1000">
+        <div class="my-card lazy right-up-out" id="uniform">
           <div class="card-content">
             <h3 class="card-title">SUXD Uniform</h3>
             <p><small>Oct 2021 - Dec 2021</small></p>
@@ -290,6 +293,96 @@
               Project</button>
           </div>
         </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="contact-area" class="mt-100">
+    <div class="container">
+      <div class="row">
+        <div class="col-12" data-aos="fade-right" data-aos-duration="1000">
+          <div class="fade-out-up">
+            <h3 class="mb-3" style="color: #c4c4c4;">💬 Shoot me a message</h3>
+            <p class="mb-4 paragraph" style="color: #909090;">Hi there, want to connect with me? Or have a project in
+              mind? Feel free
+              to drop me a message to talk about
+              work, life, etc.</p>
+          </div>
+        </div>
+        <section class="chat" data-aos="fade-left" data-aos-duration="1000">
+          <div class='top-bar'>
+            <div class='circles'>
+               <div class="circle" style="background-color: #ff605c"></div>
+               <div class="circle" style="background-color: #ffbd44"></div>
+               <div class="circle" style="background-color: #00ca4e"></div>
+            </div>
+          </div>
+          <div class="header-chat">
+            <div class="discussion" style="padding-left: 5vw">
+              <div class="photo" style="border-radius: 50px; background-image: url(./images/mylogo.svg);">
+                <div class="online"></div>
+              </div>
+              <div class="desc-contact">
+                <p class="name">Kaylee Gao</p>
+                <p class="message text-secondary">Reply time: 1 - 2 business days</p>
+              </div>
+            </div>
+          </div>
+          <div class="messages-chat">
+            <div class="message" data-aos="fade-up" data-aos-duration="1000">
+              <div class="photo"
+                style="background-image: url(./images/mylogo.svg);">
+                <div class="online"></div>
+              </div>
+              <p class="text"> Hi there, feel free to drop me a message to talk about anything!
+              </p>
+            </div>
+            <div class="message" data-aos="fade-up" data-aos-duration="1000">
+              <div class="photo"
+                style="background-image: url(./images/mylogo.svg);">
+                <div class="online"></div>
+              </div>
+              <div class="text"> You can reach me by: 
+                <ul class="list-unstyled mb-1">
+                  <li>👉🏻 <a class="hyperlink" href="mailto:kayleegao1998@gmail.com">Email</a></li>
+                  <li>👉🏻 <a class="hyperlink" target="__blank" href="https://www.linkedin.com/in/yifei-gao-a9a288183/">Linkedin</a></li>
+                  <li>👉🏻 <a class="hyperlink" target="__blank" href="https://www.instagram.com/kayleeegao/">Instagram</a></li>
+                </ul>
+                or just fill out the contact form below 👇🏻
+              </div>
+            </div>
+            <div class="message" data-aos="fade-up" data-aos-duration="1000">
+              <div class="photo"
+                style="background-image: url(./images/mylogo.svg);">
+                <div class="online"></div>
+              </div>
+              <form id="contact-form" class="text p-4" name="contact" action="/contact-success.html" method="POST" netlify-honeypot="bot-field" data-netlify="true">
+                <div class="row">
+                  <div class="col-12">
+                    <h6 class="mb-2">👋🏻 Hi Kaylee Gao,</h6>
+                    <div class="form-group mb-4">
+                      <textarea class="form-control" id="contact-message" name="contact-message" rows="8"
+                        placeholder="Write your message here..." required></textarea>
+                    </div>
+                    <h6 class="mb-2">✨ Best,</h6>
+                    <div class="form-group">
+                      <input type="text" class="form-control" id="name" name="name" placeholder="Your name" required>
+                    </div>
+                    <div class="form-group mb-3">
+                      <input type="email" class="form-control" id="emailid" name="emailid" placeholder="Your email"
+                        required>
+                    </div>
+                    <div class="form-group">
+                      <button type="submit" class="btn my-dark-btn"
+                        style="width: 100%; font-size: 1em; margin-top: 10px;">Send Message<i
+                          class="fa fa-paper-plane ml-2" aria-hidden="true"></i></button>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </section>
       </div>
     </div>
   </div>
@@ -303,6 +396,8 @@
   <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="js/smoothscroll.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lax.js"></script>
+  <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
 
   <!-- Include all compiled plugins (below), or include individual files as needed -->
   <script src="js/popper.min.js"></script>
@@ -310,61 +405,86 @@
   <script src="js/custom.js"></script>
   <script>
     //typewriter
-    var TxtType = function (el, toRotate, period) {
-      this.toRotate = toRotate;
-      this.el = el;
-      this.loopNum = 0;
-      this.period = parseInt(period, 10) || 2000;
-      this.txt = '';
-      this.tick();
-      this.isDeleting = false;
-    };
+    var typing = document.getElementById('typing');
 
-    TxtType.prototype.tick = function () {
-      var i = this.loopNum % this.toRotate.length;
-      var fullTxt = this.toRotate[i];
+    var typewriter = new Typewriter(typing, {
+      loop: true
+    });
 
-      if (this.isDeleting) {
-        this.txt = fullTxt.substring(0, this.txt.length - 1);
-      } else {
-        this.txt = fullTxt.substring(0, this.txt.length + 1);
-      }
-
-      this.el.innerHTML = '<span class="wrap">' + this.txt + '.</span>';
-
-      var that = this;
-      var delta = 200 - Math.random() * 100;
-
-      if (this.isDeleting) { delta /= 2; }
-
-      if (!this.isDeleting && this.txt === fullTxt) {
-        delta = this.period;
-        this.isDeleting = true;
-      } else if (this.isDeleting && this.txt === '') {
-        this.isDeleting = false;
-        this.loopNum++;
-        delta = 500;
-      }
-
-      setTimeout(function () {
-        that.tick();
-      }, delta);
-    };
+    typewriter.typeString('Design & Tech')
+      .pauseFor(2000)
+      .deleteAll()
+      .typeString('UX Design')
+      .pauseFor(2000)
+      .deleteAll()
+      .typeString('Interaction Design')
+      .pauseFor(2000)
+      .deleteAll()
+      .typeString('HCI')
+      .pauseFor(2000)
+      .deleteAll()
+      .start();
 
     window.onload = function () {
-      var elements = document.getElementsByClassName('typewrite');
-      for (var i = 0; i < elements.length; i++) {
-        var toRotate = elements[i].getAttribute('data-type');
-        var period = elements[i].getAttribute('data-period');
-        if (toRotate) {
-          new TxtType(elements[i], JSON.parse(toRotate), period);
+      lax.init()
+
+      // Add a driver that we use to control our animations
+      lax.addDriver('scrollY', function () {
+        return window.scrollY
+      })
+      lax.addElements(".fade-out-up", {
+        scrollY: {
+          translateY: [["elCenterY", 'elOutY-100', "elOutY"], [0, -5, -20]],
+          opacity: [["elCenterY", 'elOutY-100', "elOutY"], [1, 0.8, 0]]
         }
-      }
+      });
+      lax.addElements(".square", {
+        scrollY: {
+          scale: [[100, "screenHeight"], [0, 10]],
+          opacity: [[0, "screenHeight/2", "screenHeight"], [1, 1, 0]],
+          "rotate": [[0, "screenHeight"], [0, 360]],
+          "border-radius": [
+            ["elInY", "elCenterY", "elOutY"],
+            [0, 100, 0],
+            {
+              easing: 'easeInOutQuint',
+            }
+          ]
+        }
+      });
+      lax.addElements(".right-out", {
+        scrollY: {
+          translateY: [[-400, 0], [100, 0]],
+          translateX: [[0, "screenHeight"], [0, 400]],
+          opacity: [[0, "screenHeight/2"], [1, 0]]
+        }
+      });
+      lax.addElements(".left-out", {
+        scrollY: {
+          translateY: [[-400, 0], [200, 0]],
+          translateX: [[0, "screenHeight"], [0, -400]],
+          opacity: [[0, "screenHeight/2"], [1, 0]]
+        }
+      });
+
+      lax.addElements(".left-up-out", {
+        scrollY: {
+          translateX: [["elCenterY", 'elOutY-250', "elOutY"], [0, 0, -120]],
+          translateY: [["elCenterY", 'elOutY-250', "elOutY"], [0, 0, -120]],
+          opacity: [["elCenterY", 'elOutY-250', "elOutY"], [1, 0.8, 0]]
+        }
+      });
+      lax.addElements(".right-up-out", {
+        scrollY: {
+          translateX: [["elCenterY", 'elOutY-250', "elOutY"], [0, 0, 120]],
+          translateY: [["elCenterY", 'elOutY-250', "elOutY"], [0, 0, -120]],
+          opacity: [["elCenterY", 'elOutY-250', "elOutY"], [1, 0.8, 0]]
+        }
+      });
 
     };
     //Activate home animation after finish loading
     $(document).ready(function () {
-      AOS.init();
       bounceInRight = ['#image-fire', '#image-smile', '#image-lock', '#image-look', '#image-heart', '#image-horns'];
       bounceInLeft = ['#image-battery', '#image-drink', '#image-male', '#image-fire-hydrant'];
       bounceInDown = ['#image-think-face', '#image-lucky', '#image-ghost', '#image-bomb', '#image-think', '#image-dice', '#image-bucket', '#image-blue-heart', '#image-gamepad'];
