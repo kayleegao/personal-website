@@ -99,14 +99,10 @@ h1, h2, h5 {
 #work {
   position: relative; 
   background-color: #fafafa; 
-  margin-top: 110vh;
+  margin-top: 130vh;
   z-index: 1000;
 }
 
-.wave-top {
-  transform: translateY(-100%); 
-  width: 100%;
-}
 
 
 #translator {

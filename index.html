@@ -102,7 +102,9 @@
   </div>
 
   <div id="work">
-    <img src="./images/wave.svg" class="position-absolute wave-top">
+    <img src="./images/dark-wave.svg" id="dark-wave" class="position-absolute" style="width: 100%;"> 
+    <img src="./images/yellow-wave.svg" id="yellow-wave" class="position-absolute" style="width: 100%;">
+    <img src="./images/light-wave.svg" class="position-absolute" style="transform: translateY(-15%); width: 100%;">
     <div class="container" style="padding-bottom: 100px;">
       <div class="row">
         <div class="col-12" data-aos="fade-right" data-aos-duration="1000">
@@ -227,10 +229,7 @@
             <div class="fade-out-up">
               <h3 class="mb-3" style="color: #c4c4c4;">💬 Shoot me a message</h3>
               <p class="mb-4 paragraph-sm" style="color: #909090;">Hi there, want to connect with me? Or have a project
-                in
-                mind? Feel free
-                to drop me a message to talk about
-                work, life, etc.</p>
+                in mind? Feel free to drop me a message to talk about work, life, etc.</p>
             </div>
           </div>
           <section class="chat" data-aos="fade-left" data-aos-duration="1000">
@@ -248,7 +247,7 @@
                 </div>
                 <div class="desc-contact">
                   <p class="name">Kaylee Gao</p>
-                  <p class="message text-secondary">Reply time: 1 - 2 business days</p>
+                  <p class="message text-secondary">Respond within 1 - 2 business days</p>
                 </div>
               </div>
             </div>
@@ -264,11 +263,11 @@
                 <div class="photo" style="background-image: url(./images/mylogo.svg);">
                   <div class="online"></div>
                 </div>
-                <div class="text"> You can reach me by:
+                <div class="text"> You can reach me at:
                   <ul class="list-unstyled mb-1">
                     <li>👉🏻 <a class="hyperlink" href="mailto:kayleegao1998@gmail.com">Email</a></li>
                     <li>👉🏻 <a class="hyperlink" target="__blank"
-                        href="https://www.linkedin.com/in/yifei-gao-a9a288183/">Linkedin</a></li>
+                        href="https://www.linkedin.com/in/yifei-gao-a9a288183/">LinkedIn</a></li>
                     <li>👉🏻 <a class="hyperlink" target="__blank"
                         href="https://www.instagram.com/kayleeegao/">Instagram</a></li>
                   </ul>
@@ -406,6 +405,35 @@
           opacity: [["elCenterY", 'elOutY-250', "elOutY"], [1, 0.8, 0]]
         }
       });
+      lax.addElements('#dark-wave', {
+        scrollY: {
+          translateY: [
+            ["elInY", "elOutY"],
+            {
+              500: [-110, -280], // Screen width < 500
+              900: [-150, -525], // Screen width > 500 and < 900
+              1400: [-300, -1050], // Screen width > 900
+            },
+          ],
+          translateZ: [["elInY", "elOutY"], [-100, -100]]
+        }
+      })
+
+      lax.addElements('#yellow-wave', {
+        scrollY: {
+          translateY: [
+            ["elInY", "elOutY"],
+            {
+              500: [-100, -180], // Screen width < 500
+              900: [-140, -350], // Screen width > 500 and < 900
+              1400: [-280, -700], // Screen width > 900
+            },
+          ],
+          translateZ: [["elInY", "elOutY"], [-10, -10]]
+        }
+      })
+      
+
 
     };
 
