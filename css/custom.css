@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500&display=swap');
-
 @font-face {
   font-family: 'Euclidcircularb';
   src: url(../font/EuclidCircularB-Regular.otf) format('opentype');
@@ -87,10 +85,6 @@ hr.wavy-line {
   font-weight: 500;
 }
 
-nav * {
-  font-family: 'Ubuntu', avenir, sans-serif;
-  font-weight: 500 !important;
-}
 
 h1, h2, h5 {
   line-height: 1.5em;
@@ -99,7 +93,7 @@ h1, h2, h5 {
 #work {
   position: relative; 
   background-color: #fafafa; 
-  margin-top: 130vh;
+  margin-top: 145vh;
   z-index: 1000;
 }
 
@@ -688,11 +682,11 @@ background: linear-gradient(0deg, rgba(244, 186, 185, 0.35) 0%, rgba(244, 186, 1
 
 #welcome {
     height: 70vh;
-    margin-top: 13vh;
+    margin-top: 30vh;
 }
 
 #home-images {
-  margin-top: 12vh;
+  margin-top: 29vh;
   height: 380px;
   position: relative;
   z-index: -1;
@@ -757,7 +751,7 @@ background: linear-gradient(0deg, rgba(244, 186, 185, 0.35) 0%, rgba(244, 186, 1
 }
 
 .mylogo {
-    width: 60px;
+    width: 50px;
     height: auto;
 }
 
@@ -765,7 +759,7 @@ background: linear-gradient(0deg, rgba(244, 186, 185, 0.35) 0%, rgba(244, 186, 1
 .subtitle {
     font-size: 3em;
     margin-bottom: 60px;
-    margin-top: 150px;
+    margin-top: 250px;
     font-weight: 700;
 }
 
@@ -813,7 +807,7 @@ background: linear-gradient(0deg, rgba(244, 186, 185, 0.35) 0%, rgba(244, 186, 1
 
 
 .breadcrumb {
-  margin-top: 150px;
+  margin-top: 250px;
   background-color: transparent;
 }
 
@@ -1242,12 +1236,16 @@ td {
   }
 
 /* More Projects Swiper CSS */
-  a.more-projects-link, a.more-projects-link:hover, a.more-projects-link:visited {
+  a.index-projects, a.more-projects-link, a.more-projects-link:hover, a.more-projects-link:visited {
     color: var(--text-color);
     text-decoration: none;
   }
 
-  .more-projects h5 {
+  .index-projects p {
+    line-height: 1.8em;
+  }
+
+  .more-projects h5, .index-projects h4  {
     font-weight: 500;
       background:
         linear-gradient(
@@ -1266,7 +1264,7 @@ td {
       transition: background-size 400ms;
   }
 
-  .more-projects-title-hover {
+  .projects-title-hover {
     background-size: 0 4px, 100% 4px !important;
   }
 
@@ -1278,10 +1276,10 @@ td {
     margin-top: -8px;
   }
 
-  .more-projects-img {
+  .projects-img {
     transition: .5s ease;
   }
-  .more-projects-badge {
+  .projects-badge {
     position: absolute;
     top: 7%;
     left: 8%;
@@ -1723,11 +1721,6 @@ blockquote.blockstyle:after {
     #hello {
         font-size: 2.3em;
     }
-    .nav-link {
-        text-align: center;
-        margin-top: 30px;
-        margin-left: 0px !important;
-    }
     .large {
       font-size: 1.5em;
     }
@@ -1740,9 +1733,9 @@ blockquote.blockstyle:after {
     #home-illustration {
       top: -10px;
     }
+
   }
   @media only screen and (max-width: 767px) { /* sm or smaller */
-
     h2 {
       font-size: 1.5em;
     }
@@ -1750,15 +1743,11 @@ blockquote.blockstyle:after {
     h4 {
       font-size: 1.3em;
     }
-
-    .talk-bubble {
-      transform: scale(0.9); 
-    }
     .paragraph {
       line-height: 2em;
     }
     #welcome {
-      margin-top: 12vh;
+      margin-top: 30vh;
       height: auto;
     }
     #home-images {
@@ -1790,12 +1779,6 @@ blockquote.blockstyle:after {
     #random-projects {
       font-size: 1.2em;
     }
-    .talk-bubble {
-      transform: scale(0.7); 
-    }
-    .note-li {
-      font-size: 0.7em;
-    }
     #hello {
       font-size: 2em;
     }
@@ -1812,7 +1795,7 @@ blockquote.blockstyle:after {
       max-height: 40px;
     }
     #welcome {
-      margin-top: 8vh;
+      margin-top: 20vh;
       text-align: center;
     }
     #home-images {
@@ -1851,7 +1834,7 @@ blockquote.blockstyle:after {
     .more-projects p {
       font-size: 0.8em;
     }
-    .more-projects-badge {
+    .projects-badge {
       transform: scale(0.8);
     }
     #shuffle-link {
@@ -1874,9 +1857,6 @@ blockquote.blockstyle:after {
     }
   }
 
-
-
-  
 
 .hidden {
   visibility: hidden;

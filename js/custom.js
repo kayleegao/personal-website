@@ -3,24 +3,34 @@ $(document).ready(function() {
   $("#footer-placeholder").load("../footer.html");
 });
 
-window.onload = function () {
-  lax.init()
+(function($) { "use strict";
+    
+    //Navigation
+  
+    var app = function () {
+      var body = undefined;
+      var menu = undefined;
+      var menuItems = undefined;
+      var init = function init() {
+        body = document.querySelector('body');
+        menu = document.querySelector('.menu-icon');
+        menuItems = document.querySelectorAll('.nav__list-item');
+        applyListeners();
+      };
+      var applyListeners = function applyListeners() {
+        menu.addEventListener('click', function () {
+          return toggleClass(body, 'nav-active');
+        });
+      };
+      var toggleClass = function toggleClass(element, stringClass) {
+        if (element.classList.contains(stringClass)) element.classList.remove(stringClass);else element.classList.add(stringClass);
+      };
+      init();
+    }();
 
-  // Add a driver that we use to control our animations
-  lax.addDriver('scrollY', function () {
-    return window.scrollY
-  })
+    
+  })(jQuery);
 
-  // Add animation bindings to elements
-  lax.addElements('.selector', {
-    scrollY: {
-      translateX: [
-        ["elInY", "elCenterY", "elOutY"],
-        [0, 'screenWidth/2', 'screenWidth'],
-      ]
-    }
-  })
-}
 
 $("#nav-button").click(function(){
   $(this).toggleClass("open");
@@ -80,7 +90,7 @@ var daddyZonePage = {
   link: function() {
     return this.codeName + ".html"
   },
-  badgeInfo: "UI"
+  badgeInfo: "UX/UI"
 };
 
 var roommatePage = {
@@ -185,9 +195,9 @@ function getRandomProjects() {
         `<div class="swiper-slide more-projects animate__animated animate__fadeIn animate__slow">
           <a href="`+selected[i].link()+`" class="more-projects-link">
             <div class="row">
-              <div class="col-12 mb-3 mb-sm-4 more-projects-img">
-              <span class="badge badge-pill more-projects-badge">`+selected[i].badgeInfo+`</span>
-                <img src="`+selected[i].imageAddress()+`" class="img-fluid position-relative" alt="project image">
+              <div class="col-12 mb-3 mb-sm-4 projects-img">
+              <span class="badge badge-pill projects-badge">`+selected[i].badgeInfo+`</span>
+                <img src="`+selected[i].imageAddress()+`" class="img-fluid position-relative radius-10" alt="project image">
               </div>
               <div class="col-12">
                 <h5 class="d-inline-block">`+selected[i].name+`</h5>
@@ -211,12 +221,12 @@ function getRandomProjects() {
   </div>`;
 
   $('.more-projects').on("mouseover", function() {
-    $(this).find('.more-projects-img').addClass('opacity-50');
-    $(this).find('h5').addClass('more-projects-title-hover');
+    $(this).find('.projects-img').addClass('opacity-50');
+    $(this).find('h5').addClass('projects-title-hover');
   })
   .on("mouseout", function () {
-    $(this).find('.more-projects-img').removeClass('opacity-50');
-    $(this).find('h5').removeClass('more-projects-title-hover');
+    $(this).find('.projects-img').removeClass('opacity-50');
+    $(this).find('h5').removeClass('projects-title-hover');
   })
 }
 

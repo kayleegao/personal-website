@@ -11,7 +11,6 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-  <link href="css/card.css" rel="stylesheet">
   <link href="css/hover.css" rel="stylesheet" media="all">
   <link href="css/custom.css" rel="stylesheet">
   <link href="css/nav.css" rel="stylesheet">
@@ -19,56 +18,31 @@
 </head>
 
 <body style="background-color: #eeeeee;">
-  <nav class="navbar navbar-expand-lg navbar-light pt-3 pt-md-5 bg-transparent animate__animated animate__fadeInDown"
-    id="top">
-    <div class="container">
-      <a class="navbar-brand font-weight-bold left-out" href="index.html"><img src="images/mylogo.svg"
-          class="mylogo mr-4"><span class="my-name">Kaylee Gao.</span></a>
-      <div class="right-out">
-        <button class="navbar-toggler animate__animated animate__jackInTheBox border-0" type="button"
-          data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-          aria-expanded="false" aria-label="Toggle navigation">
-          <a class="navicon-button x" id="nav-button">
-            <div class="navicon"></div>
-          </a>
-      </div>
-      </button>
-      <div class="collapse navbar-collapse navbar-light right-out" id="navbarSupportedContent">
-        <ul class="navbar-nav ml-auto font-weight-bold">
-          <li class="nav-item animate__animated animate__jackInTheBox">
-            <a class="nav-link link font-12" href="#work">Work
-              <svg class="link__graphic link__graphic--stroke link__graphic--scribble" width="100%" height="9"
-                viewBox="0 0 101 9">
-                <path
-                  d="M.426 1.973C4.144 1.567 17.77-.514 21.443 1.48 24.296 3.026 24.844 4.627 27.5 7c3.075 2.748 6.642-4.141 10.066-4.688 7.517-1.2 13.237 5.425 17.59 2.745C58.5 3 60.464-1.786 66 2c1.996 1.365 3.174 3.737 5.286 4.41 5.423 1.727 25.34-7.981 29.14-1.294"
-                  pathLength="1" />
-              </svg></a>
-            </a>
-          </li>
-          <li class="nav-item animate__animated animate__jackInTheBox">
-            <a class="nav-link link font-12" href="about.html">About
-              <svg class="link__graphic link__graphic--stroke link__graphic--scribble" width="100%" height="9"
-                viewBox="0 0 101 9">
-                <path
-                  d="M.426 1.973C4.144 1.567 17.77-.514 21.443 1.48 24.296 3.026 24.844 4.627 27.5 7c3.075 2.748 6.642-4.141 10.066-4.688 7.517-1.2 13.237 5.425 17.59 2.745C58.5 3 60.464-1.786 66 2c1.996 1.365 3.174 3.737 5.286 4.41 5.423 1.727 25.34-7.981 29.14-1.294"
-                  pathLength="1" />
-              </svg></a>
-            </a>
-          </li>
-          <li class="nav-item animate__animated animate__jackInTheBox">
-            <a class="nav-link link font-12" href="#contact-area">Contact
-              <svg class="link__graphic link__graphic--stroke link__graphic--scribble" width="100%" height="9"
-                viewBox="0 0 101 9">
-                <path
-                  d="M.426 1.973C4.144 1.567 17.77-.514 21.443 1.48 24.296 3.026 24.844 4.627 27.5 7c3.075 2.748 6.642-4.141 10.066-4.688 7.517-1.2 13.237 5.425 17.59 2.745C58.5 3 60.464-1.786 66 2c1.996 1.365 3.174 3.737 5.286 4.41 5.423 1.727 25.34-7.981 29.14-1.294"
-                  pathLength="1" />
-              </svg></a>
-            </a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
+  <header class="cd-header bg-transparent px-lg-5 animate__animated animate__fadeInDown">
+		<div class="header-wrapper">
+			<div class="logo-wrap left-out">
+				<a class="navbar-brand font-weight-bold" href="index.html"><img src="images/mylogo.svg" class="mylogo mr-4"><span
+          class="my-name">Kaylee Gao.</span></a>
+			</div>
+			<div class="nav-but-wrap float-right right-out">
+				<div class="menu-icon hover-target">
+					<span class="menu-icon__line menu-icon__line-left"></span>
+					<span class="menu-icon__line"></span>
+					<span class="menu-icon__line menu-icon__line-right"></span>
+				</div>					
+			</div>					
+		</div>				
+	</header>
+
+	<div class="nav">
+		<div class="nav__content">
+			<ul class="nav__list">
+				<li class="nav__list-item"><a href="#work" class="hover-target hvr-shrink">Work</a></li>
+				<li class="nav__list-item"><a href="about.html" class="hover-target hvr-shrink">About</a></li>
+				<li class="nav__list-item"><a href="#contact-area" class="hover-target hvr-shrink">Contact</a></li>
+			</ul>
+		</div>
+	</div>
 
   <div class="container position-fixed" style="left: 50%; transform: translateX(-50%);">
     <div class="row">
@@ -102,67 +76,112 @@
   </div>
 
   <div id="work">
-    <img src="./images/dark-wave.svg" id="dark-wave" class="position-absolute" style="width: 100%;"> 
-    <img src="./images/yellow-wave.svg" id="yellow-wave" class="position-absolute" style="width: 100%;">
-    <img src="./images/light-wave.svg" class="position-absolute" style="transform: translateY(-15%); width: 100%;">
+    <img src="./images/dark-wave.svg" id="dark-wave" class="position-absolute w-100"> 
+    <img src="./images/yellow-wave.svg" id="yellow-wave" class="position-absolute w-100">
+    <img src="./images/light-wave.svg" class="position-absolute w-100" style="transform: translateY(-15%); width: 100%;">
     <div class="container" style="padding-bottom: 100px;">
       <div class="row">
         <div class="col-12" data-aos="fade-right" data-aos-duration="1000">
           <h2 class="mb-4 custom-h fade-out-up">📱 UX/UI design.</h2>
         </div>
+
         <div class="col-12 col-md-6 mb-5" data-aos="fade-up-right" data-aos-duration="1000">
-          <div class="my-card lazy left-up-out" id="dyson-bot">
-            <div class="card-content">
-              <h3 class="card-title">Dyson Bot x IBM</h3>
-              <p><small>Apr. 4, 2022 - Apr. 18, 2022</small></p>
-              <p class="card-copy">Design for AI - A trustworthy and ethical conversational AI chatbot for Dyson</p>
-              <button class="card-btn hvr-shadow" onclick="location.href='./work/dyson-bot.html'">View
-                Project</button>
-            </div>
+          <div class="left-up-out">
+            <a href="./work/dyson-bot.html" class="index-projects">
+              <div class="row">
+                <div class="col-12 mb-3 mb-sm-4 projects-img">
+                <span class="badge badge-pill projects-badge">UX/UI & AR</span>
+                  <img src="./images/more-projects/dyson-bot-card.png" class="img-fluid position-relative radius-10" alt="project image">
+                </div>
+                <div class="col-12">
+                  <h4 class="d-inline-block">Dyson Bot</h4>
+                  <img src="./images/more-projects/btn-round-arrow.svg" alt="" class="pull-right d-inline-block more-projects-icon">
+                </div>
+                <div class="col-11 col-md-10">
+                  <p>A trustworthy and ethical conversational AI Chatbot for Dyson</p>
+                </div>
+              </div>
+            </a>
           </div>
         </div>
+
         <div class="col-12 col-md-6 mb-5" data-aos="fade-up-left" data-aos-duration="1000">
-          <div class="my-card lazy right-up-out" id="baby-u">
-            <div class="card-content">
-              <h3 class="card-title">BabyU</h3>
-              <p><small>Mar 2022 - Apr 2022</small></p>
-              <p class="card-copy">A platform to help first-time parents learn about parenting and track their child's
-                development</p>
-              <button class="card-btn hvr-shadow" onclick="location.href='./work/baby-u.html'">View Project</button>
-            </div>
+          <div class="right-up-out">
+            <a href="./work/baby-u.html" class="index-projects">
+              <div class="row">
+                <div class="col-12 mb-3 mb-sm-4 projects-img">
+                <span class="badge badge-pill projects-badge">UX/UI</span>
+                  <img src="./images/baby-u/baby-u-card.png" class="img-fluid position-relative radius-10" alt="project image">
+                </div>
+                <div class="col-12">
+                  <h4 class="d-inline-block">BabyU</h4>
+                  <img src="./images/more-projects/btn-round-arrow.svg" alt="" class="pull-right d-inline-block more-projects-icon">
+                </div>
+                <div class="col-11 col-md-10">
+                  <p>A platform to help first-time parents learn about parenting and track their child's development</p>
+                </div>
+              </div>
+            </a>
           </div>
         </div>
+
         <div class="col-12 col-md-6 mb-5" data-aos="fade-up-right" data-aos-duration="1000">
-          <div class="my-card lazy left-up-out" id="playground">
-            <div class="card-content">
-              <h3 class="card-title">Playground</h3>
-              <p><small>Nov 2021 - Dec 2021</small></p>
-              <p class="card-copy">A social app that helps children make friends and socialize</p>
-              <button class="card-btn hvr-shadow" onclick="location.href='./work/playground.html'">View
-                Project</button>
-            </div>
+          <div class="left-up-out">
+            <a href="./work/playground.html" class="index-projects">
+              <div class="row">
+                <div class="col-12 mb-3 mb-sm-4 projects-img">
+                <span class="badge badge-pill projects-badge">UX/UI</span>
+                  <img src="./images/more-projects/playground-card.png" class="img-fluid position-relative radius-10" alt="project image">
+                </div>
+                <div class="col-12">
+                  <h4 class="d-inline-block">Playground</h4>
+                  <img src="./images/more-projects/btn-round-arrow.svg" alt="" class="pull-right d-inline-block more-projects-icon">
+                </div>
+                <div class="col-11 col-md-10">
+                  <p>A social app that helps children make friends and socialize</p>
+                </div>
+              </div>
+            </a>
           </div>
         </div>
+
         <div class="col-12 col-md-6 mb-5" data-aos="fade-up-left" data-aos-duration="1000">
-          <div class="my-card lazy right-up-out" id="daddy-zone">
-            <div class="card-content">
-              <h3 class="card-title">Daddy Zone</h3>
-              <p><small>Oct 2021 - Nov 2021</small></p>
-              <p class="card-copy">Design for Future - A solution for fathers with parenting responsibilities</p>
-              <button class="card-btn hvr-shadow" onclick="location.href='./work/daddy-zone.html'">View
-                Project</button>
-            </div>
+          <div class="right-up-out">
+            <a href="./work/daddy-zone.html" class="index-projects">
+              <div class="row">
+                <div class="col-12 mb-3 mb-sm-4 projects-img">
+                <span class="badge badge-pill projects-badge">UX/UI</span>
+                  <img src="./images/more-projects/daddy-zone-card.png" class="img-fluid position-relative radius-10" alt="project image">
+                </div>
+                <div class="col-12">
+                  <h4 class="d-inline-block">Daddy Zone</h4>
+                  <img src="./images/more-projects/btn-round-arrow.svg" alt="" class="pull-right d-inline-block more-projects-icon">
+                </div>
+                <div class="col-11 col-md-10">
+                  <p>Design for Future - A solution for fathers with parenting responsibilities</p>
+                </div>
+              </div>
+            </a>
           </div>
         </div>
+
         <div class="col-12 col-md-6 mb-5" data-aos="fade-up-right" data-aos-duration="1000">
-          <div class="my-card lazy left-up-out" id="roommate">
-            <div class="card-content">
-              <h3 class="card-title">Best Roommate</h3>
-              <p><small>Sep. 3, 2021 - Sep. 6, 2021</small></p>
-              <p class="card-copy">An app that helps young people find ideal apartments and roommates</p>
-              <button class="card-btn hvr-shadow" onclick="location.href='./work/best-roommate.html'">View
-                Project</button>
-            </div>
+          <div class="left-up-out">
+            <a href="./work/best-roommate.html" class="index-projects">
+              <div class="row">
+                <div class="col-12 mb-3 mb-sm-4 projects-img">
+                <span class="badge badge-pill projects-badge">UX/UI</span>
+                  <img src="./images/more-projects/best-roommate-card.png" class="img-fluid position-relative radius-10" alt="project image">
+                </div>
+                <div class="col-12">
+                  <h4 class="d-inline-block">Best Roommate</h4>
+                  <img src="./images/more-projects/btn-round-arrow.svg" alt="" class="pull-right d-inline-block more-projects-icon">
+                </div>
+                <div class="col-11 col-md-10">
+                  <p>An app that helps young people find ideal apartments and roommates</p>
+                </div>
+              </div>
+            </a>
           </div>
         </div>
       </div>
@@ -172,50 +191,82 @@
           <h2 class="mb-4 custom-h fade-out-up">🔎 Other work.</h2>
         </div>
         <div class="col-12 col-md-6 mb-5" data-aos="fade-up-right" data-aos-duration="1000">
-          <div class="my-card lazy left-up-out" id="odds-and-ends">
-            <div class="card-content">
-              <h3 class="card-title">Odds and Ends</h3>
-              <p><small>Mar 2022 - Apr 2022</small></p>
-              <p class="card-copy">An AR experience that brings Emily Carr's artwork Odds and Ends to life</p>
-              <button class="card-btn hvr-shadow" onclick="location.href='./work/odds-and-ends.html'">View
-                Project</button>
-            </div>
+          <div class="left-up-out">
+            <a href="./work/odds-and-ends.html" class="index-projects">
+              <div class="row">
+                <div class="col-12 mb-3 mb-sm-4 projects-img">
+                <span class="badge badge-pill projects-badge">AR</span>
+                  <img src="./images/more-projects/odds-and-ends-card.png" class="img-fluid position-relative radius-10" alt="project image">
+                </div>
+                <div class="col-12">
+                  <h4 class="d-inline-block">Odds and Ends</h4>
+                  <img src="./images/more-projects/btn-round-arrow.svg" alt="" class="pull-right d-inline-block more-projects-icon">
+                </div>
+                <div class="col-11 col-md-10">
+                  <p>An AR experience that brings Emily Carr's artwork Odds and Ends to life</p>
+                </div>
+              </div>
+            </a>
           </div>
         </div>
 
         <div class="col-12 col-md-6 mb-5" data-aos="fade-up-left" data-aos-duration="1000">
-          <div class="my-card lazy right-up-out" id="earth">
-            <div class="card-content">
-              <h3 class="card-title">Go to the Earth</h3>
-              <p><small>Aug. 24, 2021 - Sep. 5, 2021</small></p>
-              <p class="card-copy">An educational roll-and-move board game to teach about the solar system</p>
-              <button class="card-btn hvr-shadow" onclick="location.href='./work/go-to-the-earth.html'">View
-                Project</button>
-            </div>
+          <div class="right-up-out">
+            <a href="./work/go-to-the-earth.html" class="index-projects">
+              <div class="row">
+                <div class="col-12 mb-3 mb-sm-4 projects-img">
+                <span class="badge badge-pill projects-badge">Game Design</span>
+                  <img src="./images/more-projects/go-to-the-earth-card.png" class="img-fluid position-relative radius-10" alt="project image">
+                </div>
+                <div class="col-12">
+                  <h4 class="d-inline-block">Go to the Earth</h4>
+                  <img src="./images/more-projects/btn-round-arrow.svg" alt="" class="pull-right d-inline-block more-projects-icon">
+                </div>
+                <div class="col-11 col-md-10">
+                  <p>An educational roll-and-move board game to teach about the solar system</p>
+                </div>
+              </div>
+            </a>
           </div>
         </div>
 
         <div class="col-12 col-md-6 mb-5" data-aos="fade-up-right" data-aos-duration="1000">
-          <div class="my-card lazy left-up-out" id="bench-press">
-            <div class="card-content">
-              <h3 class="card-title">Bench Press Upgrade</h3>
-              <p><small>Sep 2019 - Dec 2019</small></p>
-              <p class="card-copy">A bench press with no safety issues</p>
-              <button class="card-btn hvr-shadow" onclick="location.href='./work/bench-press-upgrade.html'">View
-                Project</button>
-            </div>
+          <div class="left-up-out">
+            <a href="./work/bench-press-upgrade.html" class="index-projects">
+              <div class="row">
+                <div class="col-12 mb-3 mb-sm-4 projects-img">
+                <span class="badge badge-pill projects-badge">HCI</span>
+                  <img src="./images/more-projects/bench-press-upgrade-card.jpg" class="img-fluid position-relative radius-10" alt="project image">
+                </div>
+                <div class="col-12">
+                  <h4 class="d-inline-block">Bench Press Upgrade</h4>
+                  <img src="./images/more-projects/btn-round-arrow.svg" alt="" class="pull-right d-inline-block more-projects-icon">
+                </div>
+                <div class="col-11 col-md-10">
+                  <p>A bench press with no safety issues</p>
+                </div>
+              </div>
+            </a>
           </div>
         </div>
 
         <div class="col-12 col-md-6 mb-5" data-aos="fade-up-left" data-aos-duration="1000">
-          <div class="my-card lazy right-up-out" id="uniform">
-            <div class="card-content">
-              <h3 class="card-title">SUXD Uniform</h3>
-              <p><small>Oct 2021 - Dec 2021</small></p>
-              <p class="card-copy">A promotional page for SUXD department uniform developed for mobile terminal</p>
-              <button class="card-btn hvr-shadow" onclick="location.href='./work/suxd-uniform.html'">View
-                Project</button>
-            </div>
+          <div class="right-up-out">
+            <a href="./work/suxd-uniform.html" class="index-projects">
+              <div class="row">
+                <div class="col-12 mb-3 mb-sm-4 projects-img">
+                <span class="badge badge-pill projects-badge">Development</span>
+                  <img src="./images/more-projects/suxd-uniform-card.png" class="img-fluid position-relative radius-10" alt="project image">
+                </div>
+                <div class="col-12">
+                  <h4 class="d-inline-block">SUXD Uniform</h4>
+                  <img src="./images/more-projects/btn-round-arrow.svg" alt="" class="pull-right d-inline-block more-projects-icon">
+                </div>
+                <div class="col-11 col-md-10">
+                  <p>A promotional page for SUXD department uniform developed for mobile terminal</p>
+                </div>
+              </div>
+            </a>
           </div>
         </div>
       </div>
@@ -296,8 +347,8 @@
                           required>
                       </div>
                       <div class="form-group">
-                        <button type="submit" class="btn my-dark-btn"
-                          style="width: 100%; font-size: 1em; margin-top: 10px;">Send Message<i
+                        <button type="submit" class="btn my-dark-btn w-100"
+                          style="font-size: 1em; margin-top: 10px;">Send Message<i
                             class="fa fa-paper-plane ml-2" aria-hidden="true"></i></button>
                       </div>
                     </div>
@@ -328,6 +379,14 @@
   <script src="js/bootstrap-4.3.1.js"></script>
   <script src="js/custom.js"></script>
   <script>
+    $('.index-projects').on("mouseover", function() {
+    $(this).find('.projects-img').addClass('opacity-50');
+    $(this).find('h4').addClass('projects-title-hover');
+  })
+  .on("mouseout", function () {
+    $(this).find('.projects-img').removeClass('opacity-50');
+    $(this).find('h4').removeClass('projects-title-hover');
+  })
     //typewriter
     var typing = document.getElementById('typing');
 
@@ -393,15 +452,13 @@
 
       lax.addElements(".left-up-out", {
         scrollY: {
-          translateX: [["elCenterY", 'elOutY-250', "elOutY"], [0, 0, -120]],
-          translateY: [["elCenterY", 'elOutY-250', "elOutY"], [0, 0, -120]],
+          translateX: [["elCenterY", 'elOutY-250', "elOutY"], [0, 0, -100]],
           opacity: [["elCenterY", 'elOutY-250', "elOutY"], [1, 0.8, 0]]
         }
       });
       lax.addElements(".right-up-out", {
         scrollY: {
-          translateX: [["elCenterY", 'elOutY-250', "elOutY"], [0, 0, 120]],
-          translateY: [["elCenterY", 'elOutY-250', "elOutY"], [0, 0, -120]],
+          translateX: [["elCenterY", 'elOutY-250', "elOutY"], [0, 0, 100]],
           opacity: [["elCenterY", 'elOutY-250', "elOutY"], [1, 0.8, 0]]
         }
       });
@@ -432,61 +489,8 @@
           translateZ: [["elInY", "elOutY"], [-10, -10]]
         }
       })
-      
-
 
     };
-
-
-    //Background image lazy loading
-    document.addEventListener("DOMContentLoaded", function () {
-      var lazyloadImages;
-
-      if ("IntersectionObserver" in window) {
-        lazyloadImages = document.querySelectorAll(".lazy");
-        var imageObserver = new IntersectionObserver(function (entries, observer) {
-          entries.forEach(function (entry) {
-            if (entry.isIntersecting) {
-              var image = entry.target;
-              image.classList.remove("lazy");
-              imageObserver.unobserve(image);
-            }
-          });
-        });
-
-        lazyloadImages.forEach(function (image) {
-          imageObserver.observe(image);
-        });
-      } else {
-        var lazyloadThrottleTimeout;
-        lazyloadImages = document.querySelectorAll(".lazy");
-
-        function lazyload() {
-          if (lazyloadThrottleTimeout) {
-            clearTimeout(lazyloadThrottleTimeout);
-          }
-
-          lazyloadThrottleTimeout = setTimeout(function () {
-            var scrollTop = window.pageYOffset;
-            lazyloadImages.forEach(function (img) {
-              if (img.offsetTop < (window.innerHeight + scrollTop)) {
-                img.src = img.dataset.src;
-                img.classList.remove('lazy');
-              }
-            });
-            if (lazyloadImages.length == 0) {
-              document.removeEventListener("scroll", lazyload);
-              window.removeEventListener("resize", lazyload);
-              window.removeEventListener("orientationChange", lazyload);
-            }
-          }, 20);
-        }
-
-        document.addEventListener("scroll", lazyload);
-        window.addEventListener("resize", lazyload);
-        window.addEventListener("orientationChange", lazyload);
-      }
-    })
   </script>
 
 </body>
