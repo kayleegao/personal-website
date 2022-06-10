@@ -465,30 +465,30 @@
       lax.addElements('#dark-wave', {
         scrollY: {
           translateY: [
-            ["elInY-200", "elOutY"],
+            [0, "screenHeight"],
             {
-              500: [-110, -300], // Screen width < 500
-              900: [-150, -1000], // Screen width > 500 and < 900
-              1150: [-200, -1250], // Screen width > 900 and < 1150
-              1400: [-300, -1850], // Screen width > 1150
+              500: [0, -300], // Screen width < 500
+              900: [0, -450], // Screen width > 500 and < 900
+              1150: [0, -650], // Screen width > 900 and < 1150
+              1400: [0, -850], // Screen width > 1150
             },
           ],
-          translateZ: [["elInY", "elOutY"], [-20, -20]]
+          translateZ: [[0, "screenHeight"], [-20, -20]]
         }
       })
 
       lax.addElements('#yellow-wave', {
         scrollY: {
           translateY: [
-            ["elInY-200", "elOutY"],
+            [0, "screenHeight"],
             {
-              500: [-100, -180], // Screen width < 500
-              900: [-140, -500], // Screen width > 500 and < 900
-              1150: [-150, -750], // Screen width > 900 and < 1150
-              1400: [-250, -1050], // Screen width > 1150
+              500: [0, -200], // Screen width < 500
+              900: [0, -300], // Screen width > 500 and < 900
+              1150: [0, -400], // Screen width > 900 and < 1150
+              1400: [0, -600], // Screen width > 1150
             },
           ],
-          translateZ: [["elInY", "elOutY"], [-10, -10]]
+          translateZ: [[0, "screenHeight"], [-10, -10]]
         }
       })
 
