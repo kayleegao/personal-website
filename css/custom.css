@@ -29,6 +29,7 @@
   --peach-color: rgb(244, 186, 185);
   --swiper-theme-color: #ffc722;
   --text-primary-grey: #5e5d60;
+  --light-white-color: #fafafa;
 }
 
 * {
@@ -44,7 +45,7 @@ html, body {
   max-width: 100%;
   overflow-x: hidden;
   scroll-behavior: smooth;
-  background-color: #fafafa;
+  background-color: var(--light-white-color);
   color: var(--text-color);
 }
 
@@ -92,7 +93,7 @@ h1, h2, h5 {
 
 #work {
   position: relative; 
-  background-color: #fafafa; 
+  background-color: var(--light-white-color); 
   margin-top: 145vh;
   z-index: 1000;
 }
@@ -176,7 +177,7 @@ h1, h2, h5 {
   top: -18%;
   width: 80px;
   height: 80px;
-  background-color: #fafafa;
+  background-color: var(--light-white-color);
   z-index: 100;
 }
 
@@ -204,7 +205,7 @@ h1, h2, h5 {
   height: 100%;
   left: 0;
   top: 0;
-  background: linear-gradient(to right, #fafafa, rgba(255, 255, 255, 0) 80px, rgba(255, 255, 255, 0) calc(100% - 80px), #fafafa);
+  background: linear-gradient(to right, var(--light-white-color), rgba(255, 255, 255, 0) 80px, rgba(255, 255, 255, 0) calc(100% - 80px), var(--light-white-color));
 }
 @media (max-width: 900px) {
   #hobby-slider {
@@ -232,10 +233,6 @@ h1, h2, h5 {
 
 
 /* === CONVERSATIONS === */
-
-
-
-
 
 .header-chat {
   background-color: #FFF;
@@ -335,7 +332,6 @@ border: 2.5px solid #FFF;
 
 .desc-contact {
 white-space: nowrap;
-overflow: hidden;
 text-overflow: ellipsis;
 }
 
@@ -651,7 +647,7 @@ mark {
   /* Firefox */
   * {
     scrollbar-width: auto;
-    scrollbar-color: var(--main-color) #fafafa;
+    scrollbar-color: var(--main-color) var(--light-white-color);
   }
 
   /* Chrome, Edge, and Safari */
@@ -660,13 +656,13 @@ mark {
   }
 
   *::-webkit-scrollbar-track {
-    background: #fafafa;
+    background: var(--light-white-color);
   }
 
   *::-webkit-scrollbar-thumb {
     background-color: var(--main-color);
     border-radius: 0px;
-    border: 3px none #fafafa;
+    border: 3px none var(--light-white-color);
   }
 
   .container {
@@ -791,7 +787,7 @@ background: linear-gradient(0deg, rgba(244, 186, 185, 0.35) 0%, rgba(244, 186, 1
 }
 
 .intro-card {
-  background-color: #fafafa;
+  background-color: var(--light-white-color);
   border: none;
   border-radius: 20px;
   box-shadow: 2.037e-15px 33.2667px 66.5333px rgba(51, 51, 51, 0.1175), inset -4.75299e-16px -7.76222px 7.76222px #F4F4F4, inset 4.75299e-16px 7.76222px 7.76222px #FFFFFF;
@@ -900,7 +896,7 @@ td {
 
 .my-dark-btn {
   background-color: var(--text-color);
-  color: #fafafa;
+  color: var(--light-white-color);
   border-radius: 50px;
   font-size: .8em;
   padding: 15px 20px;
@@ -913,7 +909,7 @@ td {
 .my-dark-btn:hover {
   transform: translate(-5px, -5px);
   box-shadow: 5px 5px 0px #888888;
-  color: #fafafa;
+  color: var(--light-white-color);
 }
 
 #shuffle-link {
@@ -1038,7 +1034,7 @@ td {
   }
   
   .icon-ul .icon-li a:hover .icon {
-    color: #fafafa;
+    color: var(--light-white-color);
     transform: rotateY(360deg);
   }
   
@@ -1288,6 +1284,7 @@ td {
     background-color: #faf3e3;
     color: #d7a306;
     font-weight: 500;
+    text-transform: uppercase;
   }
 
   .more-projects:hover {
@@ -1312,14 +1309,15 @@ td {
   }
 
   .all-center {
-    color: #fafafa;
+    color: var(--light-white-color);
     border-radius: 30px;
     border: 1px solid black;
     height: auto;
     font-weight: 500;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url(../images/more-projects/home-screen.png);
+    background-color: #eee;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url(../images/more-projects/index-screen.png);
     background-size: 100% auto;
-    background-position: top center;
+    background-position: center center;
     background-repeat: no-repeat;
     /* Center slide text vertically */
     display: -webkit-box;
@@ -1411,14 +1409,14 @@ td {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: #fafafa;
+    background: var(--light-white-color);
     -webkit-user-select: none;
     user-select: none;
     transition: background-color .8s linear;
 }
 
 .desWrapper{
-    background: #fafafa;
+    background: var(--light-white-color);
     display: none;
     padding: 20px;
     transition: max-height 1s ease-in;
@@ -1493,7 +1491,7 @@ td {
     background-color: transparent;
   }
   .filters__button:hover {
-    background-color: #fafafa;
+    background-color: var(--light-white-color);
     transform: translate(-3px, -3px);
     box-shadow: 5px 5px 0px var(--text-color);
   }
@@ -1509,7 +1507,7 @@ td {
   
   .filters [data-target].is-active {
     background-color: var(--text-color);
-    color: #fafafa;
+    color: var(--light-white-color);
     font-weight: 500;
     transform: translate(-3px, -3px);
     box-shadow: 5px 5px 0px #888888;
@@ -1651,7 +1649,7 @@ blockquote.blockstyle:after {
 
 #lower-side {
   padding: 2em 2em 5em 2em;
-  background: #fafafa;
+  background: var(--light-white-color);
   display: block;
   border-bottom-right-radius: 8px;
   border-bottom-left-radius: 8px;
