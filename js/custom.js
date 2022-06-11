@@ -19,6 +19,7 @@ $(document).ready(function() {
       };
       var applyListeners = function applyListeners() {
         menu.addEventListener('click', function () {
+          $('#my-nav').css('opacity', '1');
           return toggleClass(body, 'nav-active');
         });
       };
