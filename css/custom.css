@@ -99,21 +99,6 @@ h1, h2, h5 {
 }
 
 
-
-#translator {
-  display: inline-block;
-  position: fixed;
-  top: 4%;
-  right: 6%;
-  color: var(--text-color);
-  font-weight: 500;
-}
-
-#translator a{
-  color: #909090;
-  font-weight: 400;
-}
-
 .hyperlink {
   color: #666;
   text-decoration: none;
