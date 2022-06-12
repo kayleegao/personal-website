@@ -279,4 +279,9 @@ body.nav-active .nav__list-item:nth-child(3) {
           transition-delay: 1s;
 }
 
-
+@media only screen and (max-width: 576px) { /* xs or smaller */
+    .header-wrapper{
+		width: calc(100% - 60px);
+		margin-left: 30px;
+	} 
+}
