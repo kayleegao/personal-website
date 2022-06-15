@@ -685,7 +685,6 @@ background: linear-gradient(0deg, rgba(244, 186, 185, 0.35) 0%, rgba(244, 186, 1
   top: 0; 
   right: 0;
   z-index: -1;
-  animation-delay: 0.5s;
 }
 
 #home-illustration {
@@ -694,6 +693,7 @@ background: linear-gradient(0deg, rgba(244, 186, 185, 0.35) 0%, rgba(244, 186, 1
   left: 0;
   z-index: 1;
 }
+
 #name-cursor {
   width: 40%; 
   top: 75%; 
@@ -709,6 +709,31 @@ background: linear-gradient(0deg, rgba(244, 186, 185, 0.35) 0%, rgba(244, 186, 1
     font-size: 3em;
     font-weight: 700;
     position: relative;
+}
+
+.ramp-up-anim {
+  overflow: hidden;
+}
+.ramp-up-anim span {
+  letter-spacing: 0px;
+  display: inline-block;
+  animation-duration: .5s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  transition-timing-function: ease-out;
+  transform: translate3d(-30%, -100%, 0);
+  animation-name: rampUp;
+}
+
+
+
+@keyframes rampUp {
+  0% {
+    transform: translate3d(0, 100%, 0);
+  }
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
 }
 
 .typewrite {
@@ -1253,32 +1278,18 @@ td {
     opacity: 0.5;
   }
 
-  .more-projects p {
-    margin-top: -8px;
-  }
-
   .projects-img {
     transition: .5s ease;
-  }
-  .projects-badge {
-    position: absolute;
-    top: 7%;
-    left: 8%;
-    z-index: 1000;
-    padding: 6px 15px;
-    background-color: #faf3e3;
-    color: #d7a306;
-    font-weight: 500;
-    text-transform: uppercase;
   }
 
   .more-projects:hover {
     cursor: pointer;
   }
 
-  .more-projects-icon {
+  .more-projects-icon, .projects-icon {
     max-width: 40px; 
     max-height: 40px;
+    margin-top: 3px;
   }
 
   .mySwiperMenu .swiper {
@@ -1810,14 +1821,17 @@ blockquote.blockstyle:after {
       max-width: 100%;
     }
     .more-projects h5 {
-      font-size: 15px;
+      font-size: 18px;
+      margin-bottom: 3px;
     }
     .more-projects-icon {
-      max-width: 30px;
-      max-height: 30px;
+      display: none !important;
     }
     .more-projects p {
-      font-size: 0.8em;
+      font-size: 0.75em;
+    }
+    .more-projects span.small {
+      font-size: 60%;
     }
     .projects-badge {
       transform: scale(0.8);

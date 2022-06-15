@@ -65,7 +65,8 @@ var babyuPage = {
   link: function() {
     return this.codeName + ".html";
   },
-  badgeInfo: "UX/UI"
+  ProjectType: "UX/UI", 
+  ProjectTypeColor: "rgba(78, 161, 165, 0.7)"
 };
 
 var playgroundPage = {
@@ -78,7 +79,8 @@ var playgroundPage = {
   link: function() {
     return this.codeName + ".html";
   },
-  badgeInfo: "UX/UI"
+  ProjectType: "UX/UI", 
+  ProjectTypeColor: "rgba(75, 98, 193, 0.7)"
 };
 
 var daddyZonePage = {
@@ -91,7 +93,8 @@ var daddyZonePage = {
   link: function() {
     return this.codeName + ".html"
   },
-  badgeInfo: "UX/UI"
+  ProjectType: "UX/UI · DESIGN FOR FUTURE", 
+  ProjectTypeColor: "rgba(73, 117, 233, 0.7)"
 };
 
 var roommatePage = {
@@ -104,7 +107,8 @@ var roommatePage = {
   link: function() {
     return this.codeName + ".html"
   },
-  badgeInfo: "UX/UI"
+  ProjectType: "UX/UI", 
+  ProjectTypeColor: "rgba(99, 82, 151, 0.7)"
 };
 
 var dysonBotPage = {
@@ -117,7 +121,8 @@ var dysonBotPage = {
   link: function() {
     return this.codeName + ".html"
   },
-  badgeInfo: "UX/UI & AI"
+  ProjectType: "UX/UI · AI ETHICS", 
+  ProjectTypeColor: "rgba(181, 68, 138, 0.7)"
 };
 
 var oddsAndEndsPage = {
@@ -130,7 +135,8 @@ var oddsAndEndsPage = {
   link: function() {
     return this.codeName + ".html"
   },
-  badgeInfo: "AR"
+  ProjectType: "AR · STORYTELLING", 
+  ProjectTypeColor: "rgba(121, 156, 117, 0.7)"
 };
 
 
@@ -144,7 +150,8 @@ var benchPressPage = {
   link: function() {
     return this.codeName + ".html"
   },
-  badgeInfo: "HCI"
+  ProjectType: "HCI REDESIGN", 
+  ProjectTypeColor: "rgba(225, 159, 88, 0.7)"
 };
 
 var goToTheEarthPage = {
@@ -157,7 +164,8 @@ var goToTheEarthPage = {
   link: function() {
     return this.codeName + ".html"
   },
-  badgeInfo: "Game"
+  ProjectType: "GAME DESIGN", 
+  ProjectTypeColor: "rgba(88, 181, 227, 0.7)"
 };
 
 
@@ -171,7 +179,8 @@ var uniformPage = {
   link: function() {
     return this.codeName + ".html"
   },
-  badgeInfo: "Development"
+  ProjectType: "DEVELOPMENT", 
+  ProjectTypeColor: "rgba(221, 165, 23, 0.7)"
 };
 
 var allProjects = [dysonBotPage, babyuPage, playgroundPage, daddyZonePage, roommatePage, oddsAndEndsPage, goToTheEarthPage, benchPressPage, uniformPage];
@@ -196,16 +205,18 @@ function getRandomProjects() {
         `<div class="swiper-slide more-projects animate__animated animate__fadeIn animate__slow">
           <a href="`+selected[i].link()+`" class="more-projects-link">
             <div class="row">
-              <div class="col-12 mb-3 mb-sm-4 projects-img">
-              <span class="badge badge-pill projects-badge">`+selected[i].badgeInfo+`</span>
+              <div class="col-12 mb-1 mb-sm-3 projects-img">
                 <img src="`+selected[i].imageAddress()+`" class="img-fluid position-relative radius-10" alt="project image">
               </div>
               <div class="col-12">
-                <h5 class="d-inline-block">`+selected[i].name+`</h5>
+                <div class="d-inline-block">
+                    <span class="small" style="color: `+selected[i].ProjectTypeColor+`">`+selected[i].ProjectType+`</span><br>
+                    <h5 class="mt-0 mb-md-1 d-inline-block">`+selected[i].name+`</h5>
+                  </div>
                 <img src="../images/more-projects/btn-round-arrow.svg"
                     alt="" class="pull-right d-inline-block more-projects-icon">
               </div>
-              <div class="col-10">
+              <div class="col-12 col-sm-11">
                 <p>`+selected[i].description+`</p>
               </div>
             </div>
