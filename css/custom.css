@@ -632,27 +632,6 @@ mark {
   -webkit-text-decoration-color: var(--peach-color);
   text-decoration-color: var(--peach-color);
 }
-/* ===== Scrollbar CSS ===== */
-  /* Firefox */
-  * {
-    scrollbar-width: auto;
-    scrollbar-color: var(--main-color) var(--light-white-color);
-  }
-
-  /* Chrome, Edge, and Safari */
-  *::-webkit-scrollbar {
-    width: 8px;
-  }
-
-  *::-webkit-scrollbar-track {
-    background: var(--light-white-color);
-  }
-
-  *::-webkit-scrollbar-thumb {
-    background-color: var(--main-color);
-    border-radius: 0px;
-    border: 3px none var(--light-white-color);
-  }
 
   .container {
     max-width: 1000px;

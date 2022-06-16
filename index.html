@@ -27,7 +27,7 @@
         <a class="navbar-brand font-weight-bold" href="index.html"><img src="images/mylogo.svg"
             class="mylogo mr-4"><span class="my-name">Kaylee Gao.</span></a>
       </div>
-      <div class="nav-but-wrap float-right right-out">
+      <div class="nav-but-wrap float-right right-out-sm">
         <div class="menu-icon hover-target">
           <span class="menu-icon__line menu-icon__line-left"></span>
           <span class="menu-icon__line"></span>
@@ -431,7 +431,6 @@
     * Copyright (c) 2022
     */
     var counting = setInterval(function () {
-      $("body").addClass("vh-100");
       var currval = parseInt(loader.value);
       loader.set(++currval);
       if (currval > 89) {
@@ -451,7 +450,6 @@
             sleep(500).then(() => {
               //sleep for 0.5 seconds
               $("#preloader").addClass("animate__animated animate__slideOutDown");
-              $("body").removeClass("vh-100");
               //landing page animation
               var headline = document.querySelector("#headline");
               spanText(headline);
