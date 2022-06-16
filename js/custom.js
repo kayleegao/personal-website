@@ -113,7 +113,7 @@ var prevScrollpos = window.pageYOffset;
 $(window).scroll(function () {
   //hide nav on scroll
   var currentScrollPos = window.pageYOffset;
-  if (prevScrollpos > currentScrollPos) {
+  if ((prevScrollpos > currentScrollPos) || ($(window).scrollTop() < 100)) {
     $(".cd-header").not("#index-header").css("top", "0");
   } 
   else {
