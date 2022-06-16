@@ -19,7 +19,7 @@
 
 <body style="background-color: #eeeeee;">
   <div id="preloader">
-    <div class="ldBar" data-type="fill" data-img="./images/mylogo.svg" data-img-size="120,120"></div>
+    <div class="ldBar" data-type="fill" data-img="./images/mylogo.svg" data-img-size="120,120" data-fill-background="#444"></div>
   </div>
   <header class="cd-header bg-transparent px-xl-5">
     <div class="header-wrapper">
@@ -423,13 +423,15 @@
     var loader = new ldBar(".ldBar", {
       "value": 0
     });
+    let intro = document.getElementById("home-intro").innerHTML;
 
     /*!
- * Percent-Preloader JS - v1
- * @author JDM Digital - https://jdmdigital.co
- * Copyright (c) 2022
- */
+    * Percent-Preloader JS - v1
+    * @author JDM Digital - https://jdmdigital.co
+    * Copyright (c) 2022
+    */
     var counting = setInterval(function () {
+      $("body").addClass("vh-100");
       var currval = parseInt(loader.value);
       loader.set(++currval);
       if (currval > 89) {
@@ -448,8 +450,8 @@
             loader.set(100);
             sleep(500).then(() => {
               //sleep for 0.5 seconds
-              $("#preloader").addClass("animate__animated animate__fadeOutDown");
-              
+              $("#preloader").addClass("animate__animated animate__slideOutDown");
+              $("body").removeClass("vh-100");
               //landing page animation
               var headline = document.querySelector("#headline");
               spanText(headline);
@@ -481,7 +483,7 @@
                   .typeString('Interaction Design')
                   .pauseFor(2000)
                   .deleteAll()
-                  .typeString('HCI')
+                  .typeString('Emerging Tech')
                   .pauseFor(2000)
                   .deleteAll()
                   .start();
@@ -512,7 +514,6 @@
     }
 
     $(window).resize(function () {
-      var intro = "👋🏻 Hi, I'm Yifei Gao (Kaylee), a Shanghai-based multi-disciplinary UX designer with a background in computer science and communication. I elevate products through human-centric design.";
       document.getElementById("home-intro").innerHTML = intro;
     });
 
