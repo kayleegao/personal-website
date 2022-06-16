@@ -53,11 +53,7 @@
           <div id="headline" class="ramp-up-anim">I'm passionate about</div>
           <div id="typing" class="my-color"></div>
         </div>
-        <div class="paragraph mb-4" id="home-intro">
-          👋🏻 Hi, I'm Yifei Gao (Kaylee), a Shanghai-based multi-disciplinary UX designer with a background in computer
-          science
-          and communication. I elevate products through human-centric design.
-        </div>
+        <div class="paragraph mb-4" id="home-intro">👋🏻 Hi, I'm Yifei Gao (Kaylee), a Shanghai-based multi-disciplinary UX designer with a background in computer science and communication. I elevate products through human-centric design.</div>
         <div class="col-12 pl-0 pr-0" id="about-me-btn">
           <button class="btn my-btn" onclick="location.href='./about.html'" style="background-color: #eee;">More About
             Me<img src="./images/ic_arrow.svg" alt="" class="ic-arrow"></button>
@@ -507,6 +503,7 @@
       var placeholder = "";
       var renderedNewLine = getLineBreaks(document.querySelector('#home-intro').childNodes[0]);
       for (i = 0; i < renderedNewLine.length; i++) {
+        console.log(renderedNewLine[i]);
         placeholder = placeholder.concat(`<div class="intro-line ramp-up-anim">` + renderedNewLine[i] + `</div>`);
       }
       return placeholder;
