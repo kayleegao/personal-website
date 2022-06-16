@@ -109,13 +109,26 @@ function spanVocab(text) {
 
 
 var btn = $('.to-top');
+var prevScrollpos = window.pageYOffset;
 $(window).scroll(function () {
+  //hide nav on scroll
+  var currentScrollPos = window.pageYOffset;
+  if (prevScrollpos > currentScrollPos) {
+    $(".cd-header").not("#index-header").css("top", "0");
+  } 
+  else {
+    $(".cd-header").not("#index-header").css("top", "-100px");
+  }
+  prevScrollpos = currentScrollPos;
+
+  //show or hide to-top button
   if ($(window).scrollTop() > 300) {
     btn.addClass('show');
   } else {
     btn.removeClass('show');
   }
 });
+
 
 function toHome() {
   window.location.href = "../index.html#work";
