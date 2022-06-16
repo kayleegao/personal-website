@@ -431,15 +431,16 @@
     * Copyright (c) 2022
     */
     var counting = setInterval(function () {
-      var currval = parseInt(loader.value);
-      loader.set(++currval);
-      if (currval > 89) {
+      loader.set(++loader.value);
+      if (loader.value > 89) {
         //loader.innerHTML = 90;
         loader.set(90);
         console.log(loader.value);
         if (window.jQuery) {
           //console.log('jquery loaded');
-          loader.set(95);
+          if (loader.value < 95) {
+            loader.set(95);
+          }
           if (document.readyState == "interactive") {
             loader.set(99);
           }
