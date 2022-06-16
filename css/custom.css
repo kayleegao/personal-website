@@ -66,6 +66,10 @@ hr.wavy-line {
    border: 0;
 }
 
+.animation-delay-half {
+  animation-delay: 0.5s;
+}
+
 .flex {
   display: flex;
 }
@@ -709,6 +713,28 @@ background: linear-gradient(0deg, rgba(244, 186, 185, 0.35) 0%, rgba(244, 186, 1
     font-size: 3em;
     font-weight: 700;
     position: relative;
+}
+
+#preloader {
+  text-align: center;
+  width: 100%;
+  height: 100vh;
+  background-color: #eee;
+  position: fixed;
+  z-index: 2000;
+  animation-fill-mode: forwards;
+}
+
+.ldBar {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.ldBar-label {
+  font-size: 20px;
+  margin-top: 15px;
 }
 
 .ramp-up-anim {

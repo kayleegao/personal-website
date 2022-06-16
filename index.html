@@ -18,32 +18,34 @@
 </head>
 
 <body style="background-color: #eeeeee;">
-  <header class="cd-header bg-transparent px-xl-5 animate__animated animate__fadeInDown">
-		<div class="header-wrapper">
-			<div class="logo-wrap left-out">
-				<a class="navbar-brand font-weight-bold" href="index.html"><img src="images/mylogo.svg" class="mylogo mr-4"><span
-          class="my-name">Kaylee Gao.</span></a>
-			</div>
-			<div class="nav-but-wrap float-right right-out">
-				<div class="menu-icon hover-target">
-					<span class="menu-icon__line menu-icon__line-left"></span>
-					<span class="menu-icon__line"></span>
-					<span class="menu-icon__line menu-icon__line-right"></span>
-				</div>					
-			</div>					
-		</div>				
-	</header>
+  <div id="preloader">
+    <div class="ldBar" data-type="fill" data-img="./images/mylogo.svg" data-img-size="120,120"></div>
+  </div>
+  <header class="cd-header bg-transparent px-xl-5">
+    <div class="header-wrapper">
+      <div class="logo-wrap left-out">
+        <a class="navbar-brand font-weight-bold" href="index.html"><img src="images/mylogo.svg"
+            class="mylogo mr-4"><span class="my-name">Kaylee Gao.</span></a>
+      </div>
+      <div class="nav-but-wrap float-right right-out">
+        <div class="menu-icon hover-target">
+          <span class="menu-icon__line menu-icon__line-left"></span>
+          <span class="menu-icon__line"></span>
+          <span class="menu-icon__line menu-icon__line-right"></span>
+        </div>
+      </div>
+    </div>
+  </header>
 
-	<div id="my-nav">
-		<div class="nav__content">
-			<ul class="nav__list">
-				<li class="nav__list-item"><a href="#work" class="hover-target hvr-shrink">Work</a></li>
-				<li class="nav__list-item"><a href="about.html" class="hover-target hvr-shrink">About</a></li>
-				<li class="nav__list-item"><a href="#contact-area" class="hover-target hvr-shrink">Contact</a></li>
-			</ul>
-		</div>
-	</div>
-
+  <div id="my-nav">
+    <div class="nav__content">
+      <ul class="nav__list">
+        <li class="nav__list-item"><a href="#work" class="hover-target hvr-shrink">Work</a></li>
+        <li class="nav__list-item"><a href="about.html" class="hover-target hvr-shrink">About</a></li>
+        <li class="nav__list-item"><a href="#contact-area" class="hover-target hvr-shrink">Contact</a></li>
+      </ul>
+    </div>
+  </div>
   <div class="container position-fixed" style="left: 50%; transform: translateX(-50%);">
     <div class="row">
       <div class="col-12 col-sm-11 col-md-7 left-out-lg" id="welcome">
@@ -52,18 +54,18 @@
           <div id="typing" class="my-color"></div>
         </div>
         <div class="paragraph mb-4" id="home-intro">
-          👋🏻 Hi, I'm Yifei Gao (Kaylee), a Shanghai-based multi-disciplinary UX designer with a background in computer science
+          👋🏻 Hi, I'm Yifei Gao (Kaylee), a Shanghai-based multi-disciplinary UX designer with a background in computer
+          science
           and communication. I elevate products through human-centric design.
         </div>
-        <div class="col-12 pl-0 pr-0 animate__animated animate__fadeInUp animate__delay-2s">
-          <button class="btn my-btn" onclick="location.href='./about.html'" style="background-color: #eee;">More About Me<img src="./images/ic_arrow.svg" alt="" class="ic-arrow"></button>
+        <div class="col-12 pl-0 pr-0" id="about-me-btn">
+          <button class="btn my-btn" onclick="location.href='./about.html'" style="background-color: #eee;">More About
+            Me<img src="./images/ic_arrow.svg" alt="" class="ic-arrow"></button>
         </div>
       </div>
       <div class="col-12 offset-sm-4 col-sm-8 offset-md-0 col-md-5" id="home-images">
-        <img src="./images/pink-blob.svg" id="pink-blob"
-        class="position-absolute right-out">
-        <img src="./images/yellow-blob.svg" id="yellow-blob"
-          class="position-absolute left-out">
+        <img src="./images/pink-blob.svg" id="pink-blob" class="position-absolute right-out">
+        <img src="./images/yellow-blob.svg" id="yellow-blob" class="position-absolute left-out">
         <div class="right-out-sm">
           <img src="./images/portrait-illustration.png" id="home-illustration" alt="portrait illustration"
             class="position-absolute">
@@ -73,9 +75,10 @@
   </div>
 
   <div id="work">
-    <img src="./images/dark-wave.svg" id="dark-wave" class="position-absolute w-100"> 
+    <img src="./images/dark-wave.svg" id="dark-wave" class="position-absolute w-100">
     <img src="./images/yellow-wave.svg" id="yellow-wave" class="position-absolute w-100">
-    <img src="./images/light-wave.svg" class="position-absolute w-100" style="transform: translateY(-20%); width: 100%;">
+    <img src="./images/light-wave.svg" class="position-absolute w-100"
+      style="transform: translateY(-20%); width: 100%;">
     <div class="container" style="padding-bottom: 100px;">
       <div class="row">
         <div class="col-12" data-aos="fade-right" data-aos-duration="1000">
@@ -87,14 +90,17 @@
             <a href="./work/dyson-bot.html" class="index-projects">
               <div class="row">
                 <div class="col-12 mb-3 projects-img">
-                  <img src="./images/more-projects/dyson-bot-card.png" class="img-fluid radius-10 inertia" alt="project image">
+                  <img src="./images/more-projects/dyson-bot-card.png" class="img-fluid radius-10 inertia"
+                    alt="project image">
                 </div>
                 <div class="col-12">
                   <div class="d-inline-block">
-                    <span class="small font-weight-bold" style="color: rgba(181, 68, 138, 0.7)">UX/UI · AI ETHICS</span><br>
+                    <span class="small font-weight-bold" style="color: rgba(181, 68, 138, 0.7)">UX/UI · AI
+                      ETHICS</span><br>
                     <h4 class="mt-1 d-inline-block">Dyson Bot x IBM</h4>
                   </div>
-                  <img src="./images/more-projects/btn-round-arrow.svg" alt="" class="pull-right d-inline-block projects-icon">
+                  <img src="./images/more-projects/btn-round-arrow.svg" alt=""
+                    class="pull-right d-inline-block projects-icon">
                 </div>
                 <div class="col-11">
                   <p>A trustworthy and ethical conversational AI Chatbot for Dyson</p>
@@ -116,7 +122,8 @@
                     <span class="small font-weight-bold" style="color: rgba(78, 161, 165, 0.7)">UX/UI</span><br>
                     <h4 class="mt-1 d-inline-block">BabyU</h4>
                   </div>
-                  <img src="./images/more-projects/btn-round-arrow.svg" alt="" class="pull-right d-inline-block projects-icon">
+                  <img src="./images/more-projects/btn-round-arrow.svg" alt=""
+                    class="pull-right d-inline-block projects-icon">
                 </div>
                 <div class="col-11">
                   <p>A platform to help first-time parents learn about parenting and track their child's development</p>
@@ -131,14 +138,16 @@
             <a href="./work/playground.html" class="index-projects">
               <div class="row">
                 <div class="col-12 mb-3 projects-img">
-                  <img src="./images/more-projects/playground-card.png" class="img-fluid radius-10 inertia" alt="project image">
+                  <img src="./images/more-projects/playground-card.png" class="img-fluid radius-10 inertia"
+                    alt="project image">
                 </div>
                 <div class="col-12">
                   <div class="d-inline-block">
                     <span class="small font-weight-bold" style="color: rgba(75, 98, 193, 0.7)">UX/UI</span><br>
                     <h4 class="mt-1 d-inline-block">Playground</h4>
                   </div>
-                  <img src="./images/more-projects/btn-round-arrow.svg" alt="" class="pull-right d-inline-block projects-icon">
+                  <img src="./images/more-projects/btn-round-arrow.svg" alt=""
+                    class="pull-right d-inline-block projects-icon">
                 </div>
                 <div class="col-11">
                   <p>A social app that helps children make friends and socialize</p>
@@ -153,14 +162,17 @@
             <a href="./work/daddy-zone.html" class="index-projects">
               <div class="row">
                 <div class="col-12 mb-3 projects-img">
-                  <img src="./images/more-projects/daddy-zone-card.png" class="img-fluid radius-10 inertia" alt="project image">
+                  <img src="./images/more-projects/daddy-zone-card.png" class="img-fluid radius-10 inertia"
+                    alt="project image">
                 </div>
                 <div class="col-12">
                   <div class="d-inline-block">
-                    <span class="small font-weight-bold" style="color: rgba(73, 117, 233, 0.7)">UX/UI · DESIGN FOR FUTURE</span><br>
+                    <span class="small font-weight-bold" style="color: rgba(73, 117, 233, 0.7)">UX/UI · DESIGN FOR
+                      FUTURE</span><br>
                     <h4 class="mt-1 d-inline-block">Daddy Zone</h4>
                   </div>
-                  <img src="./images/more-projects/btn-round-arrow.svg" alt="" class="pull-right d-inline-block projects-icon">
+                  <img src="./images/more-projects/btn-round-arrow.svg" alt=""
+                    class="pull-right d-inline-block projects-icon">
                 </div>
                 <div class="col-11">
                   <p>A solution for fathers with parenting responsibilities</p>
@@ -175,14 +187,16 @@
             <a href="./work/best-roommate.html" class="index-projects">
               <div class="row">
                 <div class="col-12 mb-3 projects-img">
-                  <img src="./images/more-projects/best-roommate-card.png" class="img-fluid radius-10 inertia" alt="project image">
+                  <img src="./images/more-projects/best-roommate-card.png" class="img-fluid radius-10 inertia"
+                    alt="project image">
                 </div>
                 <div class="col-12">
                   <div class="d-inline-block">
                     <span class="small font-weight-bold" style="color: rgba(99, 82, 151, 0.7)">UX/UI</span><br>
                     <h4 class="mt-1 d-inline-block">Best Roommate</h4>
                   </div>
-                  <img src="./images/more-projects/btn-round-arrow.svg" alt="" class="pull-right d-inline-block projects-icon">
+                  <img src="./images/more-projects/btn-round-arrow.svg" alt=""
+                    class="pull-right d-inline-block projects-icon">
                 </div>
                 <div class="col-11">
                   <p>An app that helps young people find ideal apartments and roommates</p>
@@ -202,14 +216,17 @@
             <a href="./work/odds-and-ends.html" class="index-projects">
               <div class="row">
                 <div class="col-12 mb-3 projects-img">
-                  <img src="./images/more-projects/odds-and-ends-card.png" class="img-fluid radius-10 inertia" alt="project image">
+                  <img src="./images/more-projects/odds-and-ends-card.png" class="img-fluid radius-10 inertia"
+                    alt="project image">
                 </div>
                 <div class="col-12">
                   <div class="d-inline-block">
-                    <span class="small font-weight-bold" style="color: rgba(121, 156, 117, 0.7)">AR · STORYTELLING</span><br>
+                    <span class="small font-weight-bold" style="color: rgba(121, 156, 117, 0.7)">AR ·
+                      STORYTELLING</span><br>
                     <h4 class="mt-1 d-inline-block">Odds and Ends</h4>
                   </div>
-                  <img src="./images/more-projects/btn-round-arrow.svg" alt="" class="pull-right d-inline-block projects-icon">
+                  <img src="./images/more-projects/btn-round-arrow.svg" alt=""
+                    class="pull-right d-inline-block projects-icon">
                 </div>
                 <div class="col-11">
                   <p>An AR experience that brings Emily Carr's artwork Odds and Ends to life</p>
@@ -224,14 +241,16 @@
             <a href="./work/go-to-the-earth.html" class="index-projects">
               <div class="row">
                 <div class="col-12 mb-3 projects-img">
-                  <img src="./images/more-projects/go-to-the-earth-card.png" class="img-fluid radius-10 inertia" alt="project image">
+                  <img src="./images/more-projects/go-to-the-earth-card.png" class="img-fluid radius-10 inertia"
+                    alt="project image">
                 </div>
                 <div class="col-12">
                   <div class="d-inline-block">
                     <span class="small font-weight-bold" style="color: rgba(88, 181, 227, 0.7)">GAME DESIGN</span><br>
                     <h4 class="mt-1 d-inline-block">Go to the Earth</h4>
                   </div>
-                  <img src="./images/more-projects/btn-round-arrow.svg" alt="" class="pull-right d-inline-block projects-icon">
+                  <img src="./images/more-projects/btn-round-arrow.svg" alt=""
+                    class="pull-right d-inline-block projects-icon">
                 </div>
                 <div class="col-11">
                   <p>An educational roll-and-move board game to teach about the solar system</p>
@@ -246,14 +265,16 @@
             <a href="./work/bench-press-upgrade.html" class="index-projects">
               <div class="row">
                 <div class="col-12 mb-3 projects-img">
-                  <img src="./images/more-projects/bench-press-upgrade-card.jpg" class="img-fluid radius-10 inertia" alt="project image">
+                  <img src="./images/more-projects/bench-press-upgrade-card.jpg" class="img-fluid radius-10 inertia"
+                    alt="project image">
                 </div>
                 <div class="col-12">
                   <div class="d-inline-block">
                     <span class="small font-weight-bold" style="color: rgba(225, 159, 88, 0.7)">HCI REDESIGN</span><br>
                     <h4 class="mt-1 d-inline-block">Bench Press Upgrade</h4>
                   </div>
-                  <img src="./images/more-projects/btn-round-arrow.svg" alt="" class="pull-right d-inline-block projects-icon">
+                  <img src="./images/more-projects/btn-round-arrow.svg" alt=""
+                    class="pull-right d-inline-block projects-icon">
                 </div>
                 <div class="col-11">
                   <p>A bench press with no safety issues</p>
@@ -268,14 +289,17 @@
             <a href="./work/suxd-uniform.html" class="index-projects">
               <div class="row">
                 <div class="col-12 mb-3 projects-img">
-                  <img src="./images/more-projects/suxd-uniform-card.png" class="img-fluid radius-10 inertia" alt="project image">
+                  <img src="./images/more-projects/suxd-uniform-card.png" class="img-fluid radius-10 inertia"
+                    alt="project image">
                 </div>
                 <div class="col-12">
                   <div class="d-inline-block">
-                    <span class="small font-weight-bold" style="color: rgba(221, 165, 23, 0.7)">DEVELOPMENT · INTERACTION DESIGN</span><br>
+                    <span class="small font-weight-bold" style="color: rgba(221, 165, 23, 0.7)">DEVELOPMENT ·
+                      INTERACTION DESIGN</span><br>
                     <h4 class="mt-1 d-inline-block">SUXD Uniform</h4>
                   </div>
-                  <img src="./images/more-projects/btn-round-arrow.svg" alt="" class="pull-right d-inline-block projects-icon">
+                  <img src="./images/more-projects/btn-round-arrow.svg" alt=""
+                    class="pull-right d-inline-block projects-icon">
                 </div>
                 <div class="col-11">
                   <p>A promotional page for SUXD department uniform developed for mobile terminal</p>
@@ -363,8 +387,8 @@
                       </div>
                       <div class="form-group">
                         <button type="submit" class="btn my-dark-btn w-100"
-                          style="font-size: 1em; margin-top: 10px;">Send Message<i
-                            class="fa fa-paper-plane ml-2" aria-hidden="true"></i></button>
+                          style="font-size: 1em; margin-top: 10px;">Send Message<i class="fa fa-paper-plane ml-2"
+                            aria-hidden="true"></i></button>
                       </div>
                     </div>
                   </div>
@@ -388,135 +412,109 @@
   <script src="js/smoothscroll.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/lax.js"></script>
   <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+  <link rel="stylesheet" type="text/css" href="./css/loading-bar.min.css" />
+  <script type="text/javascript" src="./js/loading-bar.min.js"></script>
 
   <!-- Include all compiled plugins (below), or include individual files as needed -->
   <script src="js/popper.min.js"></script>
   <script src="js/bootstrap-4.3.1.js"></script>
   <script src="js/custom.js"></script>
   <script>
-    function getLineBreaks(node) {
-      // we only deal with TextNodes
-      if(!node || !node.parentNode || node.nodeType !== 3)
-        return [];
-      // our Range object form which we'll get the characters positions
-      const range = document.createRange();
-      // here we'll store all our lines
-      const lines = [];
-      // begin at the first char
-      range.setStart(node, 0);
-      // initial position
-      let prevBottom = range.getBoundingClientRect().bottom;
-      let str = node.textContent;
-      let current = 1; // we already got index 0
-      let lastFound = 0;
-      let bottom = 0;
-      // iterate over all characters
-      while(current <= str.length) {
-        // move our cursor
-        range.setStart(node, current);
-        if(current < str.length -1)
-        range.setEnd(node, current+1);
-        bottom = range.getBoundingClientRect().bottom;
-        if(bottom > prevBottom) { // line break
-          lines.push(
-            str.substr(lastFound , current - lastFound) // text content
-          );
-          prevBottom = bottom;
-          lastFound = current;
+    var loader = new ldBar(".ldBar", {
+      "value": 0
+    });
+
+    /*!
+ * Percent-Preloader JS - v1
+ * @author JDM Digital - https://jdmdigital.co
+ * Copyright (c) 2022
+ */
+    var counting = setInterval(function () {
+      var currval = parseInt(loader.value);
+      loader.set(++currval);
+      if (currval > 89) {
+        //loader.innerHTML = 90;
+        loader.set(90);
+        console.log(loader.value);
+        if (window.jQuery) {
+          //console.log('jquery loaded');
+          loader.set(95);
+          if (document.readyState == "interactive") {
+            loader.set(99);
+          }
+          if (document.readyState == "complete") {
+            //console.log('fully loaded!');
+            clearInterval(counting);
+            loader.set(100);
+            sleep(500).then(() => {
+              //sleep for 0.5 seconds
+              $("#preloader").addClass("animate__animated animate__fadeOutDown");
+              
+              //landing page animation
+              var headline = document.querySelector("#headline");
+              spanText(headline);
+              document.getElementById("home-intro").innerHTML = renderedLine();;
+              $('.intro-line').each(function (i, obj) {
+                spanVocab(obj);
+              });
+              $(".cd-header").addClass("animate__animated animate__fadeInDown animation-delay-half");
+              $("#about-me-btn").addClass("animate__animated animate__fadeInUp animate__delay-2s");
+              $("#pink-blob").addClass("animate__animated animate__zoomIn animation-delay-half");
+              $("#yellow-blob").addClass("animate__animated animate__zoomIn animate__delay-1s");
+              $("#home-illustration").addClass("animate__animated animate__fadeInRight animate__delay-2s");
+
+              //typewriter
+              var typing = document.getElementById('typing');
+
+              var typewriter = new Typewriter(typing, {
+                loop: true
+              });
+              
+              sleep(3000).then(() => {
+                //sleep for 3 seconds and start typing
+                typewriter.typeString('Design & Tech')
+                  .pauseFor(2000)
+                  .deleteAll()
+                  .typeString('UX Design')
+                  .pauseFor(2000)
+                  .deleteAll()
+                  .typeString('Interaction Design')
+                  .pauseFor(2000)
+                  .deleteAll()
+                  .typeString('HCI')
+                  .pauseFor(2000)
+                  .deleteAll()
+                  .start();
+              });
+            });
+
+            //project hover
+            $('.index-projects').on("mouseover", function () {
+              $(this).find('.projects-img').addClass('opacity-50');
+              $(this).find('h4').addClass('projects-title-hover');
+            })
+              .on("mouseout", function () {
+                $(this).find('.projects-img').removeClass('opacity-50');
+                $(this).find('h4').removeClass('projects-title-hover');
+              })
+          }
         }
-        current++;
       }
-      // push the last line
-      lines.push(str.substr(lastFound));
-
-      return lines;
-    }
-
-    console.log(getLineBreaks(document.querySelector('#home-intro').childNodes[0]));
-
-    var spanText = function spanText(text) {
-      var string = text.innerText;
-      var spaned = '';
-      var delayTime = 0.1;
-      for (var i = 0; i < string.length; i++) {
-        if(string.substring(i, i + 1) === ' ') {
-          spaned += string.substring(i, i + 1);
-        }
-        else {
-          spaned += '<span style="animation-delay: '+delayTime+'s">' + string.substring(i, i + 1) + '</span>';
-          delayTime += 0.05;
-        }
-      }
-      text.innerHTML = spaned;
-    }
-
-    var spanVocab = function spanVocab(text) {
-      var string = text.innerText;
-      var spaned = '';
-      var delayTime = 1;
-      const splitted = string.split(" ");
-      for (var i = 0; i < splitted.length; i++) {
-        spaned += '<span style="animation-delay: '+delayTime+'s">' + splitted[i] + '&nbsp</span>';
-        delayTime += 0.04;
-      }
-      text.innerHTML = spaned;
-    }
+    }, 20);
 
     function renderedLine() {
       var placeholder = "";
       var renderedNewLine = getLineBreaks(document.querySelector('#home-intro').childNodes[0]);
       for (i = 0; i < renderedNewLine.length; i++) {
-        placeholder = placeholder.concat(`<div class="intro-line ramp-up-anim">`+renderedNewLine[i]+`</div>`);
+        placeholder = placeholder.concat(`<div class="intro-line ramp-up-anim">` + renderedNewLine[i] + `</div>`);
       }
       return placeholder;
     }
 
-  $(document).ready(function () {
-    var intro = "👋🏻 Hi, I'm Yifei Gao (Kaylee), a Shanghai-based multi-disciplinary UX designer with a background in computer science and communication. I elevate products through human-centric design.";
-    var headline = document.querySelector("#headline");
-    spanText(headline);
-    document.getElementById("home-intro").innerHTML = renderedLine();;
-    $('.intro-line').each(function(i, obj) {
-      spanVocab(obj);
-    });
-    setTimeout(function() {
+    $(window).resize(function () {
+      var intro = "👋🏻 Hi, I'm Yifei Gao (Kaylee), a Shanghai-based multi-disciplinary UX designer with a background in computer science and communication. I elevate products through human-centric design.";
       document.getElementById("home-intro").innerHTML = intro;
-    }, 5000);
-    //typewriter
-    var typing = document.getElementById('typing');
-
-    var typewriter = new Typewriter(typing, {
-      loop: true
     });
-
-    $("#pink-blob").addClass("animate__animated animate__zoomIn");
-    $("#yellow-blob").addClass("animate__animated animate__zoomIn animate__delay-1s");
-    $("#home-illustration").addClass("animate__animated animate__fadeInRight animate__delay-2s");
-
-    typewriter.pauseFor(2000)
-      .typeString('Design & Tech')
-      .pauseFor(2000)
-      .deleteAll()
-      .typeString('UX Design')
-      .pauseFor(2000)
-      .deleteAll()
-      .typeString('Interaction Design')
-      .pauseFor(2000)
-      .deleteAll()
-      .typeString('HCI')
-      .pauseFor(2000)
-      .deleteAll()
-      .start();
-  });
-
-    $('.index-projects').on("mouseover", function() {
-    $(this).find('.projects-img').addClass('opacity-50');
-    $(this).find('h4').addClass('projects-title-hover');
-  })
-  .on("mouseout", function () {
-    $(this).find('.projects-img').removeClass('opacity-50');
-    $(this).find('h4').removeClass('projects-title-hover');
-  })
 
     window.onload = function () {
       lax.init()
@@ -599,7 +597,7 @@
             [0],
             [0],
             {
-              inertia: -1
+              inertia: -1.2
             }
           ],
           "box-shadow": [
