@@ -228,7 +228,7 @@ var benchPressPage = {
   name: "Bench Press Upgrade",
   description: "A bench press with no safety issues", 
   imageAddress: function() {
-    return "../images/more-projects/"+this.codeName+"-card.jpg";
+    return "../images/more-projects/"+this.codeName+"-card.png";
   },
   link: function() {
     return this.codeName + ".html"
