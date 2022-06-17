@@ -427,9 +427,6 @@
     var counting = setInterval(function () {
       loader.set(++loader.value);
       if (loader.value > 89) {
-        //loader.innerHTML = 90;
-        loader.set(90);
-        console.log(loader.value);
         if (window.jQuery) {
           //console.log('jquery loaded');
           if (loader.value < 95) {
@@ -501,7 +498,7 @@
       var placeholder = "";
       var renderedNewLine = getLineBreaks(document.querySelector('#home-intro').childNodes[0]);
       for (i = 0; i < renderedNewLine.length; i++) {
-        console.log(renderedNewLine[i]);
+        //console.log(renderedNewLine[i]);
         placeholder = placeholder.concat(`<div class="intro-line ramp-up-anim">` + renderedNewLine[i] + `</div>`);
       }
       return placeholder;
