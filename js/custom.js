@@ -3,7 +3,7 @@ $(document).ready(function() {
   $("#footer-placeholder").load("../footer.html");
 });
 
-function sleep (time) {
+function sleep(time) {
   return new Promise((resolve) => setTimeout(resolve, time));
 }
 

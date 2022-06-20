@@ -14,7 +14,7 @@
 }
 @font-face {
   font-family: 'Euclidcircularb';
-  src: url(../font/EuclidCircularB-Bold.otf) format('opentype');
+  src: url(../font/EuclidCircularB-SemiBold.otf) format('opentype');
   font-weight: 700;
   font-style: normal;
   font-display: swap;
@@ -72,6 +72,10 @@ hr.wavy-line {
 
 .flex {
   display: flex;
+}
+
+.font-weight-medium {
+  font-weight: 500;
 }
 
 .items-center {
@@ -600,9 +604,9 @@ mark {
   background-image: linear-gradient(#FFCC00 0%, #FFCC00 100%);
   background-repeat: no-repeat;
   background-size: 100% 0.3em;
-  background-position: 0 73%;
+  background-position: 0 74%;
   background-color: transparent;
-  font-weight: 500;
+  font-weight: 700;
 }
 
 .pink-mark {
@@ -813,10 +817,6 @@ background: linear-gradient(0deg, rgba(244, 186, 185, 0.35) 0%, rgba(244, 186, 1
 
 .intro-card p, .intro-card ul li, .span-title, .mySwiperCube ul li, .mySwiperCube p, .skill-name {
   font-size: 0.9em;
-}
-
-.font-weight-bold {
-  font-weight: 500 !important;
 }
 
 
