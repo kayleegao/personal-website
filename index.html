@@ -17,9 +17,10 @@
   <link rel="shortcut icon" type="image/x-icon" href="images/mylogo2.ico" />
 </head>
 
-<body style="background-color: #eeeeee;">
+<body>
   <div id="preloader">
-    <div class="ldBar" data-type="fill" data-img="./images/mylogo.svg" data-img-size="120,120" data-fill-background="#444"></div>
+    <div class="ldBar" data-type="fill" data-img="./images/mylogo.svg" data-img-size="120,120"
+      data-fill-background="#444"></div>
   </div>
   <header class="cd-header bg-transparent px-xl-5" id="index-header">
     <div class="header-wrapper">
@@ -46,262 +47,269 @@
       </ul>
     </div>
   </div>
-  <div class="container position-fixed" style="left: 50%; transform: translateX(-50%);">
-    <div class="row">
-      <div class="col-12 col-sm-11 col-md-7 left-out-lg" id="welcome">
-        <div class="mb-2" id="hello">
-          <div id="headline" class="ramp-up-anim">I'm passionate about</div>
-          <div id="typing" class="my-color"></div>
+  <div class="position-fixed vw-100" style="background-color: #eeeeee; left: 50%; transform: translateX(-50%);">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-sm-11 col-md-7 left-out-lg" id="welcome">
+          <div class="mb-2" id="hello">
+            <div id="headline" class="ramp-up-anim">I'm passionate about</div>
+            <div id="typing" class="my-color"></div>
+          </div>
+          <div class="paragraph mb-4" id="home-intro">👋🏻 Hi, I'm Yifei Gao (Kaylee), a Shanghai-based
+            multi-disciplinary UX designer with a background in computer science and communication. I elevate products
+            through human-centric design.</div>
+          <div class="col-12 pl-0 pr-0" id="about-me-btn">
+            <button class="btn my-btn" onclick="location.href='./about.html'" style="background-color: #eee;">More About
+              Me<img src="./images/ic_arrow.svg" alt="" class="ic-arrow"></button>
+          </div>
         </div>
-        <div class="paragraph mb-4" id="home-intro">👋🏻 Hi, I'm Yifei Gao (Kaylee), a Shanghai-based multi-disciplinary UX designer with a background in computer science and communication. I elevate products through human-centric design.</div>
-        <div class="col-12 pl-0 pr-0" id="about-me-btn">
-          <button class="btn my-btn" onclick="location.href='./about.html'" style="background-color: #eee;">More About
-            Me<img src="./images/ic_arrow.svg" alt="" class="ic-arrow"></button>
-        </div>
-      </div>
-      <div class="col-12 offset-sm-4 col-sm-8 offset-md-0 col-md-5" id="home-images">
-        <img src="./images/pink-blob.svg" id="pink-blob" class="position-absolute right-out">
-        <img src="./images/yellow-blob.svg" id="yellow-blob" class="position-absolute left-out">
-        <div class="right-out-sm">
-          <img src="./images/portrait-illustration.png" id="home-illustration" alt="portrait illustration"
-            class="position-absolute">
+        <div class="col-12 offset-sm-4 col-sm-8 offset-md-0 col-md-5" id="home-images">
+          <img src="./images/pink-blob.svg" id="pink-blob" class="position-absolute right-out">
+          <img src="./images/yellow-blob.svg" id="yellow-blob" class="position-absolute left-out">
+          <div class="right-out-sm">
+            <img src="./images/portrait-illustration.png" id="home-illustration" alt="portrait illustration"
+              class="position-absolute">
+          </div>
         </div>
       </div>
     </div>
   </div>
+  <div id="layer">
+    <div id="work">
+      <img src="./images/dark-wave.svg" id="dark-wave" class="position-absolute w-100">
+      <img src="./images/yellow-wave.svg" id="yellow-wave" class="position-absolute w-100">
+      <img src="./images/light-wave.svg" class="position-absolute w-100" style="transform: translateY(-20%);">
+      <div class="container" style="padding-bottom: 100px;">
+        <div class="row">
+          <div class="col-12" data-aos="fade-right" data-aos-duration="1000">
+            <h2 class="mb-4 custom-h">📱 UX/UI design.</h2>
+          </div>
 
-  <div id="work">
-    <img src="./images/dark-wave.svg" id="dark-wave" class="position-absolute w-100">
-    <img src="./images/yellow-wave.svg" id="yellow-wave" class="position-absolute w-100">
-    <img src="./images/light-wave.svg" class="position-absolute w-100"
-      style="transform: translateY(-20%); width: 100%;">
-    <div class="container" style="padding-bottom: 100px;">
-      <div class="row">
-        <div class="col-12" data-aos="fade-right" data-aos-duration="1000">
-          <h2 class="mb-4 custom-h">📱 UX/UI design.</h2>
-        </div>
-
-        <div class="col-12 col-md-6 mb-5" data-aos="fade-up" data-aos-duration="1000">
-          <div class="fade-out-up">
-            <a href="./work/dyson-bot.html" class="index-projects">
-              <div class="row">
-                <div class="col-12 mb-3 projects-img">
-                  <img src="./images/more-projects/dyson-bot-card.png" class="img-fluid radius-10 inertia"
-                    alt="project image">
-                </div>
-                <div class="col-12">
-                  <div class="d-inline-block">
-                    <span class="small font-weight-medium" style="color: rgba(181, 68, 138, 0.7)">UX/UI · AI
-                      ETHICS</span><br>
-                    <h4 class="mt-1 d-inline-block">Dyson Bot x IBM</h4>
+          <div class="col-12 col-md-6 mb-5" data-aos="fade-up" data-aos-duration="1000">
+            <div class="fade-out-up">
+              <a href="./work/dyson-bot.html" class="index-projects">
+                <div class="row">
+                  <div class="col-12 mb-3 projects-img">
+                    <img src="./images/more-projects/dyson-bot-card.png" class="img-fluid radius-10 inertia"
+                      alt="project image">
                   </div>
-                  <img src="./images/more-projects/btn-round-arrow.svg" alt=""
-                    class="pull-right d-inline-block projects-icon">
+                  <div class="col-12">
+                    <div class="d-inline-block">
+                      <span class="small font-weight-medium" style="color: rgba(181, 68, 138, 0.7)">UX/UI · AI
+                        ETHICS</span><br>
+                      <h4 class="mt-1 d-inline-block">Dyson Bot x IBM</h4>
+                    </div>
+                    <img src="./images/more-projects/btn-round-arrow.svg" alt=""
+                      class="pull-right d-inline-block projects-icon">
+                  </div>
+                  <div class="col-11">
+                    <p>A trustworthy and ethical conversational AI Chatbot for Dyson</p>
+                  </div>
                 </div>
-                <div class="col-11">
-                  <p>A trustworthy and ethical conversational AI Chatbot for Dyson</p>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6 mb-5" data-aos="fade-up" data-aos-duration="1000">
+            <div class="fade-out-up">
+              <a href="./work/baby-u.html" class="index-projects">
+                <div class="row">
+                  <div class="col-12 mb-3 projects-img">
+                    <img src="./images/baby-u/baby-u-card.png" class="img-fluid radius-10 inertia" alt="project image">
+                  </div>
+                  <div class="col-12">
+                    <div class="d-inline-block">
+                      <span class="small font-weight-medium" style="color: rgba(78, 161, 165, 0.7)">UX/UI</span><br>
+                      <h4 class="mt-1 d-inline-block">BabyU</h4>
+                    </div>
+                    <img src="./images/more-projects/btn-round-arrow.svg" alt=""
+                      class="pull-right d-inline-block projects-icon">
+                  </div>
+                  <div class="col-11">
+                    <p>A platform to help first-time parents learn about parenting and track their child's development
+                    </p>
+                  </div>
                 </div>
-              </div>
-            </a>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6 mb-5" data-aos="fade-up" data-aos-duration="1000">
+            <div class="fade-out-up">
+              <a href="./work/playground.html" class="index-projects">
+                <div class="row">
+                  <div class="col-12 mb-3 projects-img">
+                    <img src="./images/more-projects/playground-card.png" class="img-fluid radius-10 inertia"
+                      alt="project image">
+                  </div>
+                  <div class="col-12">
+                    <div class="d-inline-block">
+                      <span class="small font-weight-medium" style="color: rgba(75, 98, 193, 0.7)">UX/UI</span><br>
+                      <h4 class="mt-1 d-inline-block">Playground</h4>
+                    </div>
+                    <img src="./images/more-projects/btn-round-arrow.svg" alt=""
+                      class="pull-right d-inline-block projects-icon">
+                  </div>
+                  <div class="col-11">
+                    <p>A social app that helps children make friends and socialize</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6 mb-5" data-aos="fade-up" data-aos-duration="1000">
+            <div class="fade-out-up">
+              <a href="./work/daddy-zone.html" class="index-projects">
+                <div class="row">
+                  <div class="col-12 mb-3 projects-img">
+                    <img src="./images/more-projects/daddy-zone-card.png" class="img-fluid radius-10 inertia"
+                      alt="project image">
+                  </div>
+                  <div class="col-12">
+                    <div class="d-inline-block">
+                      <span class="small font-weight-medium" style="color: rgba(73, 117, 233, 0.7)">UX/UI · DESIGN FOR
+                        FUTURE</span><br>
+                      <h4 class="mt-1 d-inline-block">Daddy Zone</h4>
+                    </div>
+                    <img src="./images/more-projects/btn-round-arrow.svg" alt=""
+                      class="pull-right d-inline-block projects-icon">
+                  </div>
+                  <div class="col-11">
+                    <p>A solution for fathers with parenting responsibilities</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6 mb-5" data-aos="fade-up" data-aos-duration="1000">
+            <div class="fade-out-up">
+              <a href="./work/best-roommate.html" class="index-projects">
+                <div class="row">
+                  <div class="col-12 mb-3 projects-img">
+                    <img src="./images/more-projects/best-roommate-card.png" class="img-fluid radius-10 inertia"
+                      alt="project image">
+                  </div>
+                  <div class="col-12">
+                    <div class="d-inline-block">
+                      <span class="small font-weight-medium" style="color: rgba(99, 82, 151, 0.7)">UX/UI</span><br>
+                      <h4 class="mt-1 d-inline-block">Best Roommate</h4>
+                    </div>
+                    <img src="./images/more-projects/btn-round-arrow.svg" alt=""
+                      class="pull-right d-inline-block projects-icon">
+                  </div>
+                  <div class="col-11">
+                    <p>An app that helps young people find ideal apartments and roommates</p>
+                  </div>
+                </div>
+              </a>
+            </div>
           </div>
         </div>
 
-        <div class="col-12 col-md-6 mb-5" data-aos="fade-up" data-aos-duration="1000">
-          <div class="fade-out-up">
-            <a href="./work/baby-u.html" class="index-projects">
-              <div class="row">
-                <div class="col-12 mb-3 projects-img">
-                  <img src="./images/baby-u/baby-u-card.png" class="img-fluid radius-10 inertia" alt="project image">
-                </div>
-                <div class="col-12">
-                  <div class="d-inline-block">
-                    <span class="small font-weight-medium" style="color: rgba(78, 161, 165, 0.7)">UX/UI</span><br>
-                    <h4 class="mt-1 d-inline-block">BabyU</h4>
-                  </div>
-                  <img src="./images/more-projects/btn-round-arrow.svg" alt=""
-                    class="pull-right d-inline-block projects-icon">
-                </div>
-                <div class="col-11">
-                  <p>A platform to help first-time parents learn about parenting and track their child's development</p>
-                </div>
-              </div>
-            </a>
+        <div class="row mt-100">
+          <div class="col-12" data-aos="fade-right" data-aos-duration="1000">
+            <h2 class="mb-4 custom-h">🔎 Other work.</h2>
           </div>
-        </div>
-
-        <div class="col-12 col-md-6 mb-5" data-aos="fade-up" data-aos-duration="1000">
-          <div class="fade-out-up">
-            <a href="./work/playground.html" class="index-projects">
-              <div class="row">
-                <div class="col-12 mb-3 projects-img">
-                  <img src="./images/more-projects/playground-card.png" class="img-fluid radius-10 inertia"
-                    alt="project image">
-                </div>
-                <div class="col-12">
-                  <div class="d-inline-block">
-                    <span class="small font-weight-medium" style="color: rgba(75, 98, 193, 0.7)">UX/UI</span><br>
-                    <h4 class="mt-1 d-inline-block">Playground</h4>
+          <div class="col-12 col-md-6 mb-5" data-aos="fade-up" data-aos-duration="1000">
+            <div class="fade-out-up">
+              <a href="./work/odds-and-ends.html" class="index-projects">
+                <div class="row">
+                  <div class="col-12 mb-3 projects-img">
+                    <img src="./images/more-projects/odds-and-ends-card.png" class="img-fluid radius-10 inertia"
+                      alt="project image">
                   </div>
-                  <img src="./images/more-projects/btn-round-arrow.svg" alt=""
-                    class="pull-right d-inline-block projects-icon">
+                  <div class="col-12">
+                    <div class="d-inline-block">
+                      <span class="small font-weight-medium" style="color: rgba(121, 156, 117, 0.7)">AR ·
+                        STORYTELLING</span><br>
+                      <h4 class="mt-1 d-inline-block">Odds and Ends</h4>
+                    </div>
+                    <img src="./images/more-projects/btn-round-arrow.svg" alt=""
+                      class="pull-right d-inline-block projects-icon">
+                  </div>
+                  <div class="col-11">
+                    <p>An AR experience that brings Emily Carr's artwork Odds and Ends to life</p>
+                  </div>
                 </div>
-                <div class="col-11">
-                  <p>A social app that helps children make friends and socialize</p>
-                </div>
-              </div>
-            </a>
+              </a>
+            </div>
           </div>
-        </div>
 
-        <div class="col-12 col-md-6 mb-5" data-aos="fade-up" data-aos-duration="1000">
-          <div class="fade-out-up">
-            <a href="./work/daddy-zone.html" class="index-projects">
-              <div class="row">
-                <div class="col-12 mb-3 projects-img">
-                  <img src="./images/more-projects/daddy-zone-card.png" class="img-fluid radius-10 inertia"
-                    alt="project image">
-                </div>
-                <div class="col-12">
-                  <div class="d-inline-block">
-                    <span class="small font-weight-medium" style="color: rgba(73, 117, 233, 0.7)">UX/UI · DESIGN FOR
-                      FUTURE</span><br>
-                    <h4 class="mt-1 d-inline-block">Daddy Zone</h4>
+          <div class="col-12 col-md-6 mb-5" data-aos="fade-up" data-aos-duration="1000">
+            <div class="fade-out-up">
+              <a href="./work/go-to-the-earth.html" class="index-projects">
+                <div class="row">
+                  <div class="col-12 mb-3 projects-img">
+                    <img src="./images/more-projects/go-to-the-earth-card.png" class="img-fluid radius-10 inertia"
+                      alt="project image">
                   </div>
-                  <img src="./images/more-projects/btn-round-arrow.svg" alt=""
-                    class="pull-right d-inline-block projects-icon">
+                  <div class="col-12">
+                    <div class="d-inline-block">
+                      <span class="small font-weight-medium" style="color: rgba(88, 181, 227, 0.7)">GAME
+                        DESIGN</span><br>
+                      <h4 class="mt-1 d-inline-block">Go to the Earth</h4>
+                    </div>
+                    <img src="./images/more-projects/btn-round-arrow.svg" alt=""
+                      class="pull-right d-inline-block projects-icon">
+                  </div>
+                  <div class="col-11">
+                    <p>An educational roll-and-move board game to teach about the solar system</p>
+                  </div>
                 </div>
-                <div class="col-11">
-                  <p>A solution for fathers with parenting responsibilities</p>
-                </div>
-              </div>
-            </a>
+              </a>
+            </div>
           </div>
-        </div>
 
-        <div class="col-12 col-md-6 mb-5" data-aos="fade-up" data-aos-duration="1000">
-          <div class="fade-out-up">
-            <a href="./work/best-roommate.html" class="index-projects">
-              <div class="row">
-                <div class="col-12 mb-3 projects-img">
-                  <img src="./images/more-projects/best-roommate-card.png" class="img-fluid radius-10 inertia"
-                    alt="project image">
-                </div>
-                <div class="col-12">
-                  <div class="d-inline-block">
-                    <span class="small font-weight-medium" style="color: rgba(99, 82, 151, 0.7)">UX/UI</span><br>
-                    <h4 class="mt-1 d-inline-block">Best Roommate</h4>
+          <div class="col-12 col-md-6 mb-5" data-aos="fade-up" data-aos-duration="1000">
+            <div class="fade-out-up">
+              <a href="./work/bench-press-upgrade.html" class="index-projects">
+                <div class="row">
+                  <div class="col-12 mb-3 projects-img">
+                    <img src="./images/more-projects/bench-press-upgrade-card.png" class="img-fluid radius-10 inertia"
+                      alt="project image">
                   </div>
-                  <img src="./images/more-projects/btn-round-arrow.svg" alt=""
-                    class="pull-right d-inline-block projects-icon">
+                  <div class="col-12">
+                    <div class="d-inline-block">
+                      <span class="small font-weight-medium" style="color: rgba(225, 159, 88, 0.7)">HCI
+                        REDESIGN</span><br>
+                      <h4 class="mt-1 d-inline-block">Bench Press Upgrade</h4>
+                    </div>
+                    <img src="./images/more-projects/btn-round-arrow.svg" alt=""
+                      class="pull-right d-inline-block projects-icon">
+                  </div>
+                  <div class="col-11">
+                    <p>A bench press with no safety issues</p>
+                  </div>
                 </div>
-                <div class="col-11">
-                  <p>An app that helps young people find ideal apartments and roommates</p>
-                </div>
-              </div>
-            </a>
+              </a>
+            </div>
           </div>
-        </div>
-      </div>
 
-      <div class="row mt-100">
-        <div class="col-12" data-aos="fade-right" data-aos-duration="1000">
-          <h2 class="mb-4 custom-h">🔎 Other work.</h2>
-        </div>
-        <div class="col-12 col-md-6 mb-5" data-aos="fade-up" data-aos-duration="1000">
-          <div class="fade-out-up">
-            <a href="./work/odds-and-ends.html" class="index-projects">
-              <div class="row">
-                <div class="col-12 mb-3 projects-img">
-                  <img src="./images/more-projects/odds-and-ends-card.png" class="img-fluid radius-10 inertia"
-                    alt="project image">
-                </div>
-                <div class="col-12">
-                  <div class="d-inline-block">
-                    <span class="small font-weight-medium" style="color: rgba(121, 156, 117, 0.7)">AR ·
-                      STORYTELLING</span><br>
-                    <h4 class="mt-1 d-inline-block">Odds and Ends</h4>
+          <div class="col-12 col-md-6 mb-5" data-aos="fade-up" data-aos-duration="1000">
+            <div class="fade-out-up">
+              <a href="./work/suxd-uniform.html" class="index-projects">
+                <div class="row">
+                  <div class="col-12 mb-3 projects-img">
+                    <img src="./images/more-projects/suxd-uniform-card.png" class="img-fluid radius-10 inertia"
+                      alt="project image">
                   </div>
-                  <img src="./images/more-projects/btn-round-arrow.svg" alt=""
-                    class="pull-right d-inline-block projects-icon">
-                </div>
-                <div class="col-11">
-                  <p>An AR experience that brings Emily Carr's artwork Odds and Ends to life</p>
-                </div>
-              </div>
-            </a>
-          </div>
-        </div>
-
-        <div class="col-12 col-md-6 mb-5" data-aos="fade-up" data-aos-duration="1000">
-          <div class="fade-out-up">
-            <a href="./work/go-to-the-earth.html" class="index-projects">
-              <div class="row">
-                <div class="col-12 mb-3 projects-img">
-                  <img src="./images/more-projects/go-to-the-earth-card.png" class="img-fluid radius-10 inertia"
-                    alt="project image">
-                </div>
-                <div class="col-12">
-                  <div class="d-inline-block">
-                    <span class="small font-weight-medium" style="color: rgba(88, 181, 227, 0.7)">GAME DESIGN</span><br>
-                    <h4 class="mt-1 d-inline-block">Go to the Earth</h4>
+                  <div class="col-12">
+                    <div class="d-inline-block">
+                      <span class="small font-weight-medium" style="color: rgba(221, 165, 23, 0.7)">DEVELOPMENT ·
+                        INTERACTION DESIGN</span><br>
+                      <h4 class="mt-1 d-inline-block">SUXD Uniform</h4>
+                    </div>
+                    <img src="./images/more-projects/btn-round-arrow.svg" alt=""
+                      class="pull-right d-inline-block projects-icon">
                   </div>
-                  <img src="./images/more-projects/btn-round-arrow.svg" alt=""
-                    class="pull-right d-inline-block projects-icon">
-                </div>
-                <div class="col-11">
-                  <p>An educational roll-and-move board game to teach about the solar system</p>
-                </div>
-              </div>
-            </a>
-          </div>
-        </div>
-
-        <div class="col-12 col-md-6 mb-5" data-aos="fade-up" data-aos-duration="1000">
-          <div class="fade-out-up">
-            <a href="./work/bench-press-upgrade.html" class="index-projects">
-              <div class="row">
-                <div class="col-12 mb-3 projects-img">
-                  <img src="./images/more-projects/bench-press-upgrade-card.png" class="img-fluid radius-10 inertia"
-                    alt="project image">
-                </div>
-                <div class="col-12">
-                  <div class="d-inline-block">
-                    <span class="small font-weight-medium" style="color: rgba(225, 159, 88, 0.7)">HCI REDESIGN</span><br>
-                    <h4 class="mt-1 d-inline-block">Bench Press Upgrade</h4>
+                  <div class="col-11">
+                    <p>A promotional page for SUXD department uniform developed for mobile terminal</p>
                   </div>
-                  <img src="./images/more-projects/btn-round-arrow.svg" alt=""
-                    class="pull-right d-inline-block projects-icon">
                 </div>
-                <div class="col-11">
-                  <p>A bench press with no safety issues</p>
-                </div>
-              </div>
-            </a>
-          </div>
-        </div>
-
-        <div class="col-12 col-md-6 mb-5" data-aos="fade-up" data-aos-duration="1000">
-          <div class="fade-out-up">
-            <a href="./work/suxd-uniform.html" class="index-projects">
-              <div class="row">
-                <div class="col-12 mb-3 projects-img">
-                  <img src="./images/more-projects/suxd-uniform-card.png" class="img-fluid radius-10 inertia"
-                    alt="project image">
-                </div>
-                <div class="col-12">
-                  <div class="d-inline-block">
-                    <span class="small font-weight-medium" style="color: rgba(221, 165, 23, 0.7)">DEVELOPMENT ·
-                      INTERACTION DESIGN</span><br>
-                    <h4 class="mt-1 d-inline-block">SUXD Uniform</h4>
-                  </div>
-                  <img src="./images/more-projects/btn-round-arrow.svg" alt=""
-                    class="pull-right d-inline-block projects-icon">
-                </div>
-                <div class="col-11">
-                  <p>A promotional page for SUXD department uniform developed for mobile terminal</p>
-                </div>
-              </div>
-            </a>
+              </a>
+            </div>
           </div>
         </div>
       </div>
@@ -312,9 +320,9 @@
       <div class="container">
         <div class="row">
           <div class="col-12" data-aos="fade-right" data-aos-duration="1000">
-              <h3 class="mb-3" style="color: #c4c4c4;">💬 Shoot me a message</h3>
-              <p class="mb-4 paragraph-sm" style="color: #909090;">Hi there, want to connect with me? Or have a project
-                in mind? Feel free to drop me a message to talk about work, life, etc.</p>
+            <h3 class="mb-3" style="color: #c4c4c4;">💬 Shoot me a message</h3>
+            <p class="mb-4 paragraph-sm" style="color: #909090;">Hi there, want to connect with me? Or have a project
+              in mind? Feel free to drop me a message to talk about work, life, etc.</p>
           </div>
           <section class="chat" data-aos="fade-left" data-aos-duration="1000">
             <div class='top-bar'>
@@ -461,7 +469,7 @@
               var typewriter = new Typewriter(typing, {
                 loop: true
               });
-              
+
               sleep(3000).then(() => {
                 //sleep for 3 seconds and start typing
                 typewriter.typeString('Design & Tech')
