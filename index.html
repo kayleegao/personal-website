@@ -75,10 +75,10 @@
     </div>
   </div>
   <div id="layer">
-    <div id="work">
-      <img src="./images/dark-wave.svg" id="dark-wave" class="position-absolute w-100">
+    <img src="./images/dark-wave.svg" id="dark-wave" class="position-absolute w-100">
       <img src="./images/yellow-wave.svg" id="yellow-wave" class="position-absolute w-100">
-      <img src="./images/light-wave.svg" class="position-absolute w-100" style="transform: translateY(-20%);">
+      <img src="./images/light-wave.svg" id="light-wave" class="position-absolute w-100" style="transform: translateY(-20%);">
+    <div id="work">
       <div class="container" style="padding-bottom: 100px;">
         <div class="row">
           <div class="col-12" data-aos="fade-right" data-aos-duration="1000">
@@ -462,6 +462,10 @@
               $("#pink-blob").addClass("animate__animated animate__zoomIn animation-delay-half");
               $("#yellow-blob").addClass("animate__animated animate__zoomIn animate__delay-1s");
               $("#home-illustration").addClass("animate__animated animate__fadeInRight animate__delay-2s");
+              
+              //set wave position
+              var lightWaveHeight = $('#light-wave').height();
+              $('#layer').css('margin-top', 'calc(100vh + '+0.2*lightWaveHeight+'px)');
 
               //typewriter
               var typing = document.getElementById('typing');
