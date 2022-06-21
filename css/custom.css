@@ -1282,14 +1282,6 @@ td {
     background-size: 0 4px, 100% 4px !important;
   }
 
-  .opacity-50 {
-    opacity: 0.5;
-  }
-
-  .projects-img {
-    transition: .5s ease;
-  }
-
   .more-projects:hover {
     cursor: pointer;
   }
