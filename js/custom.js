@@ -1,6 +1,12 @@
 $(document).ready(function() {
   AOS.init();
   $("#footer-placeholder").load("../footer.html");
+  var scroll = new SmoothScroll('a[href*="#"]', {
+    easing: 'easeInOutCubic',
+    durationMax: 1000,
+    topOnEmptyHash: true,
+    header: '[data-scroll-header]' // Selector for fixed headers (must be a valid CSS selector)
+  });
 });
 
 function sleep(time) {
@@ -273,9 +279,9 @@ function toHome() {
   window.location.href = "../index.html#work";
 }
 
-function toTop() {
-  window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
-}
+//function toTop() {
+//  window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
+//}
 
 var babyuPage = {
   codeName: "baby-u", 
