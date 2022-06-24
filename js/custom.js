@@ -9,18 +9,20 @@ $(document).ready(function() {
   });
   var options = {
     "cursorOuter": "circle-basic",
-    "hoverEffect": "circle-move",
+    "hoverEffect": "pointer-blur",
     "hoverItemMove": false,
     "defaultCursor": false,
     "outerWidth": 30,
     "outerHeight": 30
         };
-      //magicMouse(options);
+      magicMouse(options);
 });
+
 
 function sleep(time) {
   return new Promise((resolve) => setTimeout(resolve, time));
 }
+
 
 /*
 jQuery Hover3d
