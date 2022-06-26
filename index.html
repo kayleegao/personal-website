@@ -15,6 +15,30 @@
   <link href="css/custom.css" rel="stylesheet">
   <link href="css/nav.css" rel="stylesheet">
   <link rel="shortcut icon" type="image/x-icon" href="images/mylogo2.ico" />
+  <style>
+    #preloader {
+      text-align: center;
+      width: 100%;
+      height: 100vh;
+      background-color: #333;
+      position: fixed;
+      z-index: 2000;
+      animation-fill-mode: forwards;
+    }
+
+    .ldBar {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    .ldBar-label {
+      font-size: 20px;
+      margin-top: 15px;
+      color: #c4c4c4;
+    }
+  </style>
 </head>
 
 <body>
@@ -55,7 +79,7 @@
             <div id="headline" class="ramp-up-anim">I'm passionate about</div>
             <div id="typing" class="my-color"></div>
           </div>
-          <div class="paragraph mb-4" id="home-intro">👋🏻 Hi, I'm Yifei Gao (Kaylee), a Shanghai-based
+          <div class="paragraph mb-4" id="home-intro">👋🏻 Hi, I'm Yifei (Kaylee) Gao, a Shanghai-based
             multi-disciplinary UX designer with a background in computer science and communication. I design for better human experiences.</div>
           <div class="col-12 pl-0 pr-0" id="about-me-btn">
             <button class="btn my-btn" onclick="location.href='./about.html'" style="background-color: #eee;">More About
@@ -411,7 +435,7 @@
                   netlify-honeypot="bot-field" data-netlify="true">
                   <div class="row">
                     <div class="col-12">
-                      <h6 class="mb-2">👋🏻 Hi Kaylee Gao,</h6>
+                      <h6 class="mb-2">👋🏻 Hi Kaylee,</h6>
                       <div class="form-group mb-4">
                         <textarea class="form-control" id="contact-message" name="contact-message" rows="8"
                           placeholder="Write your message here..." required></textarea>
@@ -638,7 +662,7 @@
             [0],
             [0],
             {
-              inertia: -1.2
+              inertia: -1
             }
           ],
           "box-shadow": [
