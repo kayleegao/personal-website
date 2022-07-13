@@ -1594,8 +1594,20 @@ blockquote.blockstyle:after {
   bottom: 2px;
   height: 1px;
   width: 100%;
-  background-color: #919191;
+  background-color: #c4c4c4;
   z-index: 0;
+}
+
+.home-title:before {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 60px;
+  height: 2px;
+  content: "";
+  left: 50%;
+  margin-left: -30px;
+  background-color: var(--main-color);
 }
 
 
@@ -1755,6 +1767,9 @@ blockquote.blockstyle:after {
     .project-title, .subtitle {
       font-size: 2.5em;
       margin-bottom: 50px;
+    }
+    .home-title h1 {
+      font-size: 2rem;
     }
 
     #random-projects {
