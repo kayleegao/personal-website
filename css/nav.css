@@ -105,21 +105,7 @@
 	z-index: 98;
 	opacity: 0;
 }
-#my-nav:before, #my-nav:after {
-	content: "";
-	position: fixed;
-	width: 100vw;
-	height: 100vh;
-	background: rgba(20, 21, 26,0.6);
-	border-bottom-left-radius: 200%;
-	z-index: -1;
-	-webkit-transition: -webkit-transform cubic-bezier(0.77, 0, 0.175, 1) 0.6s, border-radius linear 0.8s;
-	transition: -webkit-transform cubic-bezier(0.77, 0, 0.175, 1) 0.6s, border-radius linear 0.8s;
-	transition: transform cubic-bezier(0.77, 0, 0.175, 1) 0.6s, border-radius linear 0.8s;
-	transition: transform cubic-bezier(0.77, 0, 0.175, 1) 0.6s, -webkit-transform cubic-bezier(0.77, 0, 0.175, 1) 0.6s, border-radius linear 0.8s;
-	-webkit-transform: translateX(100%) translateY(-100%);
-          transform: translateX(100%) translateY(-100%);
-}
+
 #my-nav:after {
 	background: rgba(9,9,12,1);
 	-webkit-transition-delay: 0s;
