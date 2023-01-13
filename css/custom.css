@@ -28,7 +28,7 @@
   --text-color: #333;
   --peach-color: rgb(244, 186, 185);
   --swiper-theme-color: #ffc722;
-  --text-primary-grey: #555;
+  --text-primary-grey: #666;
   --light-white-color: #fafafa;
 }
 
@@ -61,10 +61,10 @@ body #magicPointer {
 hr {
   border: 0;
   height: 1px;
-  background-image: -webkit-linear-gradient(left, #f0f0f0, #c4c4c4, #f0f0f0);
-  background-image: -moz-linear-gradient(left, #f0f0f0, #c4c4c4, #f0f0f0);
-  background-image: -ms-linear-gradient(left, #f0f0f0, #c4c4c4, #f0f0f0);
-  background-image: -o-linear-gradient(left, #f0f0f0, #c4c4c4, #f0f0f0);
+  background-image: -webkit-linear-gradient(left, #f0f0f0, #ccc, #f0f0f0);
+  background-image: -moz-linear-gradient(left, #f0f0f0, #ccc, #f0f0f0);
+  background-image: -ms-linear-gradient(left, #f0f0f0, #ccc, #f0f0f0);
+  background-image: -o-linear-gradient(left, #f0f0f0, #ccc, #f0f0f0);
   margin-top: 80px;
   margin-bottom: 30px;
 }
@@ -126,7 +126,7 @@ h1, h2, h5 {
 
 .hyperlink:hover {
   box-shadow: inset 0 -1.4em 0 var(--peach-color);
-  color: #000;
+  color: #333;
   text-decoration: none;
 }
 
