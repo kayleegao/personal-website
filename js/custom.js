@@ -317,7 +317,7 @@ var babyuPage = {
   name: "BabyU",
   description: "A platform to help first-time parents learn about parenting and track their child's development", 
   imageAddress: function() {
-    return "../images/baby-u/"+this.codeName+"-card.png";
+    return "../images/more-projects/"+this.codeName+"-card.png";
   },
   link: function() {
     return this.codeName + ".html";
