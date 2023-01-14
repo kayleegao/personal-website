@@ -647,7 +647,7 @@ mark {
 }
 
   .container {
-    width: calc(100% - 10vw);
+    max-width: calc(100% - 10vw) !important;
     
   }
 
@@ -1700,12 +1700,6 @@ blockquote.blockstyle:after {
     .to-top.show {
       opacity: 0;
       visibility: hidden;
-    }
-  }
-  
-  @media only screen and (max-width: 1024px) {
-    .container {
-      max-width: 90vw;
     }
   }
 
