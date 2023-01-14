@@ -646,10 +646,9 @@ mark {
   text-decoration-color: var(--peach-color);
 }
 
-  .container {
-    max-width: calc(100% - 10vw) !important;
-    
-  }
+.container {
+  max-width: calc(100% - 20vw) !important;
+}
 
 
 footer {
@@ -663,7 +662,7 @@ background: linear-gradient(0deg, rgba(244, 186, 185, 0.35) 0%, rgba(244, 186, 1
 }
 
 #home-images {
-  margin-top: 27vh;
+  margin-top: 25vh;
   height: 380px;
   position: relative;
   z-index: -1;
@@ -1840,6 +1839,9 @@ blockquote.blockstyle:after {
     .card-content {
       padding: 2rem 1rem;
     }
+    .container {
+      max-width: calc(100% - 10vw) !important;
+    } 
   }
 
   @media only screen and (max-width: 350px) {
