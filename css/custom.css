@@ -647,7 +647,7 @@ mark {
 }
 
   .container {
-    max-width: 75vw;
+    width: calc(100% - 10vw);
     
   }
 
@@ -663,7 +663,7 @@ background: linear-gradient(0deg, rgba(244, 186, 185, 0.35) 0%, rgba(244, 186, 1
 }
 
 #home-images {
-  margin-top: 29vh;
+  margin-top: 27vh;
   height: 380px;
   position: relative;
   z-index: -1;
