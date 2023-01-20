@@ -646,8 +646,10 @@ mark {
   text-decoration-color: var(--peach-color);
 }
 
-.container {
-  max-width: calc(100% - 20vw) !important;
+@media (min-width: 1200px) {
+  .container {
+    max-width: calc(100% - 20vw) !important;
+  }
 }
 
 
