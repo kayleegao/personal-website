@@ -36,10 +36,10 @@ $(document).ready(function() {
       magicMouse(options);
 });
 
-
 function sleep(time) {
   return new Promise((resolve) => setTimeout(resolve, time));
 }
+
 
 
 /*
