@@ -475,7 +475,7 @@ function getRandomProjects() {
                     <h5 class="mt-0 mb-md-1 d-inline-block">`+selected[i].name+`</h5>
                   </div>
                 <img src="../images/more-projects/btn-round-arrow.svg"
-                    alt="" class="pull-right d-inline-block more-projects-icon">
+                    alt="" class="d-inline-block more-projects-icon">
               </div>
               <div class="col-12 col-sm-11">
                 <p>`+selected[i].description+`</p>

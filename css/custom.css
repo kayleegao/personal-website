@@ -812,11 +812,11 @@ background: linear-gradient(0deg, rgba(244, 186, 185, 0.35) 0%, rgba(244, 186, 1
 
 .after-tag {
   padding: 2px 10px;
-  background-color: #2e72e0;
+  background-color: #1971ff;
   color: #eee;
   border-radius: 40px;
   font-size: smaller;
-  border: #2e72e0 1px solid;
+  border: #1971ff 1px solid;
   line-height: 2rem;
 }
 
@@ -1305,17 +1305,8 @@ td {
     visibility: hidden;
     z-index: 1000;
     box-shadow: 0px 4px 4px rgba(83, 83, 83, 0.1), 0px 8px 8px rgba(116, 116, 116, 0.1);
-
   }
-  .to-top::after {
-    content: "\f077";
-    font-family: FontAwesome;
-    font-weight: normal;
-    font-style: normal;
-    font-size: 2em;
-    line-height: 50px;
-    color: #fff;
-  }
+  
   .to-top:hover {
     cursor: pointer;
     background-color: #333;
@@ -1370,6 +1361,7 @@ td {
     max-width: 40px; 
     max-height: 40px;
     margin-top: 3px;
+    float: right;
   }
 
 
@@ -1667,7 +1659,7 @@ td {
 blockquote {
     font-size: 1.1em;
     line-height: 1.8em;
-    padding: 20px 20px 20px 40px;
+    padding: 10px 20px 10px 40px;
     border-left: none;
     position: relative;
     text-indent: -19px
@@ -1712,18 +1704,6 @@ blockquote.style2 p {
 blockquote.blockstyle {
     border-left: 3px solid var(--pink-color);
     position: relative;
-}
-
-blockquote.blockstyle>span.triangle:before {
-    text-indent: 0;
-    content: "\f0da";
-    font-family: FontAwesome;
-    color: var(--pink-color);
-    position: absolute;
-    left: -1px;
-    top: 50%;
-    margin-top: -11px;
-    font-style: normal;
 }
 
 blockquote.blockstyle:before,
