@@ -596,7 +596,8 @@ font-size: 9pt;
 }
 
 .illustration-shadow {
-  filter: drop-shadow(5px 5px 10px rgba(85, 85, 85, 0.2));
+  /* filter: drop-shadow(5px 5px 10px rgba(85, 85, 85, 0.2)); */
+  filter: drop-shadow(3px 3px 6px rgba(85, 85, 85, 0.12));
 }
 
 
@@ -757,7 +758,7 @@ background: linear-gradient(0deg, rgba(244, 186, 185, 0.35) 0%, rgba(244, 186, 1
 }
 
 .mylogo {
-    width: 50px;
+    width: 40px;
     height: auto;
 }
 
@@ -772,7 +773,7 @@ background: linear-gradient(0deg, rgba(244, 186, 185, 0.35) 0%, rgba(244, 186, 1
 
 
 .project-title {
-  font-size: 3em;
+  font-size: 2.5em;
   font-weight: 700;
   margin-bottom: 60px;
   margin-top: 30px;
@@ -798,6 +799,7 @@ background: linear-gradient(0deg, rgba(244, 186, 185, 0.35) 0%, rgba(244, 186, 1
   font-size: smaller;
   border: #eee 1px solid;
   line-height: 2rem;
+  margin-right: 0.5rem;
 }
 
 .before-tag-light {
@@ -808,6 +810,7 @@ background: linear-gradient(0deg, rgba(244, 186, 185, 0.35) 0%, rgba(244, 186, 1
   font-size: smaller;
   border: var(--text-color) 1px solid;
   line-height: 2rem;
+  margin-right: 0.5rem;
 }
 
 .after-tag {
@@ -818,16 +821,15 @@ background: linear-gradient(0deg, rgba(244, 186, 185, 0.35) 0%, rgba(244, 186, 1
   font-size: smaller;
   border: #1971ff 1px solid;
   line-height: 2rem;
+  margin-right: 0.5rem;
 }
 
 .comparsion-desc {
-  margin-left: 0.5rem;
   color: #ddd;
   line-height: 2rem;
 }
 
 .comparsion-desc-light {
-  margin-left: 0.5rem;
   color: var(--text-color);
   line-height: 2rem;
 }
@@ -853,15 +855,15 @@ background: linear-gradient(0deg, rgba(244, 186, 185, 0.35) 0%, rgba(244, 186, 1
 .intro-card {
   background-color: var(--light-white-color);
   border: none;
-  border-radius: 16px;
-  box-shadow: 2.037e-15px 33.2667px 66.5333px rgba(51, 51, 51, 0.1175), inset -4.75299e-16px -7.76222px 7.76222px #F4F4F4, inset 4.75299e-16px 7.76222px 7.76222px #FFFFFF;
+  border-radius: 8px;
+  box-shadow: 2.037e-15px 33.2667px 66.5333px rgba(51, 51, 51, 0.1), inset -4.75299e-16px -7.76222px 7.76222px #F4F4F4, inset 4.75299e-16px 7.76222px 7.76222px #FFFFFF;
 }
 
 .intro-card-reversed {
   background-color: var(--text-color);
   border: none;
-  border-radius: 16px;
-  box-shadow: 2.037e-15px 33.2667px 66.5333px rgba(51, 51, 51, 0.1175), inset -4.75299e-16px -7.76222px 7.76222px #222, inset 4.75299e-16px 7.76222px 7.76222px #555;
+  border-radius: 8px;
+  box-shadow: 2.037e-15px 33.2667px 66.5333px rgba(51, 51, 51, 0.1), inset -4.75299e-16px -7.76222px 7.76222px #222, inset 4.75299e-16px 7.76222px 7.76222px #555;
 }
 
 .intro-card p, .intro-card ul li, .intro-card-reversed p, .intro-card-reversed ul li, .span-title, .mySwiperCube ul li, .mySwiperCube p {
@@ -882,8 +884,10 @@ background: linear-gradient(0deg, rgba(244, 186, 185, 0.35) 0%, rgba(244, 186, 1
 
 
 .breadcrumb {
-  margin-top: 250px;
+  margin-top: 120px;
+  margin-bottom: 0px;
   background-color: transparent;
+  font-size: 0.9rem;
 }
 
 .breadcrumb-link {
@@ -1185,7 +1189,6 @@ td {
     margin-right: auto;
     width: 100px;
     height: 100px;
-  
   }
 
 .checklist i {
@@ -1542,7 +1545,7 @@ td {
     opacity: 0;
 }
 
-/*Tab CSS*/
+/*Tab CSS
 
 .filters {
   background-color: rgb(245, 245, 245);
@@ -1562,7 +1565,7 @@ td {
   }
 
   .filters__button {
-    flex: 1 1 20%;
+    flex: 1 1 10%;
     width: 100%;
     border: none;
     outline: none;
@@ -1576,7 +1579,7 @@ td {
     background-color: var(--light-white-color);
     transform: translate(-3px, -3px);
     box-shadow: 5px 5px 0px var(--text-color);
-  }
+  }*/
   
   /* Hide*/
   .filters [data-content] {

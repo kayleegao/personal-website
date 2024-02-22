@@ -1,0 +1,833 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>饿了么商家端数据分析改版 - Kaylee Gao</title>
+    <!-- Bootstrap -->
+    <link href="../css/bootstrap-4.3.1.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="../css/hover.css" rel="stylesheet" media="all">
+    <link href="../css/custom.css" rel="stylesheet">
+    <link href="../css/nav.css" rel="stylesheet">
+    <link rel="shortcut icon" type="image/x-icon" href="../images/mylogo2.ico" />
+    <!-- Tab css -->
+    <link href="https://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="../css/custom-tab.css">
+</head>
+
+<body>
+    <header data-scroll-header class="cd-header px-xl-5 animate__animated animate__fadeInDown">
+        <div class="header-wrapper">
+            <div class="logo-wrap">
+                <a class="navbar-brand font-weight-bold" href="../index.html"><img src="../images/mylogo.png"
+                        class="mylogo mr-4"><span class="my-name">Kaylee Gao.</span></a>
+            </div>
+            <div class="nav-but-wrap float-right">
+                <div class="menu-icon hover-target">
+                    <span class="menu-icon__line menu-icon__line-left"></span>
+                    <span class="menu-icon__line"></span>
+                    <span class="menu-icon__line menu-icon__line-right"></span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div id="my-nav">
+        <div class="nav__content">
+            <ul class="nav__list">
+                <li class="nav__list-item active-nav"><a href="../index.html#work"
+                        class="hover-target hvr-shrink">Work</a></li>
+                <li class="nav__list-item"><a href="../about.html" class="hover-target hvr-shrink">About</a></li>
+                <li class="nav__list-item"><a href="../index.html#contact-area"
+                        class="hover-target hvr-shrink">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row" data-aos="fade-up" data-aos-duration="1000">
+            <ol class="col-12 breadcrumb">
+                <li class="breadcrumb-item"><a class="breadcrumb-link" href="../index.html#work">Work</a>
+                </li>
+                <li class="breadcrumb-item my-color"><b>饿了么商家端数据分析改版</b></li>
+            </ol>
+            <h1 class="col-12 project-title custom-h">饿了么商家端数据分析改版.</h1>
+            <div class="col-12">
+                <img src="../images/eleme-data-analysis-cn/data-analysis-info.png" alt="ELEME data analysis information"
+                    class="img-fluid illustration-shadow">
+            </div>
+        </div>
+        <div class="row mt-5">
+            <div class="col-6 col-md-3 mb-5" data-aos="fade-up" data-aos-duration="1000">
+                <div class="text-center">
+                    <span class="span-title font-weight-bold">职责</span><br>
+                    <span class="span-description">UX/UI设计师</span>
+                </div>
+            </div>
+            <div class="col-6 col-md-3 mb-5" data-aos="fade-up" data-aos-duration="1000">
+                <div class="text-center">
+                    <span class="span-title font-weight-bold">平台</span><br>
+                    <span class="span-description">阿里巴巴本地生活 - 饿了么零售商家端</span>
+                </div>
+            </div>
+            <div class="col-6 col-md-3 mb-5" data-aos="fade-up" data-aos-duration="1000">
+                <div class="text-center">
+                    <span class="span-title font-weight-bold">项目性质</span><br>
+                    <span class="span-description">产品体验升级</span>
+                </div>
+            </div>
+            <div class="col-6 col-md-3 mb-5" data-aos="fade-up" data-aos-duration="1000">
+                <div class="text-center">
+                    <span class="span-title font-weight-bold">周期</span><br>
+                    <span class="span-description">5个月</span>
+                </div>
+            </div>
+            <div class="col-12 col-md-5 mb-5" data-aos="fade-up" data-aos-duration="1000">
+                <p class="span-title font-weight-bold">工具</p>
+                <ul class="icon-ul">
+                    <li class="icon-li mb-4 mr-3">
+                        <svg viewBox="0 0 95 86" xmlns="http://www.w3.org/2000/svg" class="logo-icon Sketch"
+                            aria-hidden="true" role="img" width="50px" height="50px">
+                            <use xlink:href="#a" transform="translate(.17 30.901)" fill="#EA6C00"></use>
+                            <use xlink:href="#b" transform="matrix(-1 0 0 1 94.64 30.901)" fill="#EA6C00"></use>
+                            <use xlink:href="#c" transform="translate(19.3 30.901)" fill="#FDAD00"></use>
+                            <use xlink:href="#d" transform="translate(19.3 .42)" fill="#FDD231"></use>
+                            <use xlink:href="#e" transform="matrix(-1 0 0 1 75.5 .42)" fill="#FDD231"></use>
+                            <use xlink:href="#f" transform="matrix(-1 0 0 1 94.64 3.234)" fill="#FDAD00"></use>
+                            <use xlink:href="#g" transform="translate(.17 3.234)" fill="#FDAD00"></use>
+                            <use xlink:href="#h" transform="translate(19.3 .42)" fill="#FEEEB7"></use>
+                            <defs>
+                                <path id="a" fill-rule="evenodd" d="M19.131 0l28.1 55L0 0h19.131z"></path>
+                                <path id="b" fill-rule="evenodd" d="M19.131 0l28.1 55L0 0h19.131z"></path>
+                                <path id="c" fill-rule="evenodd" d="M0 0h56.2L28.1 55 0 0z"></path>
+                                <path id="d" fill-rule="evenodd" d="M28.1 0L1.479 2.814 0 30.481 28.1 0z"></path>
+                                <path id="e" fill-rule="evenodd" d="M28.1 0L1.479 2.814 0 30.481 28.1 0z"></path>
+                                <path id="f" fill-rule="evenodd" d="M0 27.667L20.61 0l-1.479 27.667H0z"></path>
+                                <path id="g" fill-rule="evenodd" d="M0 27.667L20.61 0l-1.479 27.667H0z"></path>
+                                <path id="h" fill-rule="evenodd" d="M28.1 0L0 30.481h56.2L28.1 0z"></path>
+                            </defs>
+                        </svg>
+                    </li>
+                    <li class="icon-li mb-4 mr-3">
+                        <img src="../images/about/mastergo-logo.png" width="50px" height="auto">
+                    </li>
+                    <li class="icon-li mb-4 mr-3">
+                        <svg viewBox="0 0 23 23" xmlns="http://www.w3.org/2000/svg" fill="#448bf7"
+                            class="logo-icon Sketch" aria-hidden="true" role="img" width="50px" height="50px">
+                            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                            <g id="SVGRepo_iconCarrier">
+                                <g>
+                                    <path fill="none" d="M0 0h24v24H0z"></path>
+                                    <path fill-rule="nonzero"
+                                        d="M12 2C6.477 2 2 6.477 2 12s4.477 10 10 10 10-4.477 10-10S17.523 2 12 2zm4.49 9.04l-.006.014c-.42.898-1.516 2.66-1.516 2.66l-.005-.012-.32.558h1.543l-2.948 3.919.67-2.666h-1.215l.422-1.763c-.341.082-.745.195-1.223.349 0 0-.646.378-1.862-.729 0 0-.82-.722-.344-.902.202-.077.981-.175 1.594-.257.83-.112 1.339-.172 1.339-.172s-2.555.038-3.161-.057c-.606-.095-1.375-1.107-1.539-1.996 0 0-.253-.488.545-.257.798.231 4.101.9 4.101.9S8.27 9.312 7.983 8.99c-.286-.32-.841-1.754-.769-2.634 0 0 .031-.22.257-.16 0 0 3.176 1.45 5.347 2.245 2.172.795 4.06 1.199 3.816 2.228-.02.087-.072.216-.144.37z">
+                                    </path>
+                                </g>
+                            </g>
+                        </svg>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-12 col-md-7 mb-5" data-aos="fade-up" data-aos-duration="1000">
+                <p class="span-title font-weight-bold">负责板块</p>
+                <ul class="contribution list-unstyled" style="line-height: 2em;">
+                    <li style="margin-top: -10px;">💡 通过前期体验走查、商家走访、及分析前期调研数据挖掘商家端数据分析模块使用痛点</li>
+                    <li>💡 独立负责数据分析中所有模块的交互以及视觉重构，提升产品体验流畅性以及一致性</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="row" data-aos="zoom-in-up" data-aos-duration="1000">
+            <div class="col-12 mb-5">
+                <div class="project-intro-wrapper"
+                    style="border: 1.5px solid #1971ff; background-color: rgba(25, 113, 255, 0.05); box-shadow: 0px 5px 0 #1971ff;">
+                    <img src="../images/bulb.png" width="100px" class="bulb">
+                    <div class="row">
+                        <div class="col-12">
+                            <h6 style="color: #1971ff;">关于饿了么数据分析改版 📈</h6>
+                            <span style="color: rgba(25, 113, 255, 0.66);">UX/UI设计</span><br>
+                            <p style="color: rgba(25, 113, 255, 0.84);" class="mt-2">
+                                饿了么是中国最大的外卖平台之一，其零售业务的覆盖范围主要为商超日百、鲜花水产、医疗服务等品类的到家外卖服务。
+                                其中数据分析模块为商家提供了经营、流量、服务、商品、活动、市场、顾客相关数据的追踪，帮助商家制定经营策略。此次改版通过体验走查、商家走访、数据分析等手段总结的看数痛点，再根据商家看数习惯进行交互和视觉两方面的全新体验升级，
+                                提高产品模块用户满意度和CES分数，降低费力度和体验工单。
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mt-100" data-aos="fade-up" data-aos-duration="1000">
+            <div class="col-12">
+                <h2 class="custom-h">项目过程</h2>
+            </div>
+            <div class="col-12 col-lg-8 mt-lg-3">
+                <img src="../images/eleme-data-analysis-cn/design-process.png" class="img-fluid" alt="design process">
+            </div>
+        </div>
+
+
+        <div class="row mt-100" data-aos="fade-up" data-aos-duration="1000">
+            <div class="col-12">
+                <h2 class="custom-h">数据分析模块在零售商家端起到了什么作用？</h2>
+            </div>
+            <div class="col-12 col-lg-6">
+                <p class="paragraph">
+                    零售商家端作为帮助商家运营外卖业务的平台拥有许多功能模块，其中数据分析模块满足商家需要<mark>了解自身经验状况和周边市场机会</mark>的诉求，以提供渠道帮助不断优化运营方式。
+                    除此之外，该模块还通过为商家提供经营状态反馈及决策帮助，助力商家运营。因为外卖商家文化水平的局限性，设计侧在此之中起到了简化复杂数据外皮，通过交互手段降低数据的理解及分析成本的作用，使产品本身最大化满足受众群体的需求。
+                </p>
+                <p class="paragraph mb-lg-5">
+                    总而言之，数据分析模块通过提供数据能力满足商家日常经营需求，帮助商家获得更好的经营结果，以<mark>提高平台在业内的口碑</mark>，并最终帮助平台带来订单增长等利益。
+                </p>
+            </div>
+            <div class="col-12 col-lg-6">
+                <img src="../images/eleme-data-analysis-cn/business-undertaking.png" alt="business-undertaking"
+                    class="img-fluid">
+            </div>
+        </div>
+
+        <div class="row" data-aos="fade-up" data-aos-duration="1000">
+            <div class="col-12">
+                <h2 class="custom-h mt-100">现状调研.</h2>
+                <section class="filters" id="problem-tab">
+                    <div class="row">
+                        <div class="col-4 col-lg-2 offset-lg-3 mb-3 px-2 px-lg-3">
+                            <div class="rcircle is-active" data-target="#walkthrough"
+                                style="background-image: linear-gradient(0deg, rgba(0 0 0 / 70%), rgba(0 0 0 / 50%)),url(../images/eleme-data-analysis-cn/walkthrough-bg.png);">
+                                <div class="txt">体验走查</div>
+                                <div class="txt-sub">知自己</div>
+                            </div>
+                        </div>
+                        <div class="col-4 col-lg-2 mb-3 px-2 px-lg-3">
+                            <div class="rcircle" data-target="#competitive-analysis"
+                                style="background-image: linear-gradient(0deg, rgba(0 0 0 / 70%), rgba(0 0 0 / 50%)),url(../images/eleme-data-analysis-cn/competitive-analysis-bg.png);">
+                                <div class="txt">竞品分析</div>
+                                <div class="txt-sub">知对手</div>
+                            </div>
+                        </div>
+                        <div class="col-4 col-lg-2 mb-3 px-2 px-lg-3">
+                            <div class="rcircle" data-target="#interview"
+                                style="background-image: linear-gradient(0deg, rgba(0 0 0 / 70%), rgba(0 0 0 / 50%)),url(../images/eleme-data-analysis-cn/interview-bg.jpeg);">
+                                <div class="txt">用户访谈</div>
+                                <div class="txt-sub">知用户</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div data-content class="animate__animated animate__fadeIn animate__slow is-active"
+                            id="walkthrough">
+                            <div class="row mt-2 mt-md-5">
+                                <div class="col-12 col-md-6 col-xl-6">
+                                    <p class="paragraph mb-3">
+                                        经走查PC端及APP端的数据分析模块，共发现56个问题，其中操作体验类问题占48.2%，产品能力类问题占28.6%，技术bug类问题占23.2%。</p>
+                                    <img src="../images/eleme-data-analysis-cn/walkthrough-question.png"
+                                        alt="walkthrough" class="img-fluid">
+                                </div>
+                                <div class="col-12 col-md-6 col-xl-6 mb-5 mt-3 mt-md-0">
+                                    <img src="../images/eleme-data-analysis-cn/walkthrough-list.png" alt="walkthrough"
+                                        class="img-fluid">
+                                </div>
+                            </div>
+                        </div>
+                        <div data-content class="animate__animated animate__fadeIn animate__slow"
+                            id="competitive-analysis">
+                            <div class="row mt-2 mt-md-5">
+                                <div class="col-12 mb-2">
+                                    <p class="paragraph">
+                                        美团零售商家端为饿了么零售商家端最主要的直接竞品。在竞品分析中，我将美团的功能和体验与饿了么进行对比。在分析双端的共32个功能模块后，发现有<mark>43.7%的功能和体验落后于竞对</mark>。
+                                    </p>
+                                    <img src="../images/eleme-data-analysis-cn/competitive-analysis.png"
+                                        alt="competitive-analysis" class="img-fluid">
+                                    <div class="intro-card p-4 mt-3">
+                                        <h6 class="font-weight-bold">和竞对相比最大的问题在于：</h6>
+                                        <ul class="paragraph list-unstyled mb-0">
+                                            <li>1. 界面美观度、数据布局合理性不敌竞对，导致看数费力</li>
+                                            <li>2. 数据模块及商圈分析能力不如竞对丰富</li>
+                                            <li>3. 定制化经营指导能力弱于竞对</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div data-content class="animate__animated animate__fadeIn animate__slow" id="interview">
+                            <div class="row mt-2 mt-md-5">
+                                <div class="col-12">
+                                    <div class="row">
+                                        <div class="col-12 col-lg-4 mb-4">
+                                            <div class="intro-card p-4 h-100">
+                                                <h6 class="font-weight-bold">🚩 访谈目标</h6>
+                                                <p class="paragraph text-secondary mb-1">
+                                                    对商家整体<mark>看数诉求</mark>以及<mark>行为模式</mark>等做系统性的调研。</p>
+                                                <p class="paragraph text-secondary mb-1">具体目标包括：</p>
+                                                <ul class="list-unstyled paragraph-sm mb-0 pl-3">
+                                                    <li class="text-secondary mb-1">1) 了解散店商家的经营能力、数据模块依赖程度</li>
+                                                    <li class="text-secondary mb-1">2) 了解商家对于数据的理解程度，如字段名、图表是否易理解</li>
+                                                    <li class="text-secondary mb-1">3) 了解每个模块的商家看数核心诉求，包括看什么、怎么看</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-lg-4 mb-4">
+                                            <div class="intro-card p-4 h-100">
+                                                <h6 class="font-weight-bold">📔 访谈提纲</h6>
+                                                <p class="paragraph text-secondary">
+                                                    在体验走查、竞品分析、数据调研的前提下，制定了访谈提纲以进一步了解目标用户。</p>
+                                                <p class="paragraph text-secondary">
+                                                    提纲的整体思路为<mark>「了解商家背景和经营意愿 -> 了解数据分析的依赖情况 -> 了解商家使用偏好及问题 -> 了解各模块看数诉求」</mark>。
+                                                </p>
+                                                <p class="paragraph text-secondary mb-0">完整提纲内容可 <a class="hyperlink"
+                                                        href="https://www.notion.so/035d9a60ae7543c791e4ec6d87026e4e?pvs=4"
+                                                        target="_blank">点此查看</a></p>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-lg-4 mb-4">
+                                            <div class="intro-card p-4 h-100">
+                                                <h6 class="font-weight-bold">👤 用户分布</h6>
+                                                <p class="paragraph text-secondary">共走访8名商家，其中5名是经验丰富或较上进的商家，3名是小白商家。
+                                                </p>
+                                                <img src="../images/eleme-data-analysis-cn/interview-user.png"
+                                                    alt="interview user" class="img-fluid">
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="intro-card-reversed p-4">
+                                                <h6 class="font-weight-bold text-light">💡 访谈总结</h6>
+                                                <p class="paragraph mb-1" style="color: #c4c4c4;">商家对于数据的依赖程度、理解能力、诉求如下：
+                                                </p>
+                                                <img src="../images/eleme-data-analysis-cn/interview-insight.png"
+                                                    alt="interview insight" class="img-fluid">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+
+        <div class="row mt-100" data-aos="fade-up" data-aos-duration="1000">
+            <div class="col-12">
+                <h2 class="custom-h">系统性问题归因.</h2>
+                <p class="paragraph">经过整理上述调研手段提炼的痛点，数据分析模块目前的问题可抽象归因为<mark>数不全、看不懂、无落地</mark>。</p>
+                <img src="../images/eleme-data-analysis-cn/attribution.png" alt="attribution" class="img-fluid">
+            </div>
+        </div>
+
+        <div class="row mt-100" data-aos="fade-up" data-aos-duration="1000">
+            <div class="col-12">
+                <h2 class="custom-h">从关键问题点出发 挖掘机会点.</h2>
+                <img src="../images/eleme-data-analysis-cn/strategy.png" alt="strategy" class="img-fluid">
+            </div>
+        </div>
+
+        <div class="row mt-100" data-aos="fade-up" data-aos-duration="1000">
+            <div class="col-12">
+                <h2 class="custom-h">数据全 - 能力更契合.</h2>
+                <div class="swiper mySwiperUsability mt-4">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide p-4 p-sm-5">
+                            <div class="row">
+                                <div class="col-12">
+                                    <span class="font-large-num-dark" style="line-height: 1.4;">01</span><br>
+                                    <h4 class="text-light mb-3">匹配能力与诉求&nbsp &nbsp▸&nbsp &nbsp新增数据PC首页</h4>
+                                    <span class="after-tag">NEW</span><span
+                                        class="comparsion-desc">新增经营概览，帮助商家汇总店铺核⼼数据，掌握经营状态</span>
+                                    <img src="../images/eleme-data-analysis-cn/comparsion/1-1-new.png"
+                                        alt="comparsion-1-1-new" class="img-fluid mt-2 mb-4">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide p-4 p-sm-5">
+                            <div class="row">
+                                <div class="col-12">
+                                    <span class="font-large-num-dark" style="line-height: 1.4;">02</span><br>
+                                    <h4 class="text-light mb-3">匹配能力与诉求&nbsp &nbsp▸&nbsp &nbsp简化数据APP首页</h4>
+                                </div>
+                                <div class="col-12 col-lg-5">
+                                    <span class="before-tag">BEFORE</span><span
+                                        class="comparsion-desc">指标理解门槛高，纯数据堆砌，动线有断点</span>
+                                    <img src="../images/eleme-data-analysis-cn/comparsion/1-2-before.png"
+                                        alt="comparsion-3-1-before" class="img-fluid mt-2 mb-4">
+                                </div>
+                                <div class="col-12 col-lg-7">
+                                    <span class="after-tag">AFTER</span><span
+                                        class="comparsion-desc">基于小白经营视角简化APP首页，透出必要引导</span>
+                                    <img src="../images/eleme-data-analysis-cn/comparsion/1-2-after.png"
+                                        alt="comparsion-3-1-after" class="img-fluid mt-2 mb-4">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide p-4 p-sm-5">
+                            <div class="row">
+                                <div class="col-12">
+                                    <span class="font-large-num-dark" style="line-height: 1.4;">03</span><br>
+                                    <h4 class="text-light mb-3">匹配能力与诉求&nbsp &nbsp▸&nbsp &nbsp新增市场分析，助商家知己知彼</h4>
+                                    <span class="after-tag">NEW</span><span
+                                        class="comparsion-desc">提供市场洞察渠道，帮助商家知己知彼，跟随市场热点调整经营策略</span>
+                                    <img src="../images/eleme-data-analysis-cn/comparsion/1-3-new.png"
+                                        alt="comparsion-1-1-new" class="img-fluid mt-2 mb-4">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide p-4 p-sm-5">
+                            <div class="row">
+                                <div class="col-12">
+                                    <span class="font-large-num-dark" style="line-height: 1.4;">04</span><br>
+                                    <h4 class="text-light mb-3">匹配能力与诉求&nbsp &nbsp▸&nbsp &nbsp新增下载中心</h4>
+                                </div>
+                                <div class="col-12 col-lg-5">
+                                    <span class="before-tag">BEFORE</span><span
+                                        class="comparsion-desc">各模块下载入口离散，需要分批下载</span>
+                                    <img src="../images/eleme-data-analysis-cn/comparsion/1-4-before.png"
+                                        alt="comparsion-3-1-before" class="img-fluid mt-2 mb-4">
+                                </div>
+                                <div class="col-12 col-lg-7">
+                                    <span class="after-tag">AFTER</span><span
+                                        class="comparsion-desc">新增下载中心勾选对应分类一键生成报表</span>
+                                    <img src="../images/eleme-data-analysis-cn/comparsion/1-4-after.png"
+                                        alt="comparsion-3-1-after" class="img-fluid mt-2 mb-4">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mt-100" data-aos="fade-up" data-aos-duration="1000">
+            <div class="col-12">
+                <h2 class="custom-h">看得懂 - 表达更高效.</h2>
+                <div class="swiper mySwiperUsability mt-4">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide p-4 p-sm-5">
+                            <div class="row">
+                                <div class="col-12">
+                                    <span class="font-large-num-dark" style="line-height: 1.4;">01</span><br>
+                                    <h4 class="text-light mb-3">降低理解门槛&nbsp &nbsp▸&nbsp &nbsp表达降噪统一心智</h4>
+                                </div>
+                                <div class="col-12 col-lg-6">
+                                    <span class="before-tag">BEFORE</span><span
+                                        class="comparsion-desc">多域数据表达有差别，商户心智不统一</span>
+                                    <img src="../images/eleme-data-analysis-cn/comparsion/2-1-before.png"
+                                        alt="comparsion-2-1-before" class="img-fluid mt-2 mb-4">
+                                </div>
+                                <div class="col-12 col-lg-6">
+                                    <span class="after-tag">AFTER</span><span
+                                        class="comparsion-desc">统一多域数据表达方式，表达降噪，心智一致</span>
+                                    <img src="../images/eleme-data-analysis-cn/comparsion/2-1-after.png"
+                                        alt="comparsion-2-1-after" class="img-fluid mt-2 mb-4">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide p-4 p-sm-5">
+                            <div class="row">
+                                <div class="col-12">
+                                    <span class="font-large-num-dark" style="line-height: 1.4;">02</span><br>
+                                    <h4 class="text-light mb-3">优化可视化表达&nbsp &nbsp▸&nbsp &nbsp结合看数目的优化可视化视觉动线</h4>
+                                </div>
+                                <div class="col-12 col-lg-6">
+                                    <span class="before-tag">BEFORE</span><span
+                                        class="comparsion-desc">原因分布表达不直观，难对比</span>
+                                    <img src="../images/eleme-data-analysis-cn/comparsion/2-2-before.png"
+                                        alt="comparsion-2-2-before" class="img-fluid mt-2 mb-4">
+                                </div>
+                                <div class="col-12 col-lg-6">
+                                    <span class="after-tag">AFTER</span><span
+                                        class="comparsion-desc">条形图横向对比，占比多少一目了然</span>
+                                    <img src="../images/eleme-data-analysis-cn/comparsion/2-2-after.png"
+                                        alt="comparsion-2-2-after" class="img-fluid mt-2 mb-4">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide p-4 p-sm-5">
+                            <div class="row">
+                                <div class="col-12">
+                                    <span class="font-large-num-dark" style="line-height: 1.4;">03</span><br>
+                                    <h4 class="text-light mb-3">归类数据优化动线&nbsp &nbsp▸&nbsp &nbsp基于数据性质优化页面结构</h4>
+                                </div>
+                                <div class="col-12 col-lg-6">
+                                    <span class="before-tag">BEFORE</span><span
+                                        class="comparsion-desc">正负向数据平铺混杂难分辨，原因下钻不直观</span>
+                                    <img src="../images/eleme-data-analysis-cn/comparsion/2-3-before.png"
+                                        alt="comparsion-2-3-before" class="img-fluid mt-2 mb-4">
+                                </div>
+                                <div class="col-12 col-lg-6">
+                                    <span class="after-tag">AFTER</span><span
+                                        class="comparsion-desc">基于数据性质及从属关系归类数据，表达更直观</span>
+                                    <img src="../images/eleme-data-analysis-cn/comparsion/2-3-after.png"
+                                        alt="comparsion-2-3-after" class="img-fluid mt-2 mb-4">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide p-4 p-sm-5">
+                            <div class="row">
+                                <div class="col-12">
+                                    <span class="font-large-num-dark" style="line-height: 1.4;">04</span><br>
+                                    <h4 class="text-light mb-3">归类数据优化动线&nbsp &nbsp▸&nbsp &nbsp基于看数重点重构数据分层，合理化数据图表的使用
+                                    </h4>
+                                </div>
+                                <div class="col-12 col-lg-5">
+                                    <span class="before-tag">BEFORE</span><span
+                                        class="comparsion-desc">数据堆叠，指标评估费力，看数动线跳脱</span>
+                                    <img src="../images/eleme-data-analysis-cn/comparsion/2-4-before.png"
+                                        alt="comparsion-2-3-before" class="img-fluid mt-2 mb-4">
+                                </div>
+                                <div class="col-12 col-lg-7">
+                                    <span class="after-tag">AFTER</span><span
+                                        class="comparsion-desc">整合数据并分层表达，优化看数动线，降低费力度</span>
+                                    <img src="../images/eleme-data-analysis-cn/comparsion/2-4-after.png"
+                                        alt="comparsion-2-3-after" class="img-fluid mt-2 mb-4">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mt-100" data-aos="fade-up" data-aos-duration="1000">
+            <div class="col-12">
+                <h2 class="custom-h">能落地 - 动作更明确.</h2>
+                <div class="swiper mySwiperUsability mt-4">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide p-4 p-sm-5">
+                            <div class="row">
+                                <div class="col-12">
+                                    <span class="font-large-num-dark" style="line-height: 1.4;">01</span><br>
+                                    <h4 class="text-light mb-3">增加平台指导能力&nbsp &nbsp▸&nbsp &nbsp基础解读建议，低成本为商家提供后续动作</h4>
+                                </div>
+                                <div class="col-12 col-lg-5">
+                                    <span class="before-tag">BEFORE</span><span
+                                        class="comparsion-desc">缺乏“看数后”的进一步引导</span>
+                                    <img src="../images/eleme-data-analysis-cn/comparsion/3-1-before.png"
+                                        alt="comparsion-3-1-before" class="img-fluid mt-2 mb-4">
+                                </div>
+                                <div class="col-12 col-lg-7">
+                                    <span class="after-tag">AFTER</span><span
+                                        class="comparsion-desc">提供固定解读建议，透出建议原因，商家动作有依据</span>
+                                    <img src="../images/eleme-data-analysis-cn/comparsion/3-1-after.png"
+                                        alt="comparsion-3-1-after" class="img-fluid mt-2 mb-4">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide p-4 p-sm-5">
+                            <div class="row">
+                                <div class="col-12">
+                                    <span class="font-large-num-dark" style="line-height: 1.4;">02</span><br>
+                                    <h4 class="text-light mb-3">增加平台指导能力&nbsp &nbsp▸&nbsp &nbsp进阶经营建议，基于数据表现给出最佳动作指导
+                                    </h4>
+                                </div>
+                                <div class="col-12 col-lg-4">
+                                    <span class="before-tag">BEFORE</span><span
+                                        class="comparsion-desc">仅提供数据展示，商家无法经营动作动线断</span>
+                                    <img src="../images/eleme-data-analysis-cn/comparsion/3-2-before.png"
+                                        alt="comparsion-3-1-before" class="img-fluid mt-2 mb-4">
+                                </div>
+                                <div class="col-12 col-lg-8">
+                                    <span class="after-tag">AFTER</span><span
+                                        class="comparsion-desc">提供定制化经营建议，并联动至平台多域，体现数据价值，形成经营闭环</span>
+                                    <img src="../images/eleme-data-analysis-cn/comparsion/3-2-after.png"
+                                        alt="comparsion-3-2-after" class="img-fluid mt-2 mb-4">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-100" data-aos="fade-up" data-aos-duration="1000">
+            <div class="col-12">
+                <h2 class="custom-h">双端差异化设计 提升产品易用性.</h2>
+                <div class="swiper mySwiperUsability mt-4">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide p-4 p-sm-5">
+                            <div class="row">
+                                <div class="col-12">
+                                    <span class="font-large-num-dark" style="line-height: 1.4;">01</span><br>
+                                    <h4 class="text-light mb-3">基于一端的交互模式拓展</h4>
+                                    <p class="comparsion-desc">例如在活动明细的展示中，因数据存在嵌套关系且数据量较大，因此在PC端使用可展开表格的可视化形式表达较佳。而在APP端中因设备宽度限制导致展示有限，因此拓展「横屏浏览」模式，在保证数据层级结构展现的同时支持一屏浏览更多数据。</p>
+                                    <img src="../images/eleme-data-analysis-cn/comparsion/4-1.png" alt="comparsion-4-1" class="img-fluid mt-2 mb-4">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide p-4 p-sm-5">
+                            <div class="row">
+                                <div class="col-12">
+                                    <span class="font-large-num-dark" style="line-height: 1.4;">02</span><br>
+                                    <h4 class="text-light mb-3">双端差异化交互形式</h4>
+                                    <p class="comparsion-desc">PC端多为连锁店使用，其线下看数习惯多为拉取excel表格分析数据，因此「可滑动表格」的可视化形式最能还原其线下看数方式。而APP端多为散店商户使用，最关注「销量」「销售额」两种数据，因此采用前置数据折叠，展开查看某商品所有数据及趋势的交互形式。</p>
+                                    <img src="../images/eleme-data-analysis-cn/comparsion/4-2.png" alt="comparsion-4-2" class="img-fluid mt-2 mb-4">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mt-100">
+            <div class="col-12" data-aos="fade-up" data-aos-duration="1000">
+                <h2 class="custom-h">高保真原型.</h2>
+                <div class="col-12 px-0" data-aos="fade-up" data-aos-duration="1000">
+                    <section class="accordion">
+                        <section class="accordion-tabs">
+                            <button class="accordion-tab accordion-active" data-actab-group="0"
+                                data-actab-id="0">数据概览</button>
+                            <button class="accordion-tab" data-actab-group="0" data-actab-id="1">营业分析</button>
+                            <button class="accordion-tab" data-actab-group="0" data-actab-id="2">流量分析</button>
+                            <button class="accordion-tab" data-actab-group="0" data-actab-id="3">服务分析</button>
+                            <button class="accordion-tab" data-actab-group="0" data-actab-id="4">商品分析</button>
+                            <button class="accordion-tab" data-actab-group="0" data-actab-id="5">活动分析</button>
+                            <button class="accordion-tab" data-actab-group="0" data-actab-id="6">市场分析</button>
+                            <button class="accordion-tab" data-actab-group="0" data-actab-id="7">顾客分析</button>
+                            <button class="accordion-tab" data-actab-group="0" data-actab-id="8">下载中心</button>
+
+
+                        </section>
+                        <section class="accordion-content">
+                            <article class="accordion-item accordion-active" data-actab-group="0" data-actab-id="0">
+                                <h5 class="accordion-item__label">数据概览.</h5>
+                                    <div class="accordion-item__container">
+                                        <img src="../images/eleme-data-analysis-cn/hifi-mainpage.png"
+                                            alt="High fidelity prototype of the main page"
+                                            class="img-fluid illustration-shadow">
+                                    </div>
+                            </article>
+                            <article class="accordion-item" data-actab-group="0" data-actab-id="1">
+                                <h5 class="accordion-item__label">营业分析.</h5>
+                                    <div class="accordion-item__container">
+                                        <img src="../images/eleme-data-analysis-cn/hifi-business.png"
+                                            alt="High fidelity prototype of the business analysis page"
+                                            class="img-fluid illustration-shadow">
+                                    </div>
+                            </article>
+                            <article class="accordion-item" data-actab-group="0" data-actab-id="2">
+                                <h5 class="accordion-item__label">流量分析.</h5>
+                                    <div class="accordion-item__container">
+                                        <img src="../images/eleme-data-analysis-cn/hifi-traffic.png"
+                                            alt="High fidelity prototype of the traffic analysis page"
+                                            class="img-fluid illustration-shadow">
+                                    </div>
+                            </article>
+                            <article class="accordion-item" data-actab-group="0" data-actab-id="3">
+                                <h5 class="accordion-item__label">服务分析.</h5>
+                                    <div class="accordion-item__container">
+                                        <img src="../images/eleme-data-analysis-cn/hifi-service.png"
+                                            alt="High fidelity prototype of the service analysis page"
+                                            class="img-fluid illustration-shadow">
+                                    </div>
+                            </article>
+                            <article class="accordion-item" data-actab-group="0" data-actab-id="4">
+                                <h5 class="accordion-item__label">商品分析.</h5>
+                                    <div class="accordion-item__container">
+                                        <img src="../images/eleme-data-analysis-cn/hifi-merchandise.png"
+                                            alt="High fidelity prototype of the merchandise analysis page"
+                                            class="img-fluid illustration-shadow">
+                                    </div>
+                            </article>
+                            <article class="accordion-item" data-actab-group="0" data-actab-id="5">
+                                <h5 class="accordion-item__label">活动分析.</h5>
+                                    <div class="accordion-item__container">
+                                        <img src="../images/eleme-data-analysis-cn/hifi-promotion.png"
+                                            alt="High fidelity prototype of the promotion analysis page"
+                                            class="img-fluid illustration-shadow">
+                                    </div>
+                            </article>
+                            <article class="accordion-item" data-actab-group="0" data-actab-id="6">
+                                <h5 class="accordion-item__label">市场分析.</h5>
+                                    <div class="accordion-item__container">
+                                        <img src="../images/eleme-data-analysis-cn/hifi-market.png"
+                                            alt="High fidelity prototype of the market analysis page"
+                                            class="img-fluid illustration-shadow">
+                                    </div>
+                            </article>
+                            <article class="accordion-item" data-actab-group="0" data-actab-id="7">
+                                <h5 class="accordion-item__label">顾客分析.</h5>
+                                    <div class="accordion-item__container">
+                                        <img src="../images/eleme-data-analysis-cn/hifi-customer.png"
+                                            alt="High fidelity prototype of the customer analysis page"
+                                            class="img-fluid illustration-shadow">
+                                    </div>
+                            </article>
+                            <article class="accordion-item" data-actab-group="0" data-actab-id="8">
+                                <h5 class="accordion-item__label">下载中心.</h5>
+                                    <div class="accordion-item__container">
+                                        <img src="../images/eleme-data-analysis-cn/hifi-download.png"
+                                            alt="High fidelity prototype of the download page"
+                                            class="img-fluid illustration-shadow">
+                                    </div>
+                            </article>
+                        </section>
+                    </section>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="row mt-100" data-aos="fade-up" data-aos-duration="1000">
+            <div class="col-12 mb-md-4">
+                <h2 class="custom-h">数据结果.</h2>
+                <p>在项目改版上线后回顾数据结果，体验相关数据指标：CES分数、体验问题解决率、问题工单数均有正向改善。</p>
+            </div>
+        </div>
+        <div class="row" data-aos="fade-up" data-aos-duration="1000">
+            <div class="col-4 col-lg-3">
+                <img src="../images/eleme-data-analysis-cn/result1.png" alt="CES result increased 0.15"
+                    class="img-fluid px-md-3 px-lg-5">
+            </div>
+            <div class="col-4 col-lg-3">
+                <img src="../images/eleme-data-analysis-cn/result2.png" alt="solved 72.4% of the ux problems"
+                    class="img-fluid px-md-3 px-lg-5">
+            </div>
+            <div class="col-4 col-lg-3">
+                <img src="../images/eleme-data-analysis-cn/result3.png" alt="negative feedback decreased 30.7%"
+                    class="img-fluid px-md-3 px-lg-5">
+            </div>
+        </div>
+
+        <div class="row mt-100" data-aos="fade-up" data-aos-duration="1000">
+            <div class="col-12">
+                <h2 class="custom-h">抽象并沉淀数据组件，后续可复用.</h2>
+                <p>基于本次改版沉淀2种全新数据交互组件，组件可复用至多种看数场景，保证产品体验一致性和易用性。</p>
+            </div>
+        </div>
+        <div data-aos="fade-up" data-aos-duration="1000">
+            <div class="p-3 p-lg-4" style="border-radius:12px; background-image: -webkit-linear-gradient(top, #f1f1f1, #fafafa);
+            background-image: -moz-linear-gradient(top, #f1f1f1, #fafafa);
+            background-image: -ms-linear-gradient(top, #f1f1f1, #fafafa);
+            background-image: -o-linear-gradient(top, #f1f1f1, #fafafa);">
+                <div class="row">
+                    <div class="col-12 mb-3">
+                        <h5 class="text-center">沉淀一：指标卡下钻趋势图</h5>
+                    </div>
+                    <div class="col-12 col-md-6 mb-4">
+                        <span class="before-tag-light">BEFORE</span><span
+                            class="comparsion-desc-light">数据指标与对应趋势间隔远，不贴合商家「看指标 -> 发现异常 ->下钻看趋势」的看数习惯</span>
+                        <img src="../images/eleme-data-analysis-cn/comparsion/component1-before.png"
+                            alt="comparsion-3-1-before" class="img-fluid mt-2 mb-4">
+                    </div>
+                    <div class="col-12 col-md-6 mb-4">
+                        <span class="after-tag">AFTER</span><span
+                            class="comparsion-desc-light">指标卡联动趋势图，以「指标->趋势」为一组合理化动线，灵活自主下钻能力，结构复用至多处</span>
+                        <img src="../images/eleme-data-analysis-cn/comparsion/component1-after.png"
+                            alt="comparsion-3-1-before" class="img-fluid mt-2 mb-4">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div data-aos="fade-up" data-aos-duration="1000">
+            <div class="p-3 p-lg-4" style="border-radius:12px; background-image: -webkit-linear-gradient(top, #f1f1f1, #fafafa);
+            background-image: -moz-linear-gradient(top, #f1f1f1, #fafafa);
+            background-image: -ms-linear-gradient(top, #f1f1f1, #fafafa);
+            background-image: -o-linear-gradient(top, #f1f1f1, #fafafa);">
+                <div class="row">
+                    <div class="col-12 mb-3">
+                        <h5 class="text-center">沉淀二：“表格式”条形图</h5>
+                    </div>
+                    <div class="col-12 col-md-6 mb-4">
+                        <span class="before-tag-light">BEFORE</span><span
+                            class="comparsion-desc-light">图例较多/数据接近的场景下，饼图对比不直观</span>
+                        <img src="../images/eleme-data-analysis-cn/comparsion/component2-before.png"
+                            alt="comparsion-3-1-before" class="img-fluid mt-2 mb-4">
+                    </div>
+                    <div class="col-12 col-md-6 mb-4">
+                        <span class="after-tag">AFTER</span><span
+                            class="comparsion-desc-light">新增“表格式”条形图，数据接近场景对比也直观</span>
+                        <img src="../images/eleme-data-analysis-cn/comparsion/component2-after.png"
+                            alt="comparsion-3-1-before" class="img-fluid mt-2 mb-4">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <hr class="wavy-line" data-aos="flip-up" data-aos-duration="1000">
+    <div class="container mt-100" data-aos="fade-left" data-aos-duration="1000">
+        <div class="row">
+            <div class="col-12 mb-2 mb-sm-4 position-relative">
+                <h2 class="custom-h d-inline-block mb-0" id="random-projects">👀 Random Projects.</h2>
+                <a id="shuffle-link" class="float-right hvr-backward" onclick="getRandomProjects()">🎲 Shuffle</a>
+            </div>
+        </div>
+        <div class="swiper mySwiperMenu">
+            <div class="swiper-wrapper" id="more-project-wrapper">
+            </div>
+        </div>
+    </div>
+
+
+
+    <footer>
+        <div id="footer-placeholder"></div>
+    </footer>
+    <a href="#" class="to-top hvr-bob"><img src="../images/to-top.png"></a>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="../js/smooth-scroll.polyfills.min.js"></script>
+    <script type="text/javascript"
+        src="https://res.cloudinary.com/veseylab/raw/upload/v1636192990/magicmouse/magic_mouse-1.2.1.cdn.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="../js/popper.min.js"></script>
+    <script src="../js/bootstrap-4.3.1.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="../js/custom.js"></script>
+    <script src="../js/custom-tab.js"></script>
+    <script>
+        initMoreProject();
+
+        const tabs1 = document.querySelectorAll(".filters#problem-tab [data-target]"),
+            tabContents1 = document.querySelectorAll(".filters#problem-tab [data-content]");
+
+        tabs1.forEach((tab) => {
+            tab.addEventListener("mouseover", () => {
+                const target = document.querySelector(tab.dataset.target);
+
+                tabContents1.forEach((tc) => {
+                    tc.classList.remove("is-active");
+                });
+                target.classList.add("is-active");
+
+                tabs1.forEach((t) => {
+                    t.classList.remove("is-active");
+                });
+                tab.classList.add("is-active");
+            });
+        });
+        
+        //swiper card
+        var swiper = new Swiper(".mySwiperUsability", {
+            effect: "cards",
+            grabCursor: true,
+        });
+
+        var swiper2 = new Swiper(".mySwiperCube", {
+            loop: true,
+            pagination: {
+                el: ".swiper-pagination",
+                dynamicBullets: true,
+            },
+            effect: "cube",
+            grabCursor: true,
+            cubeEffect: {
+                shadow: true,
+                slideShadows: true,
+                shadowOffset: 20,
+                shadowScale: 0.94,
+            },
+            autoplay: {
+                delay: 5000,
+            },
+            speed: 800,
+        });
+    </script>
+</body>
+
+</html>

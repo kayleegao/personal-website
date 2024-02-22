@@ -1,0 +1,159 @@
+  .accordion-tab-wrapper {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 20px;
+  }
+  
+  .accordion {
+    overflow: hidden;
+    background: #fafafa;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px -10px rgba(0, 0, 0, 0.3);
+  }
+
+  .accordion-tabs {
+    display: none;
+  }
+  .accordion-tabs :focus {
+    outline: none;
+  }
+  .accordion-item:last-child {
+    border: none;
+  }
+  .accordion-item__label {
+    position: relative;
+    margin: 0;
+    padding: 20px;
+    cursor: pointer;
+    transition: padding 0.2s ease;
+  }
+  .accordion-item__label::after {
+    content: "";
+    position: absolute;
+    top: -4px;
+    right: 20px;
+    bottom: 0;
+    width: 6px;
+    height: 6px;
+    margin: auto;
+    transform: rotate(45deg);
+    opacity: 1;
+    transition: opacity 0.1s ease;
+    border-radius: 2px;
+    border: 5px solid transparent;
+    border-color: transparent #333 #333 transparent;
+  }
+  .accordion-item__label:hover {
+    background: #c1d7e2;
+  }
+  .accordion-item__container {
+    height: 0;
+    padding: 0 20px;
+    opacity: 0;
+    transition: padding 0.2s ease, opacity 0.5s 0.15s ease;
+  }
+  .accordion-active {
+    background: #f0f0f0;
+  }
+  .accordion-active .accordion-item__label {
+    padding-bottom: 0;
+    color: #333;
+    cursor: inherit;
+  }
+  .accordion-active .accordion-item__label:hover {
+    background: none;
+  }
+  .accordion-active .accordion-item__label::after {
+    opacity: 0;
+  }
+  .accordion-active .accordion-item__container {
+    height: auto;
+    padding: 20px;
+    opacity: 1;
+  }
+  .accordion-active .accordion-item__container p,
+  .accordion-active .accordion-item__container h1,
+  .accordion-active .accordion-item__container h2,
+  .accordion-active .accordion-item__container h3,
+  .accordion-active .accordion-item__container h4,
+  .accordion-active .accordion-item__container h5,
+  .accordion-active .accordion-item__container h6 {
+    color: #333;
+  }
+  .accordion-active .accordion-item__container p:first-child,
+  .accordion-active .accordion-item__container h1:first-child,
+  .accordion-active .accordion-item__container h2:first-child,
+  .accordion-active .accordion-item__container h3:first-child,
+  .accordion-active .accordion-item__container h4:first-child,
+  .accordion-active .accordion-item__container h5:first-child,
+  .accordion-active .accordion-item__container h6:first-child {
+    margin-top: 0;
+  }
+  .accordion-active .accordion-item__container p:last-child,
+  .accordion-active .accordion-item__container h1:last-child,
+  .accordion-active .accordion-item__container h2:last-child,
+  .accordion-active .accordion-item__container h3:last-child,
+  .accordion-active .accordion-item__container h4:last-child,
+  .accordion-active .accordion-item__container h5:last-child,
+  .accordion-active .accordion-item__container h6:last-child {
+    margin-bottom: 0;
+  }
+  
+  @media (min-width: 600px) {
+    .accordion-tabs {
+      display: flex;
+      background: #f0f0f0;
+    }
+    .accordion-tabs .accordion-tab {
+      flex: 1;
+      padding: 20px;
+      font: inherit;
+      border: none;
+      cursor: pointer;
+      color: #666;
+      background: #f0f0f0;
+      transition: 0.1s ease;
+    }
+    .accordion-tabs .accordion-tab:hover {
+      background: #e3e3e3;
+      transition: 0.5s ease;
+    }
+    .accordion-tabs .accordion-tab:last-child {
+      border-right: 0;
+    }
+    .accordion-tabs .accordion-tab.accordion-active {
+      color: #333;
+      font-weight: 600;
+      background: #fafafa;
+    }
+  
+    .accordion-item {
+      display: none;
+      min-height: 260px;
+      padding: 30px;
+      border: none;
+      background: #fafafa;
+    }
+    .accordion-item__label, .accordion-item__container {
+      padding: 0;
+      transition: inherit;
+      margin-left: 8.333333%;
+      margin-right: 8.333333%;
+    }
+    .accordion-item__label {
+      margin-bottom: 20px;
+      margin-top: 20px;
+    }
+    .accordion-item.accordion-active {
+      display: block;
+    }
+    .accordion-item.accordion-active .accordion-item__container {
+      padding: 0;
+    }
+  }
+  

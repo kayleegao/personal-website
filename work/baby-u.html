@@ -16,7 +16,9 @@
     <link href="../css/nav.css" rel="stylesheet">
     <link rel="shortcut icon" type="image/x-icon" href="../images/mylogo2.ico" />
     <script src="../js/modernizr.js"></script> <!-- Modernizr -->
-
+    <!-- Tab css -->
+    <link href="https://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="../css/custom-tab.css">
 
 </head>
 
@@ -1059,36 +1061,25 @@
         </div>
 
 
-        <div class="row" data-aos="fade-up" data-aos-duration="1000">
-            <div class="col-12">
+        <div class="row">
+            <div class="col-12" data-aos="fade-up" data-aos-duration="1000">
                 <h2 class="custom-h mt-100 mb-4">High-fidelity prototype.</h2>
             </div>
-
-            <div class="col-12 mb-5">
-                <h5 class="my-secondary">Primary Features 👇🏻</h5>
-                <section class="filters" id="tab2">
-                    <ul class="filters-content">
-                        <button class="filters__button is-active" data-target="#parent-academy">
-                            Parent Academy
-                        </button>
-                        <button class="filters__button" data-target="#milestones">
-                            Development Milestones
-                        </button>
-                        <button class="filters__button" data-target="#exercises">
-                            Exercises &amp; Skills
-                        </button>
-                        <button class="filters__button" data-target="#vaccination">
-                            Vaccination Record
-                        </button>
-                    </ul>
-
-                    <div>
-                        <div data-content class="is-active" id="parent-academy">
-                            <div class="row">
-                                <div class="col-10 offset-1 offset-lg-1 col-lg-6 mt-5">
-                                    <div class="vertical-center">
-                                        <span class="yellow-mark font-weight-bold h5">Parent Academy.</span>
-                                        <ol class="paragraph mt-4 list-unstyled">
+            <div class="col-12" data-aos="fade-up" data-aos-duration="1000">
+                <section class="accordion">
+                    <section class="accordion-tabs">
+                        <button class="accordion-tab accordion-active" data-actab-group="0" data-actab-id="0">Parent Academy</button>
+                        <button class="accordion-tab" data-actab-group="0" data-actab-id="1">Development Milestone</button>
+                        <button class="accordion-tab" data-actab-group="0" data-actab-id="2">Exercises &amp; Skills</button>
+                        <button class="accordion-tab" data-actab-group="0" data-actab-id="3">Vaccination Record</button>
+                    </section>
+                    <section class="accordion-content">
+                        <article class="accordion-item accordion-active" data-actab-group="0" data-actab-id="0">
+                            <h4 class="accordion-item__label">Parent academy.</h4>
+                            <div class="accordion-item__container">
+                                <div class="row">
+                                    <div class="col-12 col-lg-8">
+                                        <ol class="paragraph list-unstyled">
                                             <li>💡 Provide video and text parenting instructions as well as book and
                                                 website resources for children at different stages.
                                                 The selection will affect the content delivered to the kids. </li>
@@ -1100,23 +1091,22 @@
                                             </li>
                                         </ol>
                                     </div>
-                                </div>
-                                <div class="col-8 offset-2 col-sm-4 offset-sm-4 col-lg-3 offset-lg-1 mb-5 mt-5">
-                                    <video class="img-fluid" muted loop autoplay playsinline>
-                                        <source src="../images/baby-u/parent-academy.mp4" type="video/mp4">
-                                        <source src="../images/baby-u/parent-academy.ogg" type="video/ogg">
-                                        Your browser does not support the video tag.
-                                    </video>
+                                    <div class="col-8 offset-2 col-md-4 offset-md-4 col-lg-3 offset-lg-1">
+                                        <video class="mt-lg-n5 img-fluid" muted loop autoplay playsinline>
+                                            <source src="../images/baby-u/parent-academy.mp4" type="video/mp4">
+                                            <source src="../images/baby-u/parent-academy.ogg" type="video/ogg">
+                                            Your browser does not support the video tag.
+                                        </video>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-
-                        <div data-content id="milestones">
-                            <div class="row">
-                                <div class="col-10 offset-1 offset-lg-1 col-lg-6 mt-5">
-                                    <div class="vertical-center">
-                                        <span class="yellow-mark font-weight-bold h5">Development Milestones.</span>
-                                        <ol class="paragraph mt-4 list-unstyled">
+                        </article>
+                        <article class="accordion-item" data-actab-group="0" data-actab-id="1">
+                            <h4 class="accordion-item__label">Development milestone.</h4>
+                            <div class="accordion-item__container">
+                                <div class="row">
+                                    <div class="col-12 col-lg-8">
+                                        <ol class="paragraph list-unstyled">
                                             <li>💡 Check child's development including motor skills, cognitive skills,
                                                 and social skills. </li>
                                             <li>💡 Intelligent recommendation of a series of training courses for
@@ -1125,44 +1115,44 @@
                                             </li>
                                         </ol>
                                     </div>
-                                </div>
-                                <div class="col-8 offset-2 col-sm-4 offset-sm-4 col-lg-3 offset-lg-1 mb-5 mt-5">
-                                    <video class="img-fluid" muted loop autoplay playsinline>
-                                        <source src="../images/baby-u/milestones.mp4" type="video/mp4">
-                                        <source src="../images/baby-u/milestones.ogg" type="video/ogg">
-                                        Your browser does not support the video tag.
-                                    </video>
+                                    <div class="col-8 offset-2 col-md-4 offset-md-4 col-lg-3 offset-lg-1">
+                                        <video class="mt-lg-n5 img-fluid" muted loop autoplay playsinline>
+                                            <source src="../images/baby-u/milestones.mp4" type="video/mp4">
+                                            <source src="../images/baby-u/milestones.ogg" type="video/ogg">
+                                            Your browser does not support the video tag.
+                                        </video>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div data-content id="exercises">
-                            <div class="row">
-                                <div class="col-10 offset-1 offset-lg-1 col-lg-6 mt-5">
-                                    <div class="vertical-center">
-                                        <span class="yellow-mark font-weight-bold h5">Exercises &amp; Skills.</span>
-                                        <ol class="paragraph mt-4 list-unstyled">
+                        </article>
+                        <article class="accordion-item" data-actab-group="0" data-actab-id="2">
+                            <h4 class="accordion-item__label">Exercises &amp; skills.</h4>
+                            <div class="accordion-item__container">
+                                <div class="row">
+                                    <div class="col-12 col-lg-8">
+                                        <ol class="paragraph list-unstyled">
                                             <li>💡 Video-based courses for general exercises and skills development.
                                             </li>
                                             <li>💡 A list of tasks in the instruction page for a quick overview
                                             </li>
                                         </ol>
                                     </div>
-                                </div>
-                                <div class="col-8 offset-2 col-sm-4 offset-sm-4 col-lg-3 offset-lg-1 mb-5 mt-5">
-                                    <video class="img-fluid" muted loop autoplay playsinline>
-                                        <source src="../images/baby-u/exercises.mp4" type="video/mp4">
-                                        <source src="../images/baby-u/exercises.ogg" type="video/ogg">
-                                        Your browser does not support the video tag.
-                                    </video>
+                                    <div class="col-8 offset-2 col-md-4 offset-md-4 col-lg-3 offset-lg-1">
+                                        <video class="mt-lg-n5 img-fluid" muted loop autoplay playsinline>
+                                            <source src="../images/baby-u/exercises.mp4" type="video/mp4">
+                                            <source src="../images/baby-u/exercises.ogg" type="video/ogg">
+                                            Your browser does not support the video tag.
+                                        </video>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div data-content id="vaccination">
-                            <div class="row">
-                                <div class="col-10 offset-1 offset-lg-1 col-lg-6 mt-5">
-                                    <div class="vertical-center">
-                                        <span class="yellow-mark font-weight-bold h5">Vaccination Record.</span>
-                                        <ol class="paragraph mt-4 list-unstyled">
+                        </article>
+                        <article class="accordion-item" data-actab-group="0" data-actab-id="3">
+                            <h4 class="accordion-item__label">Vaccination record.</h4>
+                            <div class="accordion-item__container">
+                                <div class="row">
+                                    <div class="col-12 col-lg-8">
+                                        <ol class="paragraph list-unstyled">
                                             <li>💡 List of mandatory vaccines recommended according to the age of the
                                                 child.</li>
                                             <li>💡 Make a record of completed vaccinations</li>
@@ -1170,135 +1160,17 @@
                                             <li>💡 Allow adding an optional vaccination and its due date.</li>
                                         </ol>
                                     </div>
-                                </div>
-                                <div class="col-8 offset-2 col-sm-4 offset-sm-4 col-lg-3 offset-lg-1 mb-5 mt-5">
-                                    <video class="img-fluid" muted loop autoplay playsinline>
-                                        <source src="../images/baby-u/vaccination.mp4" type="video/mp4">
-                                        <source src="../images/baby-u/vaccination.ogg" type="video/ogg">
-                                        Your browser does not support the video tag.
-                                    </video>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-            </div>
-        </div>
-        <div class="row" data-aos="fade-up" data-aos-duration="1000">
-
-
-            <div class="col-12 mt-3 mb-4 mb-5">
-                <h5 class="my-secondary">General Features 👇🏻</h5>
-                <section class="filters" id="tab1">
-                    <ul class="filters-content">
-                        <button class="filters__button is-active" data-target="#onboarding">
-                            Onboarding
-                        </button>
-                        <button class="filters__button" data-target="#home">
-                            Home
-                        </button>
-                        <button class="filters__button" data-target="#chat">
-                            Chat
-                        </button>
-                        <button class="filters__button" data-target="#profile">
-                            Profile
-                        </button>
-                    </ul>
-
-                    <div>
-                        <div data-content class="is-active" id="onboarding">
-                            <div class="row">
-                                <div class="col-10 offset-1 offset-lg-1 col-lg-6 mt-5">
-                                    <div class="vertical-center">
-                                        <span class="yellow-mark font-weight-bold h5">Onboarding.</span>
-                                        <ol class="paragraph mt-4 list-unstyled">
-                                            <li>💡 Onboarding is divided into three steps: email and password, user
-                                                info, and child info.</li>
-                                            <li>💡 Users are allowed to add multiple children when registering.</li>
-                                            <li>💡 Each registration step has corresponding illustrations to help
-                                                visualize the information.</li>
-                                        </ol>
+                                    <div class="col-8 offset-2 col-md-4 offset-md-4 col-lg-3 offset-lg-1">
+                                        <video class="mt-lg-n5 img-fluid" muted loop autoplay playsinline>
+                                            <source src="../images/baby-u/vaccination.mp4" type="video/mp4">
+                                            <source src="../images/baby-u/vaccination.ogg" type="video/ogg">
+                                            Your browser does not support the video tag.
+                                        </video>
                                     </div>
                                 </div>
-                                <div class="col-8 offset-2 col-sm-4 offset-sm-4 col-lg-3 offset-lg-1 mb-5 mt-5">
-                                    <video class="img-fluid" muted loop autoplay playsinline>
-                                        <source src="../images/baby-u/onboarding-frame.mp4" type="video/mp4">
-                                        <source src="../images/baby-u/onboarding-frame.ogg" type="video/ogg">
-                                        Your browser does not support the video tag.
-                                    </video>
-                                </div>
                             </div>
-                        </div>
-
-                        <div data-content id="home">
-                            <div class="row">
-                                <div class="col-10 offset-1 offset-lg-1 col-lg-6 mt-5">
-                                    <div class="vertical-center">
-                                        <span class="yellow-mark font-weight-bold h5">Home.</span>
-                                        <ol class="paragraph mt-4 list-unstyled">
-                                            <li>💡 A summary of the most significant information including development
-                                                curve, parent academy learning progress, and vaccination reminder. </li>
-                                            <li>💡 Allow switching between different children if applicable. </li>
-                                            <li>💡 User will naviagte to the development milestones when clicking on the
-                                                development curve. </li>
-                                            <li>💡 Quick access to the parent academy content from the last visit. </li>
-                                            <li>💡 Check outstanding vaccinations at a glance. </li>
-                                        </ol>
-                                    </div>
-                                </div>
-                                <div class="col-8 offset-2 col-sm-4 offset-sm-4 col-lg-3 offset-lg-1 mb-5 mt-5">
-                                    <video class="img-fluid" muted loop autoplay playsinline>
-                                        <source src="../images/baby-u/home.mp4" type="video/mp4">
-                                        <source src="../images/baby-u/home.ogg" type="video/ogg">
-                                        Your browser does not support the video tag.
-                                    </video>
-                                </div>
-                            </div>
-                        </div>
-                        <div data-content id="chat">
-                            <div class="row">
-                                <div class="col-10 offset-1 offset-lg-1 col-lg-6 mt-5">
-                                    <div class="vertical-center">
-                                        <span class="yellow-mark font-weight-bold h5">Chat.</span>
-                                        <ol class="paragraph mt-4 list-unstyled">
-                                            <li>💡 Allow chat with experts for consultation. </li>
-                                            <li>💡 Experts with certain qualification are verified and titled in orange.
-                                            </li>
-                                            <li>💡 Allow add and chat with a friend.</li>
-                                        </ol>
-                                    </div>
-                                </div>
-                                <div class="col-8 offset-2 col-sm-4 offset-sm-4 col-lg-3 offset-lg-1 mb-5 mt-5">
-                                    <video class="img-fluid" muted loop autoplay playsinline>
-                                        <source src="../images/baby-u/chat.mp4" type="video/mp4">
-                                        <source src="../images/baby-u/chat.ogg" type="video/ogg">
-                                        Your browser does not support the video tag.
-                                    </video>
-                                </div>
-                            </div>
-                        </div>
-                        <div data-content id="profile">
-                            <div class="row">
-                                <div class="col-10 offset-1 offset-lg-1 col-lg-6 mt-5">
-                                    <div class="vertical-center">
-                                        <span class="yellow-mark font-weight-bold h5">Profile.</span>
-                                        <ol class="paragraph mt-4 list-unstyled">
-                                            <li>💡 User infomation editing.</li>
-                                            <li>💡 Check activity log by day.</li>
-                                            <li>💡 General setting and logout.</li>
-                                        </ol>
-                                    </div>
-                                </div>
-                                <div class="col-8 offset-2 col-sm-4 offset-sm-4 col-lg-3 offset-lg-1 mb-5 mt-5">
-                                    <video class="img-fluid" muted loop autoplay playsinline>
-                                        <source src="../images/baby-u/profile.mp4" type="video/mp4">
-                                        <source src="../images/baby-u/profile.ogg" type="video/ogg">
-                                        Your browser does not support the video tag.
-                                    </video>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                        </article>
+                    </section>
                 </section>
             </div>
         </div>
@@ -1387,6 +1259,7 @@
     <script src="../js/img-comparsion.js"></script> <!-- Resource jQuery -->
     <script type="text/javascript" src="https://res.cloudinary.com/veseylab/raw/upload/v1636192990/magicmouse/magic_mouse-1.2.1.cdn.min.js"></script>
     <script src="../js/custom.js"></script>
+    <script src="../js/custom-tab.js"></script>
     <script>
         jQuery(document).ready(function ($) {
             initMoreProject();
@@ -1406,43 +1279,6 @@
             document.getElementById("modal01").style.display = "block";
         }
 
-        //tabs
-        const tabs1 = document.querySelectorAll(".filters#tab1 [data-target]"),
-            tabContents1 = document.querySelectorAll(".filters#tab1 [data-content]"),
-            tabs2 = document.querySelectorAll(".filters#tab2 [data-target]"),
-            tabContents2 = document.querySelectorAll(".filters#tab2 [data-content]");
-
-        tabs1.forEach((tab) => {
-            tab.addEventListener("click", () => {
-                const target = document.querySelector(tab.dataset.target);
-
-                tabContents1.forEach((tc) => {
-                    tc.classList.remove("is-active");
-                });
-                target.classList.add("is-active");
-
-                tabs1.forEach((t) => {
-                    t.classList.remove("is-active");
-                });
-                tab.classList.add("is-active");
-            });
-        });
-
-        tabs2.forEach((tab) => {
-            tab.addEventListener("click", () => {
-                const target = document.querySelector(tab.dataset.target);
-
-                tabContents2.forEach((tc) => {
-                    tc.classList.remove("is-active");
-                });
-                target.classList.add("is-active");
-
-                tabs2.forEach((t) => {
-                    t.classList.remove("is-active");
-                });
-                tab.classList.add("is-active");
-            });
-        });
 
         //swiper card
         var swiper = new Swiper(".mySwiperUsability", {

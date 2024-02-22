@@ -312,6 +312,20 @@ function toHome() {
 //  window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
 //}
 
+var dataAnalysisPage = {
+  codeName: "eleme-data-analysis", 
+  name: "Eleme Data Board Redesign",
+  description: "A readable, complete, and guided data board of Eleme Retail", 
+  imageAddress: function() {
+    return "../images/more-projects/"+this.codeName+"-card.png";
+  },
+  link: function() {
+    return this.codeName + ".html";
+  },
+  ProjectType: "UX/UI · TO-B DESIGN", 
+  ProjectTypeColor: "rgba(0, 122, 255, 0.7)"
+};
+
 var babyuPage = {
   codeName: "baby-u", 
   name: "BabyU",
@@ -352,20 +366,6 @@ var daddyZonePage = {
   },
   ProjectType: "UX/UI · DESIGN FOR FUTURE", 
   ProjectTypeColor: "rgba(73, 117, 233, 0.7)"
-};
-
-var roommatePage = {
-  codeName: "best-roommate", 
-  name: "Best Roommate",
-  description: "An app that helps young people find ideal apartments and roommates", 
-  imageAddress: function() {
-    return "../images/more-projects/"+this.codeName+"-card.png";
-  },
-  link: function() {
-    return this.codeName + ".html"
-  },
-  ProjectType: "UX/UI", 
-  ProjectTypeColor: "rgba(99, 82, 151, 0.7)"
 };
 
 var dysonBotPage = {
@@ -440,7 +440,7 @@ var uniformPage = {
   ProjectTypeColor: "rgba(221, 165, 23, 0.7)"
 };
 
-var allProjects = [dysonBotPage, babyuPage, playgroundPage, daddyZonePage, roommatePage, oddsAndEndsPage, goToTheEarthPage, benchPressPage, uniformPage];
+var allProjects = [dysonBotPage, babyuPage, playgroundPage, daddyZonePage, oddsAndEndsPage, goToTheEarthPage, benchPressPage, uniformPage, dataAnalysisPage];
 
 function getRandomProjects() {
   //Generate five random projects other than the current one
