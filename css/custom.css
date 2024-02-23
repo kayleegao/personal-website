@@ -1372,7 +1372,7 @@ td {
     cursor: pointer;
   }
 
-  .more-projects-icon, .projects-icon {
+  .projects-icon {
     max-width: 40px; 
     max-height: 40px;
     margin-top: 3px;
@@ -1910,7 +1910,7 @@ blockquote.blockstyle:after {
     .tab-container {
       width: 100%;
     }
-    .more-projects-icon {
+    .projects-icon {
       max-width: 35px;
       max-height: 35px;
     }
@@ -1986,7 +1986,7 @@ blockquote.blockstyle:after {
       font-size: 18px;
       margin-bottom: 3px;
     }
-    .more-projects-icon {
+    .projects-icon {
       display: none !important;
     }
     .more-projects p {

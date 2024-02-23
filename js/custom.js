@@ -314,8 +314,8 @@ function toHome() {
 
 var dataAnalysisPage = {
   codeName: "eleme-data-analysis", 
-  name: "Eleme Data Board Redesign",
-  description: "A readable, complete, and guided data board of Eleme Retail", 
+  name: "Eleme Data Board",
+  description: "Redesigned the data board of Eleme Retail to enhance its readability, functionality, and ease of use", 
   imageAddress: function() {
     return "../images/more-projects/"+this.codeName+"-card.png";
   },
@@ -455,7 +455,7 @@ function getRandomProjects() {
       shuffled.push(shuffled.splice(shuffled.indexOf(shuffled[i]), 1)[0]); //Move the current project to the last
     }
   }
-  let selected = shuffled.slice(0, 4); //slice the first four elements from shuffled
+  let selected = shuffled.slice(0, 5); //slice the first five elements from shuffled
   var placeholder = "";
   for (i = 0; i < selected.length; i++) {
       placeholder = placeholder.concat(
@@ -475,7 +475,7 @@ function getRandomProjects() {
                     <h5 class="mt-0 mb-md-1 d-inline-block">`+selected[i].name+`</h5>
                   </div>
                 <img src="../images/more-projects/btn-round-arrow.svg"
-                    alt="" class="d-inline-block more-projects-icon">
+                    alt="" class="d-inline-block projects-icon">
                 <p>`+selected[i].description+`</p>
               </div>
             </div>
@@ -483,13 +483,7 @@ function getRandomProjects() {
         </div>`);
 
   }
-  document.getElementById("more-project-wrapper").innerHTML = placeholder+`
-  <div class="swiper-slide all-center more-projects animate__animated animate__fadeIn animate__slow" onclick="toHome()">
-    <div>
-        <img src="../images/more-projects/folder.png" alt="more" style="height: 50px; width: auto;" class="d-block ml-auto mr-auto mb-3">
-        All Projects
-    </div>
-  </div>`;
+  document.getElementById("more-project-wrapper").innerHTML = placeholder;
 
   $(".projects-img").hover3d({
     selector: ".project__card"
