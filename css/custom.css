@@ -942,6 +942,12 @@ td {
   font-weight: 700;
 }
 
+.font-med-num {
+  font-size: 60px;
+  color: #e8e8e8;
+  font-weight: 700;
+}
+
 .mySwiperCube .font-large-num {
   color: #ededed;
 }
@@ -982,7 +988,7 @@ td {
   color: var(--light-white-color);
   border-radius: 50px;
   font-size: .8em;
-  padding: 15px 20px;
+  padding: 12px 20px;
   transition: all 500ms ease;
   -webkit-transition: all 500ms ease;
   -moz-transition: all 500ms ease;
