@@ -164,66 +164,6 @@ h1, h2, h5 {
   line-height: 2em;
 }
 
-#hobby-slider {
-  --image-size: 60px;
-  padding: 40px 20px;
-  overflow: hidden;
-  width: 100%;
-  margin: 0 auto;
-  position: relative;
-  display: flex;
-  border-top: 1px solid #d5d5d5;
-  border-bottom: 1px solid #d5d5d5;
-}
-
-#hobby-heart {
-  position: absolute;
-  left: 0;
-  right: 0;
-  margin: auto;
-  top: -18%;
-  width: 80px;
-  height: 80px;
-  background-color: var(--light-white-color);
-  z-index: 100;
-}
-
-#hobby-slider div {
-  display: flex;
-  position: relative;
-  animation: marquee 5s linear infinite;
-  justify-content: space-around;
-}
-#hobby-slider:hover div {
-  animation-play-state: paused;
-}
-#hobby-slider span {
-  display: block;
-  font-size: var(--image-size);
-  margin: 0 1vw;
-}
-#hobby-slider .point-indicator {
-  color: var(--peach-color);
-}
-#hobby-slider:after {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  left: 0;
-  top: 0;
-  background: linear-gradient(to right, var(--light-white-color), rgba(255, 255, 255, 0) 80px, rgba(255, 255, 255, 0) calc(100% - 80px), var(--light-white-color));
-}
-@media (max-width: 900px) {
-  #hobby-slider {
-    --image-size: 50px;
-  }
-  #hobby-heart {
-    top: -15%;
-    width: 60px;
-    height: 60px;
-  }
-}
 
 @keyframes marquee {
   0% {

@@ -315,14 +315,14 @@ function toHome() {
 var dataAnalysisPage = {
   codeName: "eleme-analytics-section", 
   name: "Eleme Analytics Section",
-  description: "Redesigned the data analytics section for Eleme Retail to enhance its readability, functionality, and ease of use", 
+  description: " data analytics section of the Eleme business platform with enhanced readability, functionality, and understandability", 
   imageAddress: function() {
     return "../images/more-projects/"+this.codeName+"-card.jpg";
   },
   link: function() {
     return this.codeName + ".html";
   },
-  ProjectType: "UX/UI · TO-B DESIGN", 
+  ProjectType: "UX/UI · TO-B REDESIGN", 
   ProjectTypeColor: "rgba(0, 122, 255, 0.7)"
 };
 
@@ -336,7 +336,7 @@ var babyuPage = {
   link: function() {
     return this.codeName + ".html";
   },
-  ProjectType: "UX/UI", 
+  ProjectType: "UX/UI · 0-1 DESIGN", 
   ProjectTypeColor: "rgba(78, 161, 165, 0.7)"
 };
 
@@ -350,7 +350,7 @@ var playgroundPage = {
   link: function() {
     return this.codeName + ".html";
   },
-  ProjectType: "UX/UI", 
+  ProjectType: "UX/UI · 0-1 DESIGN", 
   ProjectTypeColor: "rgba(75, 98, 193, 0.7)"
 };
 
@@ -393,7 +393,7 @@ var goToTheEarthPage = {
   link: function() {
     return this.codeName + ".html"
   },
-  ProjectType: "GAME DESIGN", 
+  ProjectType: "BOARD GAME DESIGN", 
   ProjectTypeColor: "rgba(88, 181, 227, 0.7)"
 };
 
@@ -408,7 +408,7 @@ var uniformPage = {
   link: function() {
     return this.codeName + ".html"
   },
-  ProjectType: "DEVELOPMENT", 
+  ProjectType: "FRONT-END DEVELOPMENT", 
   ProjectTypeColor: "rgba(221, 165, 23, 0.7)"
 };
 
@@ -432,7 +432,7 @@ function getRandomProjects() {
   for (i = 0; i < selected.length; i++) {
       placeholder = placeholder.concat(
         `<div class="swiper-slide more-projects animate__animated animate__fadeIn animate__slow">
-          <a href="`+selected[i].link()+`" class="more-projects-link">
+          <a target="__blank" href="`+selected[i].link()+`" class="more-projects-link">
             <div class="row">
               <div class="col-12 mb-1 mb-sm-3">
               <div class="projects-img">
