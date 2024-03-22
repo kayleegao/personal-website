@@ -313,9 +313,9 @@ function toHome() {
 //}
 
 var dataAnalysisPage = {
-  codeName: "eleme-data-analysis", 
-  name: "Eleme Data Board",
-  description: "Redesigned the data board of Eleme Retail to enhance its readability, functionality, and ease of use", 
+  codeName: "eleme-analytics-section", 
+  name: "Eleme Analytics Section",
+  description: "Redesigned the data analytics section for Eleme Retail to enhance its readability, functionality, and ease of use", 
   imageAddress: function() {
     return "../images/more-projects/"+this.codeName+"-card.png";
   },

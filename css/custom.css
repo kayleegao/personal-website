@@ -83,6 +83,10 @@ hr.wavy-line {
   display: flex;
 }
 
+.figcaption {
+  color: #999;
+}
+
 .font-weight-medium {
   font-weight: 500;
 }
@@ -866,7 +870,13 @@ background: linear-gradient(0deg, rgba(244, 186, 185, 0.35) 0%, rgba(244, 186, 1
   box-shadow: 2.037e-15px 33.2667px 66.5333px rgba(51, 51, 51, 0.1), inset -4.75299e-16px -7.76222px 7.76222px #222, inset 4.75299e-16px 7.76222px 7.76222px #555;
 }
 
-.intro-card p, .intro-card ul li, .intro-card-reversed p, .intro-card-reversed ul li, .span-title, .mySwiperCube ul li, .mySwiperCube p {
+.white-card {
+  border: 1px solid #eee; 
+  border-radius: 8px; 
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
+.intro-card p, .white-card p, .intro-card ul li, .intro-card-reversed p, .intro-card-reversed ul li, .span-title, .mySwiperCube ul li, .mySwiperCube p {
   font-size: 0.9em;
 }
 
