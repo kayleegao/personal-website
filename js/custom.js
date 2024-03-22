@@ -354,20 +354,6 @@ var playgroundPage = {
   ProjectTypeColor: "rgba(75, 98, 193, 0.7)"
 };
 
-var daddyZonePage = {
-  codeName: "daddy-zone", 
-  name: "Daddy Zone",
-  description: "A solution for fathers with parenting responsibilities", 
-  imageAddress: function() {
-    return "../images/more-projects/"+this.codeName+"-card.png";
-  },
-  link: function() {
-    return this.codeName + ".html"
-  },
-  ProjectType: "UX/UI · DESIGN FOR FUTURE", 
-  ProjectTypeColor: "rgba(73, 117, 233, 0.7)"
-};
-
 var dysonBotPage = {
   codeName: "dyson-bot", 
   name: "Dyson Bot x IBM",
@@ -396,20 +382,6 @@ var oddsAndEndsPage = {
   ProjectTypeColor: "rgba(121, 156, 117, 0.7)"
 };
 
-
-var benchPressPage = {
-  codeName: "bench-press-upgrade", 
-  name: "Bench Press Upgrade",
-  description: "A bench press with no safety issues", 
-  imageAddress: function() {
-    return "../images/more-projects/"+this.codeName+"-card.png";
-  },
-  link: function() {
-    return this.codeName + ".html"
-  },
-  ProjectType: "HCI REDESIGN", 
-  ProjectTypeColor: "rgba(225, 159, 88, 0.7)"
-};
 
 var goToTheEarthPage = {
   codeName: "go-to-the-earth", 
@@ -440,7 +412,7 @@ var uniformPage = {
   ProjectTypeColor: "rgba(221, 165, 23, 0.7)"
 };
 
-var allProjects = [dysonBotPage, babyuPage, playgroundPage, daddyZonePage, oddsAndEndsPage, goToTheEarthPage, benchPressPage, uniformPage, dataAnalysisPage];
+var allProjects = [dysonBotPage, babyuPage, playgroundPage, oddsAndEndsPage, goToTheEarthPage, uniformPage, dataAnalysisPage];
 
 function getRandomProjects() {
   //Generate five random projects other than the current one
