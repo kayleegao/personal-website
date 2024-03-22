@@ -315,7 +315,7 @@ function toHome() {
 var dataAnalysisPage = {
   codeName: "eleme-analytics-section", 
   name: "Eleme Analytics Section",
-  description: " data analytics section of the Eleme business platform with enhanced readability, functionality, and understandability", 
+  description: "A data analytics section with enhanced readability, functionality, and understandability", 
   imageAddress: function() {
     return "../images/more-projects/"+this.codeName+"-card.jpg";
   },
