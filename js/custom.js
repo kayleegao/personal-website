@@ -25,15 +25,15 @@ $(document).ready(function() {
     topOnEmptyHash: true,
     header: '[data-scroll-header]' // Selector for fixed headers (must be a valid CSS selector)
   });
-  var options = {
-    "cursorOuter": "circle-basic",
-    "hoverEffect": "pointer-blur",
-    "hoverItemMove": false,
-    "defaultCursor": false,
-    "outerWidth": 30,
-    "outerHeight": 30
-        };
-      magicMouse(options);
+  //var options = {
+  //  "cursorOuter": "circle-basic",
+  //  "hoverEffect": "pointer-blur",
+  //  "hoverItemMove": false,
+  //  "defaultCursor": false,
+  //  "outerWidth": 30,
+  //  "outerHeight": 30
+  //      };
+  //    magicMouse(options);
 });
 
 function sleep(time) {
