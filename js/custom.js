@@ -317,7 +317,7 @@ var dataAnalysisPage = {
   name: "Eleme Analytics Section",
   description: "Redesigned the data analytics section for Eleme Retail to enhance its readability, functionality, and ease of use", 
   imageAddress: function() {
-    return "../images/more-projects/"+this.codeName+"-card.png";
+    return "../images/more-projects/"+this.codeName+"-card.jpg";
   },
   link: function() {
     return this.codeName + ".html";
@@ -331,7 +331,7 @@ var babyuPage = {
   name: "BabyU",
   description: "A platform to help first-time parents learn about parenting and track their child's development", 
   imageAddress: function() {
-    return "../images/more-projects/"+this.codeName+"-card.png";
+    return "../images/more-projects/"+this.codeName+"-card.jpg";
   },
   link: function() {
     return this.codeName + ".html";
@@ -345,7 +345,7 @@ var playgroundPage = {
   name: "Playground",
   description: "A social app that helps children make friends and socialize", 
   imageAddress: function() {
-    return "../images/more-projects/"+this.codeName+"-card.png";
+    return "../images/more-projects/"+this.codeName+"-card.jpg";
   },
   link: function() {
     return this.codeName + ".html";
@@ -359,7 +359,7 @@ var dysonBotPage = {
   name: "Dyson Bot x IBM",
   description: "A trustworthy and ethical conversational AI Chatbot for Dyson", 
   imageAddress: function() {
-    return "../images/more-projects/"+this.codeName+"-card.png";
+    return "../images/more-projects/"+this.codeName+"-card.jpg";
   },
   link: function() {
     return this.codeName + ".html"
@@ -373,7 +373,7 @@ var oddsAndEndsPage = {
   name: "Odds and Ends",
   description: "An AR experience that brings Emily Carr's artwork Odds and Ends to life", 
   imageAddress: function() {
-    return "../images/more-projects/"+this.codeName+"-card.png";
+    return "../images/more-projects/"+this.codeName+"-card.jpg";
   },
   link: function() {
     return this.codeName + ".html"
@@ -388,7 +388,7 @@ var goToTheEarthPage = {
   name: "Go to the Earth",
   description: "An educational roll-and-move board game to teach about the solar system", 
   imageAddress: function() {
-    return "../images/more-projects/"+this.codeName+"-card.png";
+    return "../images/more-projects/"+this.codeName+"-card.jpg";
   },
   link: function() {
     return this.codeName + ".html"
@@ -403,7 +403,7 @@ var uniformPage = {
   name: "SUXD Uniform",
   description: "A promotional page for SUXD department uniform developed for mobile terminal", 
   imageAddress: function() {
-    return "../images/more-projects/"+this.codeName+"-card.png";
+    return "../images/more-projects/"+this.codeName+"-card.jpg";
   },
   link: function() {
     return this.codeName + ".html"

@@ -11,7 +11,7 @@
   
   .accordion {
     overflow: hidden;
-    background: #fafafa;
+    background: #fff;
     border-radius: 10px;
     box-shadow: 0 10px 20px -10px rgba(0, 0, 0, 0.3);
   }
@@ -129,7 +129,7 @@
     .accordion-tabs .accordion-tab.accordion-active {
       color: #333;
       font-weight: 600;
-      background: #fafafa;
+      background: #fff;
     }
   
     .accordion-item {
@@ -137,7 +137,7 @@
       min-height: 260px;
       padding: 30px;
       border: none;
-      background: #fafafa;
+      background: #fff;
     }
     .accordion-item__label, .accordion-item__container {
       padding: 0;
