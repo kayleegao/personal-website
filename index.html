@@ -391,7 +391,8 @@
   <script src="./js/jquery-3.6.0.min.js"></script>
   <script src="./js/aos.js"></script>
   <!--<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>-->
-  <script src="https://cdn.jsdelivr.net/npm/lax.js"></script>
+  <script src="./js/lax.js"></script>
+  <!--<script src="https://cdn.jsdelivr.net/npm/lax.js"></script>-->
   <script src="./js/typewriter.js"></script>
   <!-- <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script> -->
   <script type="text/javascript" src="./js/loading-bar.min.js"></script>
@@ -414,6 +415,8 @@
     * Copyright (c) 2022
     */
     var counting = setInterval(function () {
+      console.log(loader.value);
+      console.log(document.readyState);
         loader.set(++loader.value);
       if (loader.value > 89) {
         if (window.jQuery) {
