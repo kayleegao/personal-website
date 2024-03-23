@@ -1843,6 +1843,9 @@ blockquote.blockstyle:after {
     #home-illustration {
       top: -10px;
     }
+    .projects-icon {
+      display: none !important;
+    }
 
   }
   @media only screen and (max-width: 767px) { /* sm or smaller */
@@ -1865,10 +1868,6 @@ blockquote.blockstyle:after {
     }
     .tab-container {
       width: 100%;
-    }
-    .projects-icon {
-      max-width: 35px;
-      max-height: 35px;
     }
     .more-projects p {
       margin-top: 0;
@@ -1941,9 +1940,6 @@ blockquote.blockstyle:after {
     .more-projects h5 {
       font-size: 18px;
       margin-bottom: 3px;
-    }
-    .projects-icon {
-      display: none !important;
     }
     .more-projects p {
       font-size: 0.75em;
