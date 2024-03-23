@@ -415,9 +415,11 @@
     * Copyright (c) 2022
     */
     var counting = setInterval(function () {
-      console.log(loader.value);
-      console.log(document.readyState);
+      if (loader.value < 90) {
+        console.log(loader.value);
+        console.log(document.readyState);
         loader.set(++loader.value);
+      };
       if (loader.value > 89) {
         if (window.jQuery) {
           //console.log('jquery loaded');
