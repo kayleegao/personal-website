@@ -26,7 +26,7 @@
     <header data-scroll-header class="cd-header px-xl-5 animate__animated animate__fadeInDown">
 		<div class="header-wrapper">
 			<div class="logo-wrap">
-				<a class="navbar-brand font-weight-bold" href="../index.html"><img src="../images/mylogo.png" class="mylogo mr-4"><span
+				<a class="navbar-brand font-weight-bold" href="../index.html"><img src="../images/mylogo.svg" class="mylogo mr-4"><span
           class="my-name">Kaylee Gao.</span></a>
 			</div>
 			<div class="nav-but-wrap float-right">
@@ -896,7 +896,6 @@
             </div>
 
             <div class="col-12 mb-5">
-                <p class="paragraph"><strong>Swipe the cube</strong> to see UI redesign details. </p>
                 <div class="swiper mySwiperCube">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide intro-card">
@@ -1254,7 +1253,6 @@
     <script src="../js/popper.min.js"></script>
     <script src="../js/bootstrap-4.3.1.js"></script>
     <script src="../js/smooth-scroll.polyfills.min.js"></script>
-    <script src="../js/jquery-2.1.1.js"></script>
     <script src="../js/jquery.mobile.custom.min.js"></script> <!-- Resource jQuery -->
     <script src="../js/img-comparsion.js"></script> <!-- Resource jQuery -->
     <script src="../js/custom.js"></script>
@@ -1287,6 +1285,7 @@
 
         var swiper2 = new Swiper(".mySwiperCube", {
             loop: true,
+            speed: 800,
             pagination: {
                 el: ".swiper-pagination",
                 dynamicBullets: true,
@@ -1298,6 +1297,10 @@
                 slideShadows: true,
                 shadowOffset: 20,
                 shadowScale: 0.94,
+            },
+            autoplay: {
+                delay: 6000,
+                disableOnInteraction: true,
             },
         });
 

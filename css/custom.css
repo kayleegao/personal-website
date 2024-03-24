@@ -632,6 +632,7 @@ background: linear-gradient(0deg, rgba(244, 186, 185, 0.35) 0%, rgba(244, 186, 1
 
 #home-illustration {
   width: 100%; 
+  position: absolute;
   top: -50px; 
   left: 0;
   z-index: 1;
@@ -1846,7 +1847,9 @@ blockquote.blockstyle:after {
     .projects-icon {
       display: none !important;
     }
-
+    #home-images {
+      margin-top: 35vh;
+    }
   }
   @media only screen and (max-width: 767px) { /* sm or smaller */
     h2 {
