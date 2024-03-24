@@ -617,8 +617,8 @@ background: linear-gradient(0deg, rgba(244, 186, 185, 0.35) 0%, rgba(244, 186, 1
 }
 
 #yellow-blob {
-  width: 80%; 
-  top: 40%; 
+  width: 75%; 
+  top: 45%; 
   left: 0; 
   z-index: -1;
 }
@@ -658,6 +658,7 @@ background: linear-gradient(0deg, rgba(244, 186, 185, 0.35) 0%, rgba(244, 186, 1
 
 .ramp-up-anim {
   overflow: hidden;
+  width: 101%;
 }
 .ramp-up-anim span {
   letter-spacing: 0px;
