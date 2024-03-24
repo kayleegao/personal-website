@@ -606,7 +606,7 @@ background: linear-gradient(0deg, rgba(244, 186, 185, 0.35) 0%, rgba(244, 186, 1
 
 #welcome {
     height: 70vh;
-    margin-top: 30vh;
+    margin-top: 28vh;
 }
 
 #home-images {
@@ -1848,7 +1848,7 @@ blockquote.blockstyle:after {
       display: none !important;
     }
     #home-images {
-      margin-top: 35vh;
+      margin-top: 30vh;
     }
   }
   @media only screen and (max-width: 767px) { /* sm or smaller */
@@ -1863,7 +1863,7 @@ blockquote.blockstyle:after {
       line-height: 2em;
     }
     #welcome {
-      margin-top: 30vh;
+      margin-top: 20vh;
       height: auto;
     }
     #home-images {
@@ -1911,7 +1911,6 @@ blockquote.blockstyle:after {
       max-width: 40px;
     }
     #welcome {
-      margin-top: 20vh;
       text-align: center;
     }
     #home-images {
