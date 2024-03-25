@@ -658,7 +658,7 @@ background: linear-gradient(0deg, rgba(244, 186, 185, 0.35) 0%, rgba(244, 186, 1
 
 .ramp-up-anim {
   overflow: hidden;
-  width: 101%;
+  width: 105%;
 }
 .ramp-up-anim span {
   letter-spacing: 0px;
@@ -712,7 +712,7 @@ background: linear-gradient(0deg, rgba(244, 186, 185, 0.35) 0%, rgba(244, 186, 1
 .subtitle {
     font-size: 3em;
     margin-bottom: 60px;
-    margin-top: 250px;
+    margin-top: 180px;
     font-weight: 700;
 }
 
