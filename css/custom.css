@@ -658,7 +658,7 @@ background: linear-gradient(0deg, rgba(244, 186, 185, 0.35) 0%, rgba(244, 186, 1
 
 .ramp-up-anim {
   overflow: hidden;
-  width: 105%;
+  width: 104%;
 }
 .ramp-up-anim span {
   letter-spacing: 0px;
@@ -1913,6 +1913,9 @@ blockquote.blockstyle:after {
     }
     #welcome {
       text-align: center;
+    }
+    .ramp-up-anim {
+      margin-left: -2%;
     }
     #home-images {
       margin-top: -50px;
