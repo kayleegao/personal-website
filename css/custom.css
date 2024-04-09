@@ -1,25 +1,27 @@
 @font-face {
   font-family: 'Euclidcircularb';
-  src: url(../font/EuclidCircularB-Regular.otf) format('opentype');
+  src: url(../font/euclidcircularb-regular-webfont.woff) format('woff');
+  src: url(../font/euclidcircularb-regular-webfont.woff2) format('woff2');
   font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: 'Euclidcircularb';
-  src: url(../font/EuclidCircularB-Medium.otf) format('opentype');
+  src: url(../font/euclidcircularb-medium-webfont.woff) format('woff');
+  src: url(../font/euclidcircularb-medium-webfont.woff2) format('woff2');
   font-weight: 500;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: 'Euclidcircularb';
-  src: url(../font/EuclidCircularB-SemiBold.otf) format('opentype');
+  src: url(../font/euclidcircularb-semibold-webfont.woff) format('woff');
+  src: url(../font/euclidcircularb-semibold-webfont.woff2) format('woff2');
   font-weight: 700;
   font-style: normal;
   font-display: swap;
 }
-
 
 
 :root {
