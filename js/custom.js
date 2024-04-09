@@ -250,8 +250,22 @@ var dataAnalysisPage = {
   link: function() {
     return this.codeName + ".html";
   },
-  ProjectType: "UX/UI · TO-B REDESIGN", 
+  ProjectType: "TO-B DESIGN · PROBLEM DEFINITION", 
   ProjectTypeColor: "rgba(0, 122, 255, 0.7)"
+};
+
+var storeDecorationPage = {
+  codeName: "eleme-store-decoration", 
+  name: "Eleme Store Decoration",
+  description: "A highly customizable and flexible store decoration feature with a wide range of component options", 
+  imageAddress: function() {
+    return "../images/more-projects/"+this.codeName+"-card.jpg";
+  },
+  link: function() {
+    return this.codeName + ".html";
+  },
+  ProjectType: "INTERACTION DESIGN · DESIGN THINKING", 
+  ProjectTypeColor: "rgba(68, 78, 103, 0.7)"
 };
 
 var babyuPage = {
@@ -264,7 +278,7 @@ var babyuPage = {
   link: function() {
     return this.codeName + ".html";
   },
-  ProjectType: "UX/UI · 0-1 DESIGN", 
+  ProjectType: "0-1 DESIGN · PRODUCT DESIGN", 
   ProjectTypeColor: "rgba(78, 161, 165, 0.7)"
 };
 
@@ -278,7 +292,7 @@ var playgroundPage = {
   link: function() {
     return this.codeName + ".html";
   },
-  ProjectType: "UX/UI · 0-1 DESIGN", 
+  ProjectType: "0-1 DESIGN · PRODUCT DESIGN", 
   ProjectTypeColor: "rgba(75, 98, 193, 0.7)"
 };
 
@@ -292,7 +306,7 @@ var dysonBotPage = {
   link: function() {
     return this.codeName + ".html"
   },
-  ProjectType: "UX/UI · AI ETHICS", 
+  ProjectType: "AI ETHICS · APPLICATION OF PRINCIPLES", 
   ProjectTypeColor: "rgba(181, 68, 138, 0.7)"
 };
 
@@ -340,7 +354,7 @@ var uniformPage = {
   ProjectTypeColor: "rgba(221, 165, 23, 0.7)"
 };
 
-var allProjects = [dysonBotPage, babyuPage, playgroundPage, oddsAndEndsPage, goToTheEarthPage, uniformPage, dataAnalysisPage];
+var allProjects = [dysonBotPage, babyuPage, playgroundPage, oddsAndEndsPage, goToTheEarthPage, uniformPage, dataAnalysisPage, storeDecorationPage];
 
 function getRandomProjects() {
   //Generate five random projects other than the current one

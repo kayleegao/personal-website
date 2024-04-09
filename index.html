@@ -9,7 +9,7 @@
   <!-- Bootstrap -->
   <link href="css/bootstrap-4.3.1.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-  <!-- <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> -->
+  <!-- <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">  -->
   <link href="css/aos.css" rel="stylesheet">
   <link href="css/hover.css" rel="stylesheet" media="all">
   <link href="css/custom.css" rel="stylesheet">
@@ -47,7 +47,7 @@
   <div id="preloader">
     <div class="ldBar" data-type="fill" data-img="./images/mylogo.png" data-img-size="120,120"
       data-fill-background="#444"></div>
-    <p class="paragraph-sm text-center" style="padding: 0 5vw; margin-top: 90vh; color: #999">This site may load slowly in China. Please turn on VPN or refresh if it freezes for a long time.</p>
+    <p class="paragraph text-center" style="font-size: 12px; padding: 0 5vw; margin-top: 90vh; color: #999;">This site may load slowly in China. Please turn on VPN or refresh the page if it freezes.</p>
   </div>
   <header class="cd-header bg-transparent px-xl-5" id="index-header">
     <div class="header-wrapper">
@@ -125,14 +125,36 @@
                 </div>
                 <div class="col-12">
                   <div class="d-inline-block">
-                    <span class="small font-weight-medium" style="color: rgba(0, 122, 255, 0.7)">UX/UI · TO-B REDESIGN</span><br>
+                    <span class="small font-weight-medium" style="color: rgba(0, 122, 255, 0.7)">TO-B DESIGN · PROBLEM DEFINITION</span><br>
                     <h4 class="mt-1 d-inline-block">Eleme Analytics Section</h4><span style="font-size: 14px; color: #fff; background-color: #ff0000; padding: 2px 4px; border-radius: 4px; margin-left: 8px;">New</span>
                   </div>
                   <img src="./images/more-projects/btn-round-arrow.svg" alt=""
                     class="d-inline-block projects-icon">
-                </div>
-                <div class="col-12 col-sm-11s">
                   <p>A data analytics section with enhanced readability, functionality, and understandability</p>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-12 col-md-6 mb-5" data-aos="fade-up" data-aos-duration="1000">
+            <a target="__blank" href="./work/eleme-store-decoration.html" class="index-projects" data-hover="View">
+              <div class="row">
+                <div class="col-12 mb-3">
+                  <div class="projects-img inertia">
+                    <div class="project__card">
+                      <div class="project-card-tag"><span>Only Available in Chinese</span></div>
+                      <img src="./images/more-projects/eleme-store-decoration-card.jpg" class="img-fluid radius-10"
+                        alt="project image">
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="d-inline-block">
+                    <span class="small font-weight-medium" style="color: rgba(68, 78, 103, 0.7)">INTERACTION DESIGN · DESIGN THINKING</span><br>
+                    <h4 class="mt-1 d-inline-block">Eleme Store Decoration</h4><span style="font-size: 14px; color: #fff; background-color: #ff0000; padding: 2px 4px; border-radius: 4px; margin-left: 8px;">New</span>
+                  </div>
+                  <img src="./images/more-projects/btn-round-arrow.svg" alt=""
+                    class="d-inline-block projects-icon">
+                  <p>A highly customizable and flexible store decoration feature with a wide range of component options</p>
                 </div>
               </div>
             </a>
@@ -150,7 +172,7 @@
                 </div>
                 <div class="col-12">
                   <div class="d-inline-block">
-                    <span class="small font-weight-medium" style="color: rgba(181, 68, 138, 0.7)">UX/UI · AI ETHICS</span><br>
+                    <span class="small font-weight-medium" style="color: rgba(181, 68, 138, 0.7)">AI ETHICS · APPLICATION OF PRINCIPLES</span><br>
                     <h4 class="mt-1 d-inline-block">Dyson Bot x IBM</h4>
                   </div>
                   <img src="./images/more-projects/btn-round-arrow.svg" alt=""
@@ -174,7 +196,7 @@
                 </div>
                 <div class="col-12">
                   <div class="d-inline-block">
-                    <span class="small font-weight-medium" style="color: rgba(78, 161, 165, 0.7)">UX/UI · 0-1 DESIGN</span><br>
+                    <span class="small font-weight-medium" style="color: rgba(78, 161, 165, 0.7)">0-1 DESIGN · PRODUCT DESIGN</span><br>
                     <h4 class="mt-1 d-inline-block">BabyU</h4>
                   </div>
                   <img src="./images/more-projects/btn-round-arrow.svg" alt=""
@@ -199,7 +221,7 @@
                 </div>
                 <div class="col-12">
                   <div class="d-inline-block">
-                    <span class="small font-weight-medium" style="color: rgba(75, 98, 193, 0.7)">UX/UI · 0-1 DESIGN</span><br>
+                    <span class="small font-weight-medium" style="color: rgba(75, 98, 193, 0.7)">0-1 DESIGN · PRODUCT DESIGN</span><br>
                     <h4 class="mt-1 d-inline-block">Playground</h4>
                   </div>
                   <img src="./images/more-projects/btn-round-arrow.svg" alt=""
@@ -463,16 +485,13 @@
 
               sleep(3000).then(() => {
                 //sleep for 3 seconds and start typing
-                typewriter.typeString('Design & Tech.')
+                typewriter.typeString('UX Design & Tech.')
                   .pauseFor(2000)
                   .deleteAll()
-                  .typeString('UX Design.')
+                  .typeString('Problem Research.')
                   .pauseFor(2000)
                   .deleteAll()
-                  .typeString('UX Research.')
-                  .pauseFor(2000)
-                  .deleteAll()
-                  .typeString('Emerging Tech.')
+                  .typeString('Empathize & Sketch.')
                   .pauseFor(2000)
                   .deleteAll()
                   .start();
