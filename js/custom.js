@@ -200,13 +200,31 @@ Issues: http://github.com/ariona/hover3d/issues
         });
       };
       var toggleClass = function toggleClass(element, stringClass) {
-        if (element.classList.contains(stringClass)) element.classList.remove(stringClass);else element.classList.add(stringClass);
+        if (element.classList.contains(stringClass)) {
+          element.classList.remove(stringClass);
+          enableScroll();
+        }
+        else {
+          element.classList.add(stringClass);
+          disableScroll();
+        }
       };
       init();
     }();
 
     
   })(jQuery);
+
+  function disableScroll() {
+    var xPos = window.scrollX;
+  var yPos = window.scrollY;
+  window.onscroll = () => window.scroll(xPos, yPos);
+
+}
+
+function enableScroll() {
+    window.onscroll = function () { };
+}
 
 
 

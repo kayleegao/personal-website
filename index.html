@@ -419,7 +419,7 @@
   <script src="https://cdn.jsdelivr.net/gh/kayleegao/personal-website/js/smooth-scroll.polyfills.min.js"></script>
   <script src="https://cdn.jsdelivr.net/gh/kayleegao/personal-website/js/popper.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/gh/kayleegao/personal-website/js/custom.min.js"></script>
+  <script src="./js/custom.js"></script>
   <script>
     var loader = new ldBar(".ldBar", {
       "value": 0
@@ -431,6 +431,7 @@
     * @author JDM Digital - https://jdmdigital.co
     * Copyright (c) 2022
     */
+    disableScroll();
     var counting = setInterval(function () {
       if (loader.value < 90) {
         //console.log(loader.value);
@@ -450,6 +451,7 @@
             //console.log('fully loaded!');
             clearInterval(counting);
             loader.set(99);
+            enableScroll();
             sleep(500).then(() => {
               loader.set(100);
               //sleep for 0.5 seconds
