@@ -1188,7 +1188,7 @@ td {
 .modal {
   z-index:1001;
   display:none;
-  padding-top: 100px;
+  padding-top: 120px;
   position:fixed;
   left:0;
   top:0;
