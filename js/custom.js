@@ -187,7 +187,7 @@ Issues: http://github.com/ariona/hover3d/issues
       var body = undefined;
       var menu = undefined;
       var menuItems = undefined;
-      var init = function init() {
+      var initNav = function initNav() {
         body = document.querySelector('body');
         menu = document.querySelector('.menu-icon');
         menuItems = document.querySelectorAll('.nav__list-item');
@@ -208,18 +208,27 @@ Issues: http://github.com/ariona/hover3d/issues
           element.classList.add(stringClass);
           disableScroll();
         }
+        //enable scroll and close nav when clicking a link
+        menuItems.forEach(occurence => {
+          occurence.addEventListener('click', (e) => {
+            //console.log('A link was clicked');
+            enableScroll();
+            if (element.classList.contains(stringClass)) {
+              element.classList.remove(stringClass);
+            }
+          });
+        });
       };
-      init();
+      initNav();
     }();
 
     
   })(jQuery);
 
-  function disableScroll() {
-    var xPos = window.scrollX;
+function disableScroll() {
+  var xPos = window.scrollX;
   var yPos = window.scrollY;
   window.onscroll = () => window.scroll(xPos, yPos);
-
 }
 
 function enableScroll() {
