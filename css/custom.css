@@ -1048,26 +1048,6 @@ td {
   color: var(--main-color);
 }
 
-  .experience-face {
-    width: 30px;
-    height: 30px;
-  }
-
-  .general-link {
-    color: var(--text-color);
-    border-bottom: 1px solid rgba(0,0,0, 0.4);
-    text-decoration: none;
-    transition: all 400ms;
-    -webkit-transition: all 400ms;
-    -moz-transition: all 400ms;
-    -o-transition: all 400ms;
-  }
-
-  .general-link:hover {
-    color: var(--text-color);
-    border-bottom: 1px solid var(--text-color);
-    text-decoration: none;
-  }
 
   .icon-ul {
     padding: 0;

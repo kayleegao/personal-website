@@ -20,8 +20,8 @@ $(document).ready(function() {
   AOS.init();
   $("#footer-placeholder").load("../footer.html");
   var scroll = new SmoothScroll('a[href*="#"]', {
-    easing: 'easeInOutCubic',
-    durationMax: 1000,
+    easing: 'easeInOutQuad',
+    speed: 300,
     topOnEmptyHash: true,
     header: '[data-scroll-header]' // Selector for fixed headers (must be a valid CSS selector)
   });
@@ -234,7 +234,6 @@ function disableScroll() {
 function enableScroll() {
     window.onscroll = function () { };
 }
-
 
 
 var btn = $('.to-top');
