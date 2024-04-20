@@ -1,7 +1,7 @@
 @font-face {
   font-family: 'Euclidcircularb';
-  src: url(https://cdn.jsdelivr.net/gh/kayleegao/personal-website/font/euclidcircularb-regular-webfont.woff) format('woff');
-  src: url(https://cdn.jsdelivr.net/gh/kayleegao/personal-website/font/euclidcircularb-regular-webfont.woff2) format('woff2');
+  src: url(https://gcore.jsdelivr.net/gh/kayleegao/personal-website@latest/font/euclidcircularb-regular-webfont.woff) format('woff');
+  src: url(https://gcore.jsdelivr.net/gh/kayleegao/personal-website@latest/font/euclidcircularb-regular-webfont.woff2) format('woff2');
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -9,16 +9,16 @@
 
 @font-face {
   font-family: 'Euclidcircularb';
-  src: url(https://cdn.jsdelivr.net/gh/kayleegao/personal-website/font/euclidcircularb-medium-webfont.woff) format('woff');
-  src: url(https://cdn.jsdelivr.net/gh/kayleegao/personal-website/font/euclidcircularb-medium-webfont.woff2) format('woff2');
+  src: url(https://gcore.jsdelivr.net/gh/kayleegao/personal-website@latest/font/euclidcircularb-medium-webfont.woff) format('woff');
+  src: url(https://gcore.jsdelivr.net/gh/kayleegao/personal-website@latest/font/euclidcircularb-medium-webfont.woff2) format('woff2');
   font-weight: 500;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: 'Euclidcircularb';
-  src: url(https://cdn.jsdelivr.net/gh/kayleegao/personal-website/font/euclidcircularb-semibold-webfont.woff) format('woff');
-  src: url(https://cdn.jsdelivr.net/gh/kayleegao/personal-website/font/euclidcircularb-semibold-webfont.woff2) format('woff2');
+  src: url(https://gcore.jsdelivr.net/gh/kayleegao/personal-website@latest/font/euclidcircularb-semibold-webfont.woff) format('woff');
+  src: url(https://gcore.jsdelivr.net/gh/kayleegao/personal-website@latest/font/euclidcircularb-semibold-webfont.woff2) format('woff2');
   font-weight: 700;
   font-style: normal;
   font-display: swap;
@@ -74,7 +74,7 @@ hr {
 
 hr.wavy-line {
   height: 6px;
-   background: url("https://cdn.jsdelivr.net/gh/kayleegao/personal-website/images/wavy-line.svg") no-repeat center;
+   background: url("https://gcore.jsdelivr.net/gh/kayleegao/personal-website@latest/images/wavy-line.svg") no-repeat center;
    border: 0;
 }
 
@@ -464,7 +464,7 @@ font-size: 9pt;
   margin-left: -22px;
   margin-top: -22px;
   border-radius: 50%;
-  background: var(--peach-color) url("https://cdn.jsdelivr.net/gh/kayleegao/personal-website/images/cd-arrows.svg") no-repeat center center;
+  background: var(--peach-color) url("https://gcore.jsdelivr.net/gh/kayleegao/personal-website@latest/images/cd-arrows.svg") no-repeat center center;
   cursor: move;
   box-shadow: 0 0 0 6px rgba(0, 0, 0, 0.2), 0 0 10px rgba(0, 0, 0, 0.6), inset 0 1px 0 rgba(255, 255, 255, 0.3);
   opacity: 0;

@@ -271,7 +271,7 @@ var dataAnalysisPage = {
   name: "Eleme Analytics Section",
   description: "A data analytics section with enhanced readability, functionality, and understandability", 
   imageAddress: function() {
-    return "https://cdn.jsdelivr.net/gh/kayleegao/personal-website/images/more-projects/"+this.codeName+"-card.jpg";
+    return "https://gcore.jsdelivr.net/gh/kayleegao/personal-website@latest/images/more-projects/"+this.codeName+"-card.jpg";
   },
   link: function() {
     return this.codeName + ".html";
@@ -285,7 +285,7 @@ var storeDecorationPage = {
   name: "Eleme Store Decoration",
   description: "A highly customizable and flexible store decoration feature with a wide range of component options", 
   imageAddress: function() {
-    return "https://cdn.jsdelivr.net/gh/kayleegao/personal-website/images/more-projects/"+this.codeName+"-card.jpg";
+    return "https://gcore.jsdelivr.net/gh/kayleegao/personal-website@latest/images/more-projects/"+this.codeName+"-card.jpg";
   },
   link: function() {
     return this.codeName + ".html";
@@ -299,7 +299,7 @@ var babyuPage = {
   name: "BabyU",
   description: "A platform to help first-time parents learn about parenting and track their child's development", 
   imageAddress: function() {
-    return "https://cdn.jsdelivr.net/gh/kayleegao/personal-website/images/more-projects/"+this.codeName+"-card.jpg";
+    return "https://gcore.jsdelivr.net/gh/kayleegao/personal-website@latest/images/more-projects/"+this.codeName+"-card.jpg";
   },
   link: function() {
     return this.codeName + ".html";
@@ -313,7 +313,7 @@ var playgroundPage = {
   name: "Playground",
   description: "A social app that helps children make friends and socialize", 
   imageAddress: function() {
-    return "https://cdn.jsdelivr.net/gh/kayleegao/personal-website/images/more-projects/"+this.codeName+"-card.jpg";
+    return "https://gcore.jsdelivr.net/gh/kayleegao/personal-website@latest/images/more-projects/"+this.codeName+"-card.jpg";
   },
   link: function() {
     return this.codeName + ".html";
@@ -327,7 +327,7 @@ var dysonBotPage = {
   name: "Dyson Bot x IBM",
   description: "A trustworthy and ethical conversational AI Chatbot for Dyson", 
   imageAddress: function() {
-    return "https://cdn.jsdelivr.net/gh/kayleegao/personal-website/images/more-projects/"+this.codeName+"-card.jpg";
+    return "https://gcore.jsdelivr.net/gh/kayleegao/personal-website@latest/images/more-projects/"+this.codeName+"-card.jpg";
   },
   link: function() {
     return this.codeName + ".html"
@@ -341,7 +341,7 @@ var oddsAndEndsPage = {
   name: "Odds and Ends",
   description: "An AR experience that brings Emily Carr's artwork Odds and Ends to life", 
   imageAddress: function() {
-    return "https://cdn.jsdelivr.net/gh/kayleegao/personal-website/images/more-projects/"+this.codeName+"-card.jpg";
+    return "https://gcore.jsdelivr.net/gh/kayleegao/personal-website@latest/images/more-projects/"+this.codeName+"-card.jpg";
   },
   link: function() {
     return this.codeName + ".html"
@@ -356,7 +356,7 @@ var goToTheEarthPage = {
   name: "Go to the Earth",
   description: "An educational roll-and-move board game to teach about the solar system", 
   imageAddress: function() {
-    return "https://cdn.jsdelivr.net/gh/kayleegao/personal-website/images/more-projects/"+this.codeName+"-card.jpg";
+    return "https://gcore.jsdelivr.net/gh/kayleegao/personal-website@latest/images/more-projects/"+this.codeName+"-card.jpg";
   },
   link: function() {
     return this.codeName + ".html"
@@ -371,7 +371,7 @@ var uniformPage = {
   name: "SUXD Uniform",
   description: "A promotional page for SUXD department uniform developed for mobile terminal", 
   imageAddress: function() {
-    return "https://cdn.jsdelivr.net/gh/kayleegao/personal-website/images/more-projects/"+this.codeName+"-card.jpg";
+    return "https://gcore.jsdelivr.net/gh/kayleegao/personal-website@latest/images/more-projects/"+this.codeName+"-card.jpg";
   },
   link: function() {
     return this.codeName + ".html"
@@ -414,7 +414,7 @@ function getRandomProjects() {
                     <span class="small" style="color: `+selected[i].ProjectTypeColor+`">`+selected[i].ProjectType+`</span><br>
                     <h5 class="mt-0 mb-md-1 d-inline-block">`+selected[i].name+`</h5>
                   </div>
-                <img src="https://cdn.jsdelivr.net/gh/kayleegao/personal-website/images/more-projects/btn-round-arrow.svg"
+                <img src="https://gcore.jsdelivr.net/gh/kayleegao/personal-website@latest/images/more-projects/btn-round-arrow.svg"
                     alt="" class="d-inline-block projects-icon">
                 <p>`+selected[i].description+`</p>
               </div>
