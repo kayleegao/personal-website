@@ -692,20 +692,6 @@ background: linear-gradient(0deg, rgba(244, 186, 185, 0.35) 0%, rgba(244, 186, 1
     text-decoration: none;
 }
 
-.ic-arrow {
-  position: static;
-  margin-top: -3px;
-  margin-left: 10px;
-  height: 0.9em;
-}
-
-.ic-arrow-sm {
-  position: static;
-  margin-top: -3px;
-  margin-left: 10px;
-  height: 0.8em;
-}
-
 .mylogo {
     width: 40px;
     height: auto;
@@ -1075,17 +1061,14 @@ td {
     z-index: 1;
     margin-right: 10px;
   }
-
-  .ins {
-    font-size: 23px;
-    margin-top: 13px;
-  }
   
   .icon-ul .icon-li .icon-a .icon {
     position: relative;
     color: #000;
     transition: .5s;
     z-index: 3;
+    -webkit-font-smoothing: antialiased;
+    display: inline-block;
   }
   
   .icon-ul .icon-li a:hover .icon {
@@ -1657,11 +1640,12 @@ blockquote.blockstyle:after {
   left: 0;
   bottom: 0;
   width: 60px;
-  height: 2px;
+  height: 4px;
   content: "";
   left: 50%;
   margin-left: -30px;
   background-color: var(--main-color);
+  border-radius: 2px;
 }
 
 
