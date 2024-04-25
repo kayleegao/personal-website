@@ -376,7 +376,7 @@
                 <div class="photo" style="background-image: url(https://gcore.jsdelivr.net/gh/kayleegao/personal-website@latest/images/mylogo.png);">
                   <div class="online"></div>
                 </div>
-                <form id="contact-form" class="text p-4" name="contact" action="/contact-success.html" method="POST"
+                <form id="contact-form" class="text p-4" name="contact" method="POST"
                   netlify-honeypot="bot-field" data-netlify="true">
                   <div class="row">
                     <div class="col-12">
@@ -697,6 +697,26 @@ function spanVocab(text) {
   }
   text.innerHTML = spaned;
 }
+
+//handle form submission
+const handleSubmit = (event) => {
+  event.preventDefault();
+
+  const myForm = event.target;
+  const formData = new FormData(myForm);
+  
+  fetch("/", {
+    method: "POST",
+    headers: { "Content-Type": "application/x-www-form-urlencoded" },
+    body: new URLSearchParams(formData).toString(),
+  })
+    .then(() => alert("Thank you for your submission"))
+    .catch((error) => alert(error));
+};
+
+document
+  .querySelector("form")
+  .addEventListener("submit", handleSubmit);
   </script>
 
 </body>
