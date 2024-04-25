@@ -276,8 +276,9 @@ var dataAnalysisPage = {
   link: function() {
     return this.codeName + ".html";
   },
-  ProjectType: "TO-B DESIGN · PROBLEM DEFINITION", 
-  ProjectTypeColor: "rgba(0, 122, 255, 0.7)"
+  projectType: "TO-B DESIGN · PROBLEM DEFINITION", 
+  projectTypeColor: "rgba(0, 122, 255, 0.7)",
+  language: "中文"
 };
 
 var storeDecorationPage = {
@@ -290,8 +291,9 @@ var storeDecorationPage = {
   link: function() {
     return this.codeName + ".html";
   },
-  ProjectType: "INTERACTION DESIGN · DESIGN THINKING", 
-  ProjectTypeColor: "rgba(68, 78, 103, 0.7)"
+  projectType: "INTERACTION DESIGN · DESIGN THINKING", 
+  projectTypeColor: "rgba(68, 78, 103, 0.7)",
+  language: "中文"
 };
 
 var babyuPage = {
@@ -304,8 +306,9 @@ var babyuPage = {
   link: function() {
     return this.codeName + ".html";
   },
-  ProjectType: "0-1 DESIGN · PRODUCT DESIGN", 
-  ProjectTypeColor: "rgba(78, 161, 165, 0.7)"
+  projectType: "0-1 DESIGN · PRODUCT DESIGN", 
+  projectTypeColor: "rgba(78, 161, 165, 0.7)",
+  language: "English"
 };
 
 var playgroundPage = {
@@ -318,8 +321,9 @@ var playgroundPage = {
   link: function() {
     return this.codeName + ".html";
   },
-  ProjectType: "0-1 DESIGN · PRODUCT DESIGN", 
-  ProjectTypeColor: "rgba(75, 98, 193, 0.7)"
+  projectType: "0-1 DESIGN · PRODUCT DESIGN", 
+  projectTypeColor: "rgba(75, 98, 193, 0.7)",
+  language: "English"
 };
 
 var dysonBotPage = {
@@ -332,8 +336,9 @@ var dysonBotPage = {
   link: function() {
     return this.codeName + ".html"
   },
-  ProjectType: "AI ETHICS · APPLICATION OF PRINCIPLES", 
-  ProjectTypeColor: "rgba(181, 68, 138, 0.7)"
+  projectType: "AI ETHICS · APPLICATION OF PRINCIPLES", 
+  projectTypeColor: "rgba(181, 68, 138, 0.7)",
+  language: "English"
 };
 
 var oddsAndEndsPage = {
@@ -346,8 +351,9 @@ var oddsAndEndsPage = {
   link: function() {
     return this.codeName + ".html"
   },
-  ProjectType: "AR · STORYTELLING", 
-  ProjectTypeColor: "rgba(121, 156, 117, 0.7)"
+  projectType: "AR · STORYTELLING", 
+  projectTypeColor: "rgba(121, 156, 117, 0.7)",
+  language: "English"
 };
 
 
@@ -361,8 +367,9 @@ var goToTheEarthPage = {
   link: function() {
     return this.codeName + ".html"
   },
-  ProjectType: "BOARD GAME DESIGN", 
-  ProjectTypeColor: "rgba(88, 181, 227, 0.7)"
+  projectType: "BOARD GAME DESIGN", 
+  projectTypeColor: "rgba(88, 181, 227, 0.7)",
+  language: "English"
 };
 
 
@@ -376,8 +383,9 @@ var uniformPage = {
   link: function() {
     return this.codeName + ".html"
   },
-  ProjectType: "FRONT-END DEVELOPMENT", 
-  ProjectTypeColor: "rgba(221, 165, 23, 0.7)"
+  orojectType: "FRONT-END DEVELOPMENT", 
+  projectTypeColor: "rgba(221, 165, 23, 0.7)",
+  language: "English & 中文"
 };
 
 var allProjects = [dysonBotPage, babyuPage, playgroundPage, oddsAndEndsPage, goToTheEarthPage, uniformPage, dataAnalysisPage, storeDecorationPage];
@@ -405,13 +413,14 @@ function getRandomProjects() {
               <div class="col-12 mb-1 mb-sm-3">
               <div class="projects-img">
                       <div class="project__card">
+                      <div class="project-card-tag"><span>Available Language:&nbsp `+selected[i].language+`</span></div>
                       <img src="`+selected[i].imageAddress()+`" class="img-fluid position-relative radius-10" alt="project image">
                       </div>
                     </div>
               </div>
               <div class="col-12">
                 <div class="d-inline-block">
-                    <span class="small" style="color: `+selected[i].ProjectTypeColor+`">`+selected[i].ProjectType+`</span><br>
+                    <span class="small" style="color: `+selected[i].projectTypeColor+`">`+selected[i].projectType+`</span><br>
                     <h5 class="mt-0 mb-md-1 d-inline-block">`+selected[i].name+`</h5>
                   </div>
                 <img src="https://gcore.jsdelivr.net/gh/kayleegao/personal-website@latest/images/more-projects/btn-round-arrow.svg"
