@@ -1654,76 +1654,6 @@ blockquote.blockstyle:after {
   max-width: 50px;
 }
 
-
-/* Contact success message */
-#status, #contBtn {
-  font-weight: 500;
-}
-
-#contact-success-card {
-  display: block;
-  margin: auto;
-}
-
-#upper-side {
-  padding: 2em;
-  background-color: #8BC34A;
-  display: block;
-  color: #fff;
-  border-top-right-radius: 8px;
-  border-top-left-radius: 8px;
-}
-
-#status {
-  margin-top: -.1em;
-  margin-bottom: 0;
-  line-height: 35px;
-}
-
-#lower-side {
-  padding: 2em 2em 5em 2em;
-  background: var(--light-white-color);
-  display: block;
-  border-bottom-right-radius: 8px;
-  border-bottom-left-radius: 8px;
-}
-
-#message {
-  margin-top: -.5em;
-  color: #757575;
-  line-height: 1.8em;
-}
-
-#contBtn {
-  position: relative;
-  top: 1.5em;
-  text-decoration: none;
-  background: #8bc34a;
-  color: #fff;
-  margin: auto;
-  padding: .7em 2.8em;
-  -webkit-box-shadow: 0px 15px 30px rgba(50, 50, 50, 0.21);
-  -moz-box-shadow: 0px 15px 30px rgba(50, 50, 50, 0.21);
-  box-shadow: 0px 15px 30px rgba(50, 50, 50, 0.21);
-  border-radius: 25px;
-  -webkit-transition: all .4s ease;
-    -moz-transition: all .4s ease;
-    -o-transition: all .4s ease;
-    transition: all .4s ease;
-}
-
-#contBtn:hover {
-  -webkit-box-shadow: 0px 15px 30px rgba(50, 50, 50, 0.41);
-  -moz-box-shadow: 0px 15px 30px rgba(50, 50, 50, 0.41);
-  box-shadow: 0px 15px 30px rgba(50, 50, 50, 0.41);
-  -webkit-transition: all .4s ease;
-    -moz-transition: all .4s ease;
-    -o-transition: all .4s ease;
-    transition: all .4s ease;
-}
-
-
-
 /* 100% Image Width on Smaller Screens */
 @media only screen and (max-width: 700px){
   .modal-content {
@@ -1731,8 +1661,6 @@ blockquote.blockstyle:after {
   }
 }
 
-
-  
 
   @media only screen and (max-device-width: 1024px) {
     .to-top.show {
