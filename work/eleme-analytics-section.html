@@ -18,6 +18,7 @@
     <!-- Tab css -->
     <link href="https://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="https://gcore.jsdelivr.net/gh/kayleegao/personal-website@latest/css/custom-tab.min.css">
+    <link href="https://gcore.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
 </head>
 
 <body>
@@ -187,21 +188,21 @@
                 <section class="filters" id="problem-tab">
                     <div class="row">
                         <div class="col-4 col-md-3 col-lg-2 offset-lg-3 mb-3 px-2 px-lg-3">
-                            <div class="rcircle is-active" data-target="#interview"
+                            <div class="rcircle is-active pointer" data-target="#interview"
                                 style="background-image: linear-gradient(0deg, rgba(0 0 0 / 70%), rgba(0 0 0 / 50%)),url(https://gcore.jsdelivr.net/gh/kayleegao/personal-website@latest/images/eleme-data-analysis/interview-bg.jpeg);">
                                 <div class="txt">用户访谈</div>
                                 <div class="txt-sub">知用户</div>
                             </div>
                         </div>
                         <div class="col-4 col-md-3 col-lg-2 mb-3 px-2 px-lg-3">
-                            <div class="rcircle" data-target="#walkthrough"
+                            <div class="rcircle pointer" data-target="#walkthrough"
                                 style="background-image: linear-gradient(0deg, rgba(0 0 0 / 70%), rgba(0 0 0 / 50%)),url(https://gcore.jsdelivr.net/gh/kayleegao/personal-website@latest/images/eleme-data-analysis/walkthrough-bg.png);">
                                 <div class="txt">体验走查</div>
                                 <div class="txt-sub">知自己</div>
                             </div>
                         </div>
                         <div class="col-4 col-md-3 col-lg-2 mb-3 px-2 px-lg-3">
-                            <div class="rcircle" data-target="#competitive-analysis"
+                            <div class="rcircle pointer" data-target="#competitive-analysis"
                                 style="background-image: linear-gradient(0deg, rgba(0 0 0 / 70%), rgba(0 0 0 / 50%)),url(https://gcore.jsdelivr.net/gh/kayleegao/personal-website@latest/images/eleme-data-analysis/competitive-analysis-bg.png);">
                                 <div class="txt">竞品分析</div>
                                 <div class="txt-sub">知对手</div>
@@ -217,12 +218,11 @@
                                             <div class="intro-card p-4 h-100">
                                                 <h6 class="font-weight-bold">🚩 访谈目标</h6>
                                                 <p class="paragraph text-secondary mb-1">
-                                                    对商家<mark>看数诉求</mark>及<mark>行为模式</mark>等做系统性调研。</p>
-                                                <p class="paragraph text-secondary mb-1">具体目标包括：</p>
+                                                    对商家看数诉求及行为模式等做系统性调研。具体目标包括：</p>
                                                 <ul class="list-unstyled paragraph-sm mb-0">
-                                                    <li class="text-secondary mb-1">1) 了解商家的经营能力、数据模块依赖程度</li>
-                                                    <li class="text-secondary mb-1">2) 了解商家对数据的理解程度，如指标、图表是否易理解</li>
-                                                    <li class="text-secondary mb-1">3) 了解商家的看数诉求，包括看什么、怎么看</li>
+                                                    <li class="text-secondary mb-1">1) 了解商家的经营能力、<mark>数据模块依赖程度</mark></li>
+                                                    <li class="text-secondary mb-1">2) 了解商家的<mark>数据理解程度</mark>，如指标、图表是否易理解</li>
+                                                    <li class="text-secondary">3) 了解商家的<mark>看数诉求</mark>，包括看什么怎么看</li>
                                                 </ul>
                                             </div>
                                         </div>
@@ -242,7 +242,7 @@
                                                 <h6 class="font-weight-bold">👤 用户分布</h6>
                                                 <p class="paragraph text-secondary">共走访8名商家，其中5名是经验丰富或较上进的商家，3名是小白商家。
                                                 </p>
-                                                <img src="https://gcore.jsdelivr.net/gh/kayleegao/personal-website/images/eleme-data-analysis/interview-user.png"
+                                                <img src="https://gcore.jsdelivr.net/gh/kayleegao/personal-website@latest/images/eleme-data-analysis/interview-user.png"
                                                     alt="interview user" class="img-fluid">
                                             </div>
                                         </div>
@@ -251,7 +251,7 @@
                                                 <h6 class="font-weight-bold text-light">💡 访谈总结</h6>
                                                 <p class="paragraph mb-1" style="color: #c4c4c4;">商家对于数据的依赖程度、理解能力、诉求如下：
                                                 </p>
-                                                <img src="https://gcore.jsdelivr.net/gh/kayleegao/personal-website/images/eleme-data-analysis/interview-insight.png"
+                                                <img src="https://gcore.jsdelivr.net/gh/kayleegao/personal-website@latest/images/eleme-data-analysis/interview-insight.png"
                                                     alt="interview insight" class="img-fluid">
                                             </div>
                                         </div>
@@ -802,7 +802,31 @@
 
 
     <footer>
-        <div id="footer-placeholder"></div>
+        <div class="container">
+        <hr>
+    <div class="row text-center">
+        <div class="col-12">
+            <img src="https://gcore.jsdelivr.net/gh/kayleegao/personal-website@latest/images/emmoji.png" alt="emmoji" width="100" height="auto">
+        </div>
+        <div class="col-12">
+            <ul class="icon-ul mt-3" id="social">
+                <li class="icon-li">
+                    <a href="mailto:kayleegao1998@gmail.com" class="icon-a icons"><i class="bi bi-envelope-fill icon"></i></a>
+                </li>
+                <li class="icon-li">
+                    <a target="__blank" href="https://www.linkedin.com/in/yifei-gao-a9a288183/" class="icon-a icons"><i class="bi bi-linkedin icon"></i></a>
+                </li>
+                <li class="icon-li">
+                    <a target="__blank" href="https://www.instagram.com/kayleeegao/" class="icon-a icons"><i class="bi bi-instagram icon ins"></i></a>
+                </li>
+            </ul>
+        </div>
+        <div class="col-12">
+            <span class="navbar-text mb-2" style="font-size: 0.9em;">Thanks for stopping by. Designed &amp; developed by Yifei (Kaylee) Gao with 💛 &amp; 🧋</span><br>
+            <span class="navbar-text mb-5 small" style="color: #909090;">&copy; 2021-2024. All Rights Reserved to Yifei (Kaylee) Gao</span>
+        </div>
+    </div>
+      </div>
     </footer>
     <a data-scroll href="#" class="to-top hvr-bob"><img src="https://gcore.jsdelivr.net/gh/kayleegao/personal-website@latest/images/to-top.png"></a>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
