@@ -621,7 +621,7 @@ background: linear-gradient(0deg, rgba(244, 186, 185, 0.35) 0%, rgba(244, 186, 1
 
 #yellow-blob {
   width: 75%; 
-  top: 45%; 
+  top: 50%; 
   left: 0; 
   z-index: -1;
 }

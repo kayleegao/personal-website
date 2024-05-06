@@ -267,7 +267,7 @@ var dataAnalysisPage = {
   link: function() {
     return this.codeName + ".html";
   },
-  projectType: "TO-B DESIGN · PROBLEM DEFINITION", 
+  projectType: "TO-B DESIGN · DATA VISUALIZATION", 
   projectTypeColor: "rgba(0, 122, 255, 0.7)",
   language: "中文"
 };
@@ -282,7 +282,7 @@ var storeDecorationPage = {
   link: function() {
     return this.codeName + ".html";
   },
-  projectType: "INTERACTION DESIGN · DESIGN THINKING", 
+  projectType: "TO-B DESIGN · DESIGN THINKING", 
   projectTypeColor: "rgba(68, 78, 103, 0.7)",
   language: "中文"
 };
@@ -374,7 +374,7 @@ var uniformPage = {
   link: function() {
     return this.codeName + ".html"
   },
-  orojectType: "FRONT-END DEVELOPMENT", 
+  projectType: "FRONT-END DEVELOPMENT", 
   projectTypeColor: "rgba(221, 165, 23, 0.7)",
   language: "English & 中文"
 };
