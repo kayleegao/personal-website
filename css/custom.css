@@ -1501,16 +1501,21 @@ td {
   /* (D) TEXT BLOCK */
   .rcircle .txt {
     position: absolute; 
-    bottom: 56%; 
+    bottom: 59%; 
     width: 100%; 
     text-align: center;
-    font-size: 0.6rem;
     color: var(--light-white-color);
-  
+}
+.rcircle .txt2 {
+  position: absolute; 
+  bottom: 40%; 
+  width: 100%; 
+  text-align: center;
+  color: var(--light-white-color);
 }
 .rcircle .txt-sub {
   position: absolute; 
-  bottom: 39%; 
+  bottom: 38%; 
   width: 100%; 
   text-align: center;
   font-size: 0.6rem;
