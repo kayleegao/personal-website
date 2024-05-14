@@ -269,7 +269,7 @@ var dataAnalysisPage = {
   },
   projectType: "TO-B DESIGN · DATA VISUALIZATION", 
   projectTypeColor: "rgba(0, 122, 255, 0.7)",
-  language: "中文"
+  language: "English & 中文"
 };
 
 var storeDecorationPage = {
