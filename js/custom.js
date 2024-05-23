@@ -348,22 +348,6 @@ var oddsAndEndsPage = {
 };
 
 
-var goToTheEarthPage = {
-  codeName: "go-to-the-earth", 
-  name: "Go to the Earth",
-  description: "An educational roll-and-move board game to teach about the solar system", 
-  imageAddress: function() {
-    return "https://gcore.jsdelivr.net/gh/kayleegao/personal-website@latest/images/more-projects/"+this.codeName+"-card.jpg";
-  },
-  link: function() {
-    return this.codeName + ".html"
-  },
-  projectType: "BOARD GAME DESIGN", 
-  projectTypeColor: "rgba(88, 181, 227, 0.7)",
-  language: "English"
-};
-
-
 var uniformPage = {
   codeName: "suxd-uniform", 
   name: "SUXD Uniform",
@@ -379,7 +363,7 @@ var uniformPage = {
   language: "English & 中文"
 };
 
-var allProjects = [dysonBotPage, babyuPage, playgroundPage, oddsAndEndsPage, goToTheEarthPage, uniformPage, dataAnalysisPage, storeDecorationPage];
+var allProjects = [dysonBotPage, babyuPage, playgroundPage, oddsAndEndsPage, uniformPage, dataAnalysisPage, storeDecorationPage];
 
 function getRandomProjects() {
   //Generate five random projects other than the current one
@@ -394,7 +378,7 @@ function getRandomProjects() {
       shuffled.push(shuffled.splice(shuffled.indexOf(shuffled[i]), 1)[0]); //Move the current project to the last
     }
   }
-  let selected = shuffled.slice(0, 5); //slice the first five elements from shuffled
+  let selected = shuffled.slice(0, 4); //slice the first four elements from shuffled
   var placeholder = "";
   for (i = 0; i < selected.length; i++) {
       placeholder = placeholder.concat(
